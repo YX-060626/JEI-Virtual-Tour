@@ -1,0 +1,4 @@
+PASS: actual Play mode starts with a perspective 3D overview.
+PASS: orbit update moves the camera around the model.
+PASS: overview -> first person -> overview switching; exactly one active Camera and AudioListener in all three states.
+PASS: 3D and eye-level interior images rendered from the actual runtime cameras.

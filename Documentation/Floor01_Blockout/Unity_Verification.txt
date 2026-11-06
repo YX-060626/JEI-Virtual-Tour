@@ -1,0 +1,23 @@
+PASS: 24 door openings unobstructed at pedestrian height.
+PASS: both 2.40m clear corridors continuous across the floor.
+PASS: both 2.40m cross-links unobstructed, circulation forms a loop.
+PASS: 36.00 x 26.00m footprint; 936.00m2 gross external footprint.
+PASS: two separate U-stairs; each 24 x 0.150m = 3.600m rise, 0.300m going, 1.50m clear flight.
+N01 CLASSROOM A: 55.61m2 clear zone
+N02 CLASSROOM B: 55.95m2 clear zone
+N03 COLLABORATIVE LEARNING: 73.37m2 clear zone
+N04 SEMINAR ROOM: 48.24m2 clear zone
+S01 TEACHERS OFFICE: 95.81m2 clear zone
+S02 ENTRANCE / RECEPTION: 42.88m2 clear zone
+S03 ADMIN / STUDENT SERVICES: 43.55m2 clear zone
+S04 MEETING / INTERVIEW: 50.92m2 clear zone
+C01 STAIR A: 33.28m2 clear zone
+C02 WC - WOMEN: 17.36m2 clear zone
+C03 WC - MEN: 17.36m2 clear zone
+C04 OPEN COURTYARD: 49.92m2 clear zone
+C05 CLEANER / STORE: 8.06m2 clear zone
+C06 LIFT RESERVE: 8.68m2 clear zone
+C07 ACCESSIBLE WC: 8.06m2 clear zone
+C08 IT / SERVICES: 8.68m2 clear zone
+C09 STAIR B: 33.28m2 clear zone
+Scope: structural design study only. Courtyard requires coordinated openings in subsequent floors. Lift is a reserved shaft; WC fixtures, fire doors and structural engineering remain design development.

@@ -1,0 +1,948 @@
+{
+  "source": "Assets/JEI_Blockout/Floor01_Plan.json",
+  "source_sha256": "955b4a6e8fefbb527901e391820c5ffc08ad13c7bcf1effa08ac87374c541dfa",
+  "geometry_checks": {
+    "opening_and_room_overlap_checks": "pass",
+    "east_west_corridor_clear_width_m": 2.4,
+    "courtyard_side_link_clear_width_m": 2.4,
+    "perimeter_room_clear_depth_m": 6.7,
+    "exit_count": 5
+  },
+  "method": "8-neighbour Dijkstra on body-inflated rectangles; windows solid; door openings free; five facade door mouths; exterior not traversable",
+  "limits": "Empty-room geometric screening only. Furniture, door leaves, stair solids, occupant loads, fire/smoke separation, exit adequacy, external safe dispersal and statutory applicability are not verified. 15/32m teaching and 18/45m general are comparison values supplied for this concept, not an assertion of applicable code.",
+  "grids": [
+    {
+      "step_m": 0.2,
+      "body_radius_m": 0.3,
+      "extra_collision_padding_m": 0.070711,
+      "grid_nodes": 23711,
+      "free_grid_nodes": 16935,
+      "exit_seed_counts": {
+        "SOUTH": 9,
+        "WEST_SOUTH": 3,
+        "WEST_NORTH": 3,
+        "EAST_SOUTH": 3,
+        "EAST_NORTH": 3
+      },
+      "room_results": [
+        {
+          "id": "N01",
+          "nameZh": "普通教室 A",
+          "kind": "teaching",
+          "clear_area_m2": 55.61,
+          "sampled_body_centre_area_m2": 45.6,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 17.251,
+          "conservative_empty_room_nearest_exit_upper_m": 17.669,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 35.156,
+            "WEST_SOUTH": 25.162,
+            "WEST_NORTH": 17.251,
+            "EAST_SOUTH": 45.942,
+            "EAST_NORTH": 38.734
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 35.409,
+            "WEST_SOUTH": 25.58,
+            "WEST_NORTH": 17.669,
+            "EAST_SOUTH": 46.194,
+            "EAST_NORTH": 38.986
+          },
+          "initial_to_room_door_upper_m": 9.645,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "N02",
+          "nameZh": "普通教室 B",
+          "kind": "teaching",
+          "clear_area_m2": 55.945,
+          "sampled_body_centre_area_m2": 45.6,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 21.423,
+          "conservative_empty_room_nearest_exit_upper_m": 21.423,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 29.685,
+            "WEST_SOUTH": 29.334,
+            "WEST_NORTH": 21.423,
+            "EAST_SOUTH": 38.714,
+            "EAST_NORTH": 31.505
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 29.685,
+            "WEST_SOUTH": 29.334,
+            "WEST_NORTH": 21.423,
+            "EAST_SOUTH": 38.714,
+            "EAST_NORTH": 31.505
+          },
+          "initial_to_room_door_upper_m": 7.689,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "N03",
+          "nameZh": "教学协作 / 电脑教室",
+          "kind": "collaboration",
+          "clear_area_m2": 73.365,
+          "sampled_body_centre_area_m2": 61.2,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 22.32,
+          "conservative_empty_room_nearest_exit_upper_m": 22.876,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 30.099,
+            "WEST_SOUTH": 38.776,
+            "WEST_NORTH": 31.568,
+            "EAST_SOUTH": 30.231,
+            "EAST_NORTH": 22.32
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 30.491,
+            "WEST_SOUTH": 39.002,
+            "WEST_NORTH": 31.794,
+            "EAST_SOUTH": 30.788,
+            "EAST_NORTH": 22.876
+          },
+          "initial_to_room_door_upper_m": 8.769,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "N04",
+          "nameZh": "小组研讨室",
+          "kind": "teaching",
+          "clear_area_m2": 48.24,
+          "sampled_body_centre_area_m2": 38.4,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.223,
+          "conservative_empty_room_nearest_exit_upper_m": 13.292,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 36.328,
+            "WEST_SOUTH": 47.114,
+            "WEST_NORTH": 39.905,
+            "EAST_SOUTH": 22.305,
+            "EAST_NORTH": 13.223
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 36.328,
+            "WEST_SOUTH": 47.114,
+            "WEST_NORTH": 39.905,
+            "EAST_SOUTH": 22.375,
+            "EAST_NORTH": 13.292
+          },
+          "initial_to_room_door_upper_m": 7.868,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "S01",
+          "nameZh": "教师办公与交流区",
+          "kind": "office",
+          "clear_area_m2": 95.81,
+          "sampled_body_centre_area_m2": 81.6,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 22.451,
+          "conservative_empty_room_nearest_exit_upper_m": 22.451,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 27.168,
+            "WEST_SOUTH": 22.451,
+            "WEST_NORTH": 30.362,
+            "EAST_SOUTH": 38.617,
+            "EAST_NORTH": 45.825
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 27.168,
+            "WEST_SOUTH": 22.451,
+            "WEST_NORTH": 30.362,
+            "EAST_SOUTH": 38.617,
+            "EAST_NORTH": 45.825
+          },
+          "initial_to_room_door_upper_m": 11.745,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "S02",
+          "nameZh": "入口门厅 / 接待等候",
+          "kind": "public",
+          "clear_area_m2": 42.88,
+          "sampled_body_centre_area_m2": 35.16,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 7.428,
+          "conservative_empty_room_nearest_exit_upper_m": 7.428,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 7.428,
+            "WEST_SOUTH": 25.74,
+            "WEST_NORTH": 32.948,
+            "EAST_SOUTH": 25.74,
+            "EAST_NORTH": 32.948
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 7.428,
+            "WEST_SOUTH": 25.74,
+            "WEST_NORTH": 32.948,
+            "EAST_SOUTH": 25.74,
+            "EAST_NORTH": 32.948
+          },
+          "initial_to_room_door_upper_m": 7.185,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 2
+        },
+        {
+          "id": "S03",
+          "nameZh": "行政办公 / 学生服务",
+          "kind": "admin",
+          "clear_area_m2": 43.55,
+          "sampled_body_centre_area_m2": 34.8,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 19.491,
+          "conservative_empty_room_nearest_exit_upper_m": 19.491,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 21.243,
+            "WEST_SOUTH": 32.691,
+            "WEST_NORTH": 39.899,
+            "EAST_SOUTH": 19.491,
+            "EAST_NORTH": 27.402
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 21.243,
+            "WEST_SOUTH": 32.691,
+            "WEST_NORTH": 39.899,
+            "EAST_SOUTH": 19.491,
+            "EAST_NORTH": 27.402
+          },
+          "initial_to_room_door_upper_m": 7.23,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "S04",
+          "nameZh": "会议 / 访谈室",
+          "kind": "office",
+          "clear_area_m2": 50.92,
+          "sampled_body_centre_area_m2": 40.8,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.223,
+          "conservative_empty_room_nearest_exit_upper_m": 13.292,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 28.457,
+            "WEST_SOUTH": 39.905,
+            "WEST_NORTH": 47.114,
+            "EAST_SOUTH": 13.223,
+            "EAST_NORTH": 22.305
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 28.457,
+            "WEST_SOUTH": 39.905,
+            "WEST_NORTH": 47.114,
+            "EAST_SOUTH": 13.292,
+            "EAST_NORTH": 22.375
+          },
+          "initial_to_room_door_upper_m": 7.868,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C02",
+          "nameZh": "女卫生间（占位）",
+          "kind": "service",
+          "clear_area_m2": 17.36,
+          "sampled_body_centre_area_m2": 11.52,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 12.843,
+          "conservative_empty_room_nearest_exit_upper_m": 13.254,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 27.602,
+            "WEST_SOUTH": 20.091,
+            "WEST_NORTH": 12.843,
+            "EAST_SOUTH": 38.388,
+            "EAST_NORTH": 31.843
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 28.097,
+            "WEST_SOUTH": 20.503,
+            "WEST_NORTH": 13.254,
+            "EAST_SOUTH": 38.883,
+            "EAST_NORTH": 32.337
+          },
+          "initial_to_room_door_upper_m": 4.113,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C03",
+          "nameZh": "男卫生间（占位）",
+          "kind": "service",
+          "clear_area_m2": 17.36,
+          "sampled_body_centre_area_m2": 11.52,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 12.843,
+          "conservative_empty_room_nearest_exit_upper_m": 13.254,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 21.057,
+            "WEST_SOUTH": 12.843,
+            "WEST_NORTH": 20.091,
+            "EAST_SOUTH": 31.843,
+            "EAST_NORTH": 38.388
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 21.551,
+            "WEST_SOUTH": 13.254,
+            "WEST_NORTH": 20.503,
+            "EAST_SOUTH": 32.337,
+            "EAST_NORTH": 38.883
+          },
+          "initial_to_room_door_upper_m": 4.113,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C04",
+          "nameZh": "采光庭院 / 各层留洞预留",
+          "kind": "courtyard",
+          "clear_area_m2": 49.92,
+          "sampled_body_centre_area_m2": 40.6,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 17.043,
+          "conservative_empty_room_nearest_exit_upper_m": 17.043,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 17.043,
+            "WEST_SOUTH": 26.023,
+            "WEST_NORTH": 32.568,
+            "EAST_SOUTH": 26.023,
+            "EAST_NORTH": 32.568
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 17.043,
+            "WEST_SOUTH": 26.023,
+            "WEST_NORTH": 32.568,
+            "EAST_SOUTH": 26.023,
+            "EAST_NORTH": 32.568
+          },
+          "initial_to_room_door_upper_m": 7.273,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C05",
+          "nameZh": "清洁 / 储物间",
+          "kind": "service",
+          "clear_area_m2": 8.06,
+          "sampled_body_centre_area_m2": 4.32,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.78,
+          "conservative_empty_room_nearest_exit_upper_m": 13.865,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 25.54,
+            "WEST_SOUTH": 36.325,
+            "WEST_NORTH": 29.78,
+            "EAST_SOUTH": 21.028,
+            "EAST_NORTH": 13.78
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 25.625,
+            "WEST_SOUTH": 36.411,
+            "WEST_NORTH": 29.865,
+            "EAST_SOUTH": 21.114,
+            "EAST_NORTH": 13.865
+          },
+          "initial_to_room_door_upper_m": 3.117,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C06",
+          "nameZh": "无障碍电梯井预留",
+          "kind": "service",
+          "clear_area_m2": 8.68,
+          "sampled_body_centre_area_m2": 4.8,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 10.863,
+          "conservative_empty_room_nearest_exit_upper_m": 11.037,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 28.423,
+            "WEST_SOUTH": 39.208,
+            "WEST_NORTH": 32.663,
+            "EAST_SOUTH": 18.111,
+            "EAST_NORTH": 10.863
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 28.514,
+            "WEST_SOUTH": 39.3,
+            "WEST_NORTH": 32.755,
+            "EAST_SOUTH": 18.286,
+            "EAST_NORTH": 11.037
+          },
+          "initial_to_room_door_upper_m": 3.213,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C07",
+          "nameZh": "独立无障碍卫生间预留",
+          "kind": "service",
+          "clear_area_m2": 8.06,
+          "sampled_body_centre_area_m2": 4.32,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.78,
+          "conservative_empty_room_nearest_exit_upper_m": 13.865,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 18.994,
+            "WEST_SOUTH": 29.78,
+            "WEST_NORTH": 36.325,
+            "EAST_SOUTH": 13.78,
+            "EAST_NORTH": 21.028
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 19.079,
+            "WEST_SOUTH": 29.865,
+            "WEST_NORTH": 36.411,
+            "EAST_SOUTH": 13.865,
+            "EAST_NORTH": 21.114
+          },
+          "initial_to_room_door_upper_m": 3.117,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C08",
+          "nameZh": "设备 / 弱电间",
+          "kind": "service",
+          "clear_area_m2": 8.68,
+          "sampled_body_centre_area_m2": 4.8,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 10.863,
+          "conservative_empty_room_nearest_exit_upper_m": 11.037,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 21.877,
+            "WEST_SOUTH": 32.663,
+            "WEST_NORTH": 39.208,
+            "EAST_SOUTH": 10.863,
+            "EAST_NORTH": 18.111
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 21.969,
+            "WEST_SOUTH": 32.755,
+            "WEST_NORTH": 39.3,
+            "EAST_SOUTH": 11.037,
+            "EAST_NORTH": 18.286
+          },
+          "initial_to_room_door_upper_m": 3.213,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        }
+      ]
+    },
+    {
+      "step_m": 0.1,
+      "body_radius_m": 0.3,
+      "extra_collision_padding_m": 0.035355,
+      "grid_nodes": 94221,
+      "free_grid_nodes": 67931,
+      "exit_seed_counts": {
+        "SOUTH": 17,
+        "WEST_SOUTH": 9,
+        "WEST_NORTH": 9,
+        "EAST_SOUTH": 9,
+        "EAST_NORTH": 9
+      },
+      "room_results": [
+        {
+          "id": "N01",
+          "nameZh": "普通教室 A",
+          "kind": "teaching",
+          "clear_area_m2": 55.61,
+          "sampled_body_centre_area_m2": 45.69,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 16.875,
+          "conservative_empty_room_nearest_exit_upper_m": 17.225,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 34.595,
+            "WEST_SOUTH": 24.552,
+            "WEST_NORTH": 16.875,
+            "EAST_SOUTH": 45.415,
+            "EAST_NORTH": 38.441
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 34.779,
+            "WEST_SOUTH": 24.902,
+            "WEST_NORTH": 17.225,
+            "EAST_SOUTH": 45.599,
+            "EAST_NORTH": 38.625
+          },
+          "initial_to_room_door_upper_m": 9.494,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "N02",
+          "nameZh": "普通教室 B",
+          "kind": "teaching",
+          "clear_area_m2": 55.945,
+          "sampled_body_centre_area_m2": 46.29,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 21.405,
+          "conservative_empty_room_nearest_exit_upper_m": 21.405,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 29.551,
+            "WEST_SOUTH": 29.082,
+            "WEST_NORTH": 21.405,
+            "EAST_SOUTH": 38.379,
+            "EAST_NORTH": 31.405
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 29.551,
+            "WEST_SOUTH": 29.082,
+            "WEST_NORTH": 21.405,
+            "EAST_SOUTH": 38.379,
+            "EAST_NORTH": 31.405
+          },
+          "initial_to_room_door_upper_m": 7.656,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "N03",
+          "nameZh": "教学协作 / 电脑教室",
+          "kind": "collaboration",
+          "clear_area_m2": 73.365,
+          "sampled_body_centre_area_m2": 61.93,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 22.261,
+          "conservative_empty_room_nearest_exit_upper_m": 22.512,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 30.007,
+            "WEST_SOUTH": 38.484,
+            "WEST_NORTH": 31.51,
+            "EAST_SOUTH": 29.938,
+            "EAST_NORTH": 22.261
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 30.009,
+            "WEST_SOUTH": 38.486,
+            "WEST_NORTH": 31.512,
+            "EAST_SOUTH": 30.189,
+            "EAST_NORTH": 22.512
+          },
+          "initial_to_room_door_upper_m": 8.639,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "N04",
+          "nameZh": "小组研讨室",
+          "kind": "teaching",
+          "clear_area_m2": 48.24,
+          "sampled_body_centre_area_m2": 39.09,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.023,
+          "conservative_empty_room_nearest_exit_upper_m": 13.023,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 35.942,
+            "WEST_SOUTH": 46.762,
+            "WEST_NORTH": 39.788,
+            "EAST_SOUTH": 22.164,
+            "EAST_NORTH": 13.023
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 35.942,
+            "WEST_SOUTH": 46.762,
+            "WEST_NORTH": 39.788,
+            "EAST_SOUTH": 22.164,
+            "EAST_NORTH": 13.023
+          },
+          "initial_to_room_door_upper_m": 7.767,
+          "screen_initial_m": 15,
+          "screen_total_m": 32,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "S01",
+          "nameZh": "教师办公与交流区",
+          "kind": "office",
+          "clear_area_m2": 95.81,
+          "sampled_body_centre_area_m2": 81.69,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 22.275,
+          "conservative_empty_room_nearest_exit_upper_m": 22.275,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 26.958,
+            "WEST_SOUTH": 22.275,
+            "WEST_NORTH": 29.952,
+            "EAST_SOUTH": 38.441,
+            "EAST_NORTH": 45.415
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 26.958,
+            "WEST_SOUTH": 22.275,
+            "WEST_NORTH": 29.952,
+            "EAST_SOUTH": 38.441,
+            "EAST_NORTH": 45.415
+          },
+          "initial_to_room_door_upper_m": 11.652,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "S02",
+          "nameZh": "入口门厅 / 接待等候",
+          "kind": "public",
+          "clear_area_m2": 42.88,
+          "sampled_body_centre_area_m2": 34.62,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 7.428,
+          "conservative_empty_room_nearest_exit_upper_m": 7.428,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 7.428,
+            "WEST_SOUTH": 25.64,
+            "WEST_NORTH": 32.614,
+            "EAST_SOUTH": 25.64,
+            "EAST_NORTH": 32.614
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 7.428,
+            "WEST_SOUTH": 25.64,
+            "WEST_NORTH": 32.614,
+            "EAST_SOUTH": 25.64,
+            "EAST_NORTH": 32.614
+          },
+          "initial_to_room_door_upper_m": 7.164,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 2
+        },
+        {
+          "id": "S03",
+          "nameZh": "行政办公 / 学生服务",
+          "kind": "admin",
+          "clear_area_m2": 43.55,
+          "sampled_body_centre_area_m2": 34.89,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 19.391,
+          "conservative_empty_room_nearest_exit_upper_m": 19.391,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 21.15,
+            "WEST_SOUTH": 32.633,
+            "WEST_NORTH": 39.607,
+            "EAST_SOUTH": 19.391,
+            "EAST_NORTH": 27.068
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 21.15,
+            "WEST_SOUTH": 32.633,
+            "WEST_NORTH": 39.607,
+            "EAST_SOUTH": 19.391,
+            "EAST_NORTH": 27.068
+          },
+          "initial_to_room_door_upper_m": 7.208,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "S04",
+          "nameZh": "会议 / 访谈室",
+          "kind": "office",
+          "clear_area_m2": 50.92,
+          "sampled_body_centre_area_m2": 41.49,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.023,
+          "conservative_empty_room_nearest_exit_upper_m": 13.023,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 28.305,
+            "WEST_SOUTH": 39.788,
+            "WEST_NORTH": 46.762,
+            "EAST_SOUTH": 13.023,
+            "EAST_NORTH": 22.164
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 28.305,
+            "WEST_SOUTH": 39.788,
+            "WEST_NORTH": 46.762,
+            "EAST_SOUTH": 13.023,
+            "EAST_NORTH": 22.164
+          },
+          "initial_to_room_door_upper_m": 7.767,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C02",
+          "nameZh": "女卫生间（占位）",
+          "kind": "service",
+          "clear_area_m2": 17.36,
+          "sampled_body_centre_area_m2": 11.83,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 12.784,
+          "conservative_empty_room_nearest_exit_upper_m": 12.955,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 27.275,
+            "WEST_SOUTH": 19.798,
+            "WEST_NORTH": 12.784,
+            "EAST_SOUTH": 38.095,
+            "EAST_NORTH": 31.784
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 27.447,
+            "WEST_SOUTH": 19.97,
+            "WEST_NORTH": 12.955,
+            "EAST_SOUTH": 38.267,
+            "EAST_NORTH": 31.955
+          },
+          "initial_to_room_door_upper_m": 3.966,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C03",
+          "nameZh": "男卫生间（占位）",
+          "kind": "service",
+          "clear_area_m2": 17.36,
+          "sampled_body_centre_area_m2": 11.83,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 12.784,
+          "conservative_empty_room_nearest_exit_upper_m": 12.955,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 20.964,
+            "WEST_SOUTH": 12.784,
+            "WEST_NORTH": 19.798,
+            "EAST_SOUTH": 31.784,
+            "EAST_NORTH": 38.095
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 21.135,
+            "WEST_SOUTH": 12.955,
+            "WEST_NORTH": 19.97,
+            "EAST_SOUTH": 31.955,
+            "EAST_NORTH": 38.267
+          },
+          "initial_to_room_door_upper_m": 3.966,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C04",
+          "nameZh": "采光庭院 / 各层留洞预留",
+          "kind": "courtyard",
+          "clear_area_m2": 49.92,
+          "sampled_body_centre_area_m2": 40.6,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 17.084,
+          "conservative_empty_room_nearest_exit_upper_m": 17.084,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 17.084,
+            "WEST_SOUTH": 25.864,
+            "WEST_NORTH": 32.175,
+            "EAST_SOUTH": 25.864,
+            "EAST_NORTH": 32.175
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 17.084,
+            "WEST_SOUTH": 25.864,
+            "WEST_NORTH": 32.175,
+            "EAST_SOUTH": 25.864,
+            "EAST_NORTH": 32.175
+          },
+          "initial_to_room_door_upper_m": 7.242,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C05",
+          "nameZh": "清洁 / 储物间",
+          "kind": "service",
+          "clear_area_m2": 8.06,
+          "sampled_body_centre_area_m2": 4.63,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.663,
+          "conservative_empty_room_nearest_exit_upper_m": 13.663,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 25.154,
+            "WEST_SOUTH": 35.974,
+            "WEST_NORTH": 29.663,
+            "EAST_SOUTH": 20.677,
+            "EAST_NORTH": 13.663
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 25.154,
+            "WEST_SOUTH": 35.974,
+            "WEST_NORTH": 29.663,
+            "EAST_SOUTH": 20.677,
+            "EAST_NORTH": 13.663
+          },
+          "initial_to_room_door_upper_m": 3.1,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C06",
+          "nameZh": "无障碍电梯井预留",
+          "kind": "service",
+          "clear_area_m2": 8.68,
+          "sampled_body_centre_area_m2": 5.13,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 10.804,
+          "conservative_empty_room_nearest_exit_upper_m": 10.804,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 28.095,
+            "WEST_SOUTH": 38.915,
+            "WEST_NORTH": 32.604,
+            "EAST_SOUTH": 17.818,
+            "EAST_NORTH": 10.804
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 28.095,
+            "WEST_SOUTH": 38.915,
+            "WEST_NORTH": 32.604,
+            "EAST_SOUTH": 17.818,
+            "EAST_NORTH": 10.804
+          },
+          "initial_to_room_door_upper_m": 3.14,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C07",
+          "nameZh": "独立无障碍卫生间预留",
+          "kind": "service",
+          "clear_area_m2": 8.06,
+          "sampled_body_centre_area_m2": 4.63,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 13.663,
+          "conservative_empty_room_nearest_exit_upper_m": 13.663,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 18.843,
+            "WEST_SOUTH": 29.663,
+            "WEST_NORTH": 35.974,
+            "EAST_SOUTH": 13.663,
+            "EAST_NORTH": 20.677
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 18.843,
+            "WEST_SOUTH": 29.663,
+            "WEST_NORTH": 35.974,
+            "EAST_SOUTH": 13.663,
+            "EAST_NORTH": 20.677
+          },
+          "initial_to_room_door_upper_m": 3.1,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        },
+        {
+          "id": "C08",
+          "nameZh": "设备 / 弱电间",
+          "kind": "service",
+          "clear_area_m2": 8.68,
+          "sampled_body_centre_area_m2": 5.11,
+          "unreachable_sample_area_m2": 0.0,
+          "farthest_sample_shortest_nearest_exit_m": 10.804,
+          "conservative_empty_room_nearest_exit_upper_m": 10.804,
+          "farthest_sample_shortest_each_exit_m": {
+            "SOUTH": 21.784,
+            "WEST_SOUTH": 32.604,
+            "WEST_NORTH": 38.915,
+            "EAST_SOUTH": 10.804,
+            "EAST_NORTH": 17.818
+          },
+          "conservative_each_exit_upper_m": {
+            "SOUTH": 21.784,
+            "WEST_SOUTH": 32.604,
+            "WEST_NORTH": 38.915,
+            "EAST_SOUTH": 10.804,
+            "EAST_NORTH": 17.818
+          },
+          "initial_to_room_door_upper_m": 3.14,
+          "screen_initial_m": 18,
+          "screen_total_m": 45,
+          "initial_screen_pass": true,
+          "total_screen_pass": true,
+          "door_count": 1
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.65
+}
