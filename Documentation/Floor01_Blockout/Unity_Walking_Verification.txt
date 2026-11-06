@@ -1,0 +1,3 @@
+PASS: west staircase physically climbed from ground to 3.635m using a 1.80m-tall, 0.60m-wide CharacterController.
+PASS: east staircase physically climbed from ground to 3.635m using a 1.80m-tall, 0.60m-wide CharacterController.
+PASS: lobby, both cross-links, both corridors and east exterior exit traversed continuously by CharacterController.
