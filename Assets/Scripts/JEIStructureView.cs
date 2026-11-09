@@ -7,6 +7,8 @@ public class JEIStructureView : MonoBehaviour
 {
     public Transform target;
     public GameObject walkPlayer;
+    [Tooltip("Optional floors for 1/2/3 isolated structural inspection; 0 restores all floors.")]
+    public Transform[] floors = new Transform[0];
     public float distance = 48f;
     public float yaw = -35f;
     public float pitch = 45f;
@@ -21,6 +23,8 @@ public class JEIStructureView : MonoBehaviour
     AudioListener[] walkListeners;
     bool walking;
     GUIStyle hintStyle;
+    int selectedFloor;
+    readonly System.Collections.Generic.Dictionary<Renderer, bool> floorRenderers = new System.Collections.Generic.Dictionary<Renderer, bool>();
 
     Vector3 FocusPoint { get { return target != null ? target.position : Vector3.zero; } }
 
@@ -29,6 +33,10 @@ public class JEIStructureView : MonoBehaviour
         overviewCamera = GetComponent<Camera>();
         overviewListener = GetComponent<AudioListener>();
         overviewCamera.orthographic = false;
+        foreach (var floor in floors)
+            if (floor != null)
+                foreach (var renderer in floor.GetComponentsInChildren<Renderer>(true))
+                    floorRenderers[renderer] = renderer.enabled;
 
         // Keep this component active in both modes so Tab can always return to overview.
         if (walkPlayer != null && (walkPlayer == gameObject || transform.IsChildOf(walkPlayer.transform)))
@@ -70,6 +78,14 @@ public class JEIStructureView : MonoBehaviour
             SetWalking(!walking);
 
         if (walking) return;
+        var keyboard = Keyboard.current;
+        if (keyboard != null && floors.Length > 0)
+        {
+            if (keyboard.digit0Key.wasPressedThisFrame) SetFloor(0);
+            if (keyboard.digit1Key.wasPressedThisFrame) SetFloor(1);
+            if (keyboard.digit2Key.wasPressedThisFrame) SetFloor(2);
+            if (keyboard.digit3Key.wasPressedThisFrame) SetFloor(3);
+        }
         Mouse mouse = Mouse.current;
         if (mouse == null) return;
         if (mouse.leftButton.isPressed || mouse.rightButton.isPressed)
@@ -99,6 +115,8 @@ public class JEIStructureView : MonoBehaviour
         walking = value;
         if (walking)
         {
+            // Isolation is visual only. Walking always restores the complete building.
+            SetFloor(0);
             overviewCamera.enabled = false;
             overviewListener.enabled = false;
             for (int i = 0; i < walkCameras.Length; i++) walkCameras[i].enabled = i == 0;
@@ -125,6 +143,29 @@ public class JEIStructureView : MonoBehaviour
         Cursor.visible = true;
     }
 
+    public void SetFloor(int number)
+    {
+        if (number < 0 || number > floors.Length || floors.Length == 0) return;
+        selectedFloor = number;
+        for (int i = 0; i < floors.Length; i++)
+        {
+            if (floors[i] == null) continue;
+            foreach (var renderer in floors[i].GetComponentsInChildren<Renderer>(true))
+                if (floorRenderers.TryGetValue(renderer, out bool enabled))
+                    renderer.enabled = enabled && (number == 0 || number == i + 1);
+        }
+        if (target != null)
+            target.position = number == 0
+                ? (floors[0].position + floors[floors.Length - 1].position) / 2 + Vector3.up * .7f
+                : floors[number - 1].position + Vector3.up;
+        ApplyOrbit();
+    }
+
+    void OnDisable()
+    {
+        foreach (var pair in floorRenderers) if (pair.Key != null) pair.Key.enabled = pair.Value;
+    }
+
     void OnGUI()
     {
         if (hintStyle == null)
@@ -134,10 +175,11 @@ public class JEIStructureView : MonoBehaviour
             hintStyle.normal.textColor = Color.white;
             hintStyle.padding = new RectOffset(11, 9, 8, 6);
         }
-        GUI.Box(new Rect(16, 16, 385, 65), GUIContent.none);
+        GUI.Box(new Rect(16, 16, 460, floors.Length > 0 && !walking ? 86 : 65), GUIContent.none);
         string hint = walking
             ? "WALK MODE  |  WASD: move  |  Mouse: look\nEsc: free cursor  |  Tab: return to 3D overview"
             : "3D OVERVIEW  |  Drag left / right mouse: orbit\nScroll: zoom  |  Tab: enter first-person tour";
-        GUI.Label(new Rect(16, 16, 385, 65), hint, hintStyle);
+        if (!walking && floors.Length > 0) hint += "\n1 / 2 / 3: isolate floor  |  0: all floors  |  " + (selectedFloor == 0 ? "ALL" : "F" + selectedFloor);
+        GUI.Label(new Rect(16, 16, 460, 86), hint, hintStyle);
     }
 }

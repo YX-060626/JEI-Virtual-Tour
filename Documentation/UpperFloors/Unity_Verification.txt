@@ -1,0 +1,22 @@
+PASS: Floor 2: 17 clear doorways; 2.40m corridor loop; courtyard, lift and both stair openings clear.
+02-N01 LARGE CLASSROOM: 79.06 m2 clear.
+02-N02 TEACHING STUDIO: 73.03 m2 clear.
+02-N03 COMPUTER LAB: 82.41 m2 clear.
+02-S01 TUTORIAL ROOM: 38.86 m2 clear.
+02-S02 SEMINAR ROOM: 42.88 m2 clear.
+02-S03 GROUP STUDY: 46.90 m2 clear.
+02-S04 STAFF OFFICE: 48.24 m2 clear.
+02-S05 MEETING ROOM: 54.94 m2 clear.
+PASS: Floor 3: 17 clear doorways; 2.40m corridor loop; courtyard, lift and both stair openings clear.
+03-N01 SEMINAR A: 44.22 m2 clear.
+03-N02 SEMINAR B: 49.58 m2 clear.
+03-N03 RESEARCH STUDIO: 58.96 m2 clear.
+03-N04 PROJECT ROOM: 40.20 m2 clear.
+03-N05 TUTORIAL ROOM: 38.86 m2 clear.
+03-S01 RESEARCH OFFICE: 74.37 m2 clear.
+03-S02 OPEN STUDY ROOM: 82.41 m2 clear.
+03-S03 FACULTY OFFICE: 77.72 m2 clear.
+PASS: west stair climbed continuously 0 -> 3.60 -> 7.20m and descended back to 0m with 1.80m CharacterController; landings connect to corridors.
+PASS: east stair climbed continuously 0 -> 3.60 -> 7.20m and descended back to 0m with 1.80m CharacterController; landings connect to corridors.
+PASS: Floor 2 corridor loop and all eight perimeter rooms traversed physically.
+PASS: Floor 3 corridor loop and all eight perimeter rooms traversed physically.

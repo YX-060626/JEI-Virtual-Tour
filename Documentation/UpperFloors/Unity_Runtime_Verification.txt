@@ -1,0 +1,4 @@
+PASS: actual Play mode starts with the complete three-floor perspective model.
+PASS: floors 1, 2 and 3 isolate correctly without disabling collisions.
+PASS: walking restores all floors; overview -> walking -> overview keeps exactly one active Camera and AudioListener.
+PASS: floor 2 and 3 previews rendered from the runtime camera.

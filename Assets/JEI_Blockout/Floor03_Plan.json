@@ -1,0 +1,609 @@
+{
+  "version": "03",
+  "width": 36.0,
+  "depth": 26.0,
+  "wallHeight": 3.3,
+  "floorToFloor": 3.6,
+  "externalWall": 0.3,
+  "internalWall": 0.2,
+  "corridorClearWidth": 2.4,
+  "rooms": [
+    {
+      "id": "03-C01",
+      "name": "STAIR A",
+      "nameZh": "\u897f\u4fa7\u5c01\u95ed\u697c\u68af A",
+      "kind": "stair",
+      "x0": -17.85,
+      "x1": -12.4,
+      "z0": -3.3,
+      "z1": 3.3
+    },
+    {
+      "id": "03-C02",
+      "name": "WC - WOMEN",
+      "nameZh": "\u5973\u536b\u751f\u95f4\uff08\u5360\u4f4d\uff09",
+      "kind": "service",
+      "x0": -12.4,
+      "x1": -6.6,
+      "z0": 0.0,
+      "z1": 3.3
+    },
+    {
+      "id": "03-C03",
+      "name": "WC - MEN",
+      "nameZh": "\u7537\u536b\u751f\u95f4\uff08\u5360\u4f4d\uff09",
+      "kind": "service",
+      "x0": -12.4,
+      "x1": -6.6,
+      "z0": -3.3,
+      "z1": 0.0
+    },
+    {
+      "id": "03-C04",
+      "name": "ATRIUM VOID",
+      "nameZh": "\u91c7\u5149\u5ead\u9662 / \u5404\u5c42\u7559\u6d1e\u9884\u7559",
+      "kind": "courtyard",
+      "x0": -4.0,
+      "x1": 4.0,
+      "z0": -3.3,
+      "z1": 3.3
+    },
+    {
+      "id": "03-C05",
+      "name": "CLEANER / STORE",
+      "nameZh": "\u6e05\u6d01 / \u50a8\u7269\u95f4",
+      "kind": "service",
+      "x0": 6.6,
+      "x1": 9.4,
+      "z0": 0.0,
+      "z1": 3.3
+    },
+    {
+      "id": "03-C06",
+      "name": "LIFT RESERVE",
+      "nameZh": "\u65e0\u969c\u788d\u7535\u68af\u4e95\u9884\u7559",
+      "kind": "service",
+      "x0": 9.4,
+      "x1": 12.4,
+      "z0": 0.0,
+      "z1": 3.3
+    },
+    {
+      "id": "03-C07",
+      "name": "ACCESSIBLE WC",
+      "nameZh": "\u72ec\u7acb\u65e0\u969c\u788d\u536b\u751f\u95f4\u9884\u7559",
+      "kind": "service",
+      "x0": 6.6,
+      "x1": 9.4,
+      "z0": -3.3,
+      "z1": 0.0
+    },
+    {
+      "id": "03-C08",
+      "name": "IT / SERVICES",
+      "nameZh": "\u8bbe\u5907 / \u5f31\u7535\u95f4",
+      "kind": "service",
+      "x0": 9.4,
+      "x1": 12.4,
+      "z0": -3.3,
+      "z1": 0.0
+    },
+    {
+      "id": "03-C09",
+      "name": "STAIR B",
+      "nameZh": "\u4e1c\u4fa7\u5c01\u95ed\u697c\u68af B",
+      "kind": "stair",
+      "x0": 12.4,
+      "x1": 17.85,
+      "z0": -3.3,
+      "z1": 3.3
+    },
+    {
+      "id": "03-N01",
+      "name": "SEMINAR A",
+      "nameZh": "",
+      "kind": "teaching",
+      "x0": -17.85,
+      "x1": -11.0,
+      "z0": 5.9,
+      "z1": 12.85
+    },
+    {
+      "id": "03-N02",
+      "name": "SEMINAR B",
+      "nameZh": "",
+      "kind": "teaching",
+      "x0": -11.0,
+      "x1": -3.4,
+      "z0": 5.9,
+      "z1": 12.85
+    },
+    {
+      "id": "03-N03",
+      "name": "RESEARCH STUDIO",
+      "nameZh": "",
+      "kind": "collaboration",
+      "x0": -3.4,
+      "x1": 5.6,
+      "z0": 5.9,
+      "z1": 12.85
+    },
+    {
+      "id": "03-N04",
+      "name": "PROJECT ROOM",
+      "nameZh": "",
+      "kind": "collaboration",
+      "x0": 5.6,
+      "x1": 11.8,
+      "z0": 5.9,
+      "z1": 12.85
+    },
+    {
+      "id": "03-N05",
+      "name": "TUTORIAL ROOM",
+      "nameZh": "",
+      "kind": "teaching",
+      "x0": 11.8,
+      "x1": 17.85,
+      "z0": 5.9,
+      "z1": 12.85
+    },
+    {
+      "id": "03-S01",
+      "name": "RESEARCH OFFICE",
+      "nameZh": "",
+      "kind": "office",
+      "x0": -17.85,
+      "x1": -6.5,
+      "z0": -12.85,
+      "z1": -5.9
+    },
+    {
+      "id": "03-S02",
+      "name": "OPEN STUDY ROOM",
+      "nameZh": "",
+      "kind": "collaboration",
+      "x0": -6.5,
+      "x1": 6.0,
+      "z0": -12.85,
+      "z1": -5.9
+    },
+    {
+      "id": "03-S03",
+      "name": "FACULTY OFFICE",
+      "nameZh": "",
+      "kind": "office",
+      "x0": 6.0,
+      "x1": 17.85,
+      "z0": -12.85,
+      "z1": -5.9
+    }
+  ],
+  "walls": [
+    {
+      "axis": "H",
+      "at": 3.3,
+      "start": -17.85,
+      "end": -6.6,
+      "external": false,
+      "openings": [
+        {
+          "at": -13.3,
+          "width": 1.4,
+          "kind": "door"
+        },
+        {
+          "at": -9.5,
+          "width": 1.0,
+          "kind": "door"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "at": -3.3,
+      "start": -17.85,
+      "end": -6.6,
+      "external": false,
+      "openings": [
+        {
+          "at": -13.3,
+          "width": 1.4,
+          "kind": "door"
+        },
+        {
+          "at": -9.5,
+          "width": 1.0,
+          "kind": "door"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": -12.4,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": -6.6,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "H",
+      "at": 0.0,
+      "start": -12.4,
+      "end": -6.6,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "H",
+      "at": 3.3,
+      "start": -4.0,
+      "end": 4.0,
+      "external": false,
+      "openings": [
+        {
+          "at": 0.0,
+          "width": 6.4,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "at": -3.3,
+      "start": -4.0,
+      "end": 4.0,
+      "external": false,
+      "openings": [
+        {
+          "at": -2.35,
+          "width": 2.6,
+          "kind": "window"
+        },
+        {
+          "at": 0.0,
+          "width": 1.6,
+          "kind": "window"
+        },
+        {
+          "at": 2.35,
+          "width": 2.6,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": -4.0,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": [
+        {
+          "at": 0.0,
+          "width": 5.0,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": 4.0,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": [
+        {
+          "at": 0.0,
+          "width": 5.0,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "at": 3.3,
+      "start": 6.6,
+      "end": 17.85,
+      "external": false,
+      "openings": [
+        {
+          "at": 8.0,
+          "width": 1.0,
+          "kind": "door"
+        },
+        {
+          "at": 13.3,
+          "width": 1.4,
+          "kind": "door"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "at": -3.3,
+      "start": 6.6,
+      "end": 17.85,
+      "external": false,
+      "openings": [
+        {
+          "at": 8.0,
+          "width": 1.0,
+          "kind": "door"
+        },
+        {
+          "at": 10.9,
+          "width": 1.0,
+          "kind": "door"
+        },
+        {
+          "at": 13.3,
+          "width": 1.4,
+          "kind": "door"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": 6.6,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": 9.4,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": 12.4,
+      "start": -3.3,
+      "end": 3.3,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "H",
+      "at": 0.0,
+      "start": 6.6,
+      "end": 12.4,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": -17.85,
+      "start": -12.85,
+      "end": 12.85,
+      "external": true,
+      "openings": [
+        {
+          "at": -9.4,
+          "width": 3.4,
+          "kind": "window"
+        },
+        {
+          "at": -4.6,
+          "width": 1.5,
+          "kind": "window"
+        },
+        {
+          "at": 4.6,
+          "width": 1.5,
+          "kind": "window"
+        },
+        {
+          "at": 9.4,
+          "width": 3.4,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": 17.85,
+      "start": -12.85,
+      "end": 12.85,
+      "external": true,
+      "openings": [
+        {
+          "at": -9.4,
+          "width": 3.4,
+          "kind": "window"
+        },
+        {
+          "at": -4.6,
+          "width": 1.5,
+          "kind": "window"
+        },
+        {
+          "at": 4.6,
+          "width": 1.5,
+          "kind": "window"
+        },
+        {
+          "at": 9.4,
+          "width": 3.4,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": -11.0,
+      "start": 5.9,
+      "end": 12.85,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": -3.4,
+      "start": 5.9,
+      "end": 12.85,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": 5.6,
+      "start": 5.9,
+      "end": 12.85,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": 11.8,
+      "start": 5.9,
+      "end": 12.85,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "H",
+      "at": 5.9,
+      "start": -17.85,
+      "end": 17.85,
+      "external": false,
+      "openings": [
+        {
+          "at": -14.425,
+          "width": 1.2,
+          "kind": "door"
+        },
+        {
+          "at": -7.2,
+          "width": 1.2,
+          "kind": "door"
+        },
+        {
+          "at": 1.1,
+          "width": 1.2,
+          "kind": "door"
+        },
+        {
+          "at": 8.7,
+          "width": 1.2,
+          "kind": "door"
+        },
+        {
+          "at": 14.825,
+          "width": 1.2,
+          "kind": "door"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "at": 12.85,
+      "start": -17.85,
+      "end": 17.85,
+      "external": true,
+      "openings": [
+        {
+          "at": -14.425,
+          "width": 4.65,
+          "kind": "window"
+        },
+        {
+          "at": -7.2,
+          "width": 5.4,
+          "kind": "window"
+        },
+        {
+          "at": 1.1,
+          "width": 6.6,
+          "kind": "window"
+        },
+        {
+          "at": 8.7,
+          "width": 4.0,
+          "kind": "window"
+        },
+        {
+          "at": 14.825,
+          "width": 3.85,
+          "kind": "window"
+        }
+      ]
+    },
+    {
+      "axis": "V",
+      "at": -6.5,
+      "start": -12.85,
+      "end": -5.9,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "V",
+      "at": 6.0,
+      "start": -12.85,
+      "end": -5.9,
+      "external": false,
+      "openings": []
+    },
+    {
+      "axis": "H",
+      "at": -5.9,
+      "start": -17.85,
+      "end": 17.85,
+      "external": false,
+      "openings": [
+        {
+          "at": -12.175,
+          "width": 1.5,
+          "kind": "door"
+        },
+        {
+          "at": -0.25,
+          "width": 1.5,
+          "kind": "door"
+        },
+        {
+          "at": 11.925,
+          "width": 1.5,
+          "kind": "door"
+        }
+      ]
+    },
+    {
+      "axis": "H",
+      "at": -12.85,
+      "start": -17.85,
+      "end": 17.85,
+      "external": true,
+      "openings": [
+        {
+          "at": -12.175,
+          "width": 6.6,
+          "kind": "window"
+        },
+        {
+          "at": -0.25,
+          "width": 6.6,
+          "kind": "window"
+        },
+        {
+          "at": 11.925,
+          "width": 6.6,
+          "kind": "window"
+        }
+      ]
+    }
+  ]
+}

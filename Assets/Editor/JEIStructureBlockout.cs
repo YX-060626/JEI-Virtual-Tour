@@ -11,7 +11,7 @@ using Object = UnityEngine.Object;
 
 // Independent, data-driven structural study. Does not call the furnished prototype generator.
 [InitializeOnLoad]
-public static class JEIStructureBlockout
+public static partial class JEIStructureBlockout
 {
     const string PlanPath = "Assets/JEI_Blockout/Floor01_Plan.json";
     const string ScenePath = "Assets/Scenes/JEI_Floor01_Structure.unity";
@@ -95,6 +95,9 @@ public static class JEIStructureBlockout
         if (File.Exists(ScenePath))
         {
             var prior = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+            var existingBuilding = GameObject.Find("JEI_Structure_Study");
+            if (existingBuilding && existingBuilding.transform.Find("Floor_02__36x26m__Level_3.60m"))
+                throw new InvalidOperationException("This scene now includes upper floors. The first-floor-only rebuild has been stopped to preserve them.");
             foreach (var obj in prior.GetRootGameObjects())
                 if (obj.name != "JEI_Structure_Study") throw new InvalidOperationException("Structure scene has additional manual root objects. Preserve them before rebuilding.");
             foreach (var obj in prior.GetRootGameObjects()) Object.DestroyImmediate(obj);
@@ -292,7 +295,7 @@ public static class JEIStructureBlockout
         }
     }
 
-    static void BuildStair(Transform parent, int side)
+    static void BuildStair(Transform parent, int side, bool suspendedLowerFlight = false)
     {
         var group = Group(parent, side < 0 ? "STAIR_A__WEST" : "STAIR_B__EAST");
         // Each stair has two 1.50m clear flights, 24 x 150mm risers and 300mm goings.
@@ -303,11 +306,17 @@ public static class JEIStructureBlockout
         {
             float z = -1.5f + .3f * i;
             float y = .15f * (i + 1);
-            Box(group, "Lower flight__riser_" + (i + 1), new Vector3(outer, y / 2, z), new Vector3(1.5f, y, .3f), finishes["stair"]);
+            Box(group, "Lower flight__riser_" + (i + 1), new Vector3(outer, suspendedLowerFlight ? y - .075f : y / 2, z), new Vector3(1.5f, suspendedLowerFlight ? .15f : y, .3f), finishes["stair"]);
             float upperY = 1.8f + .15f * (i + 1);
             Box(group, "Upper flight__riser_" + (i + 13), new Vector3(inner, upperY - .075f, -z), new Vector3(1.5f, .15f, .3f), finishes["stair"]);
         }
         float midX = (outer + inner) / 2;
+        if (suspendedLowerFlight)
+        {
+            Vector3 a = new Vector3(outer, -.14f, -1.65f), b = new Vector3(outer, 1.51f, 1.65f);
+            var slab = Box(group, "Lower flight structural slab", (a + b) / 2, new Vector3(1.5f, .16f, Vector3.Distance(a, b)), finishes["stair"]);
+            slab.transform.rotation = Quaternion.LookRotation(b - a);
+        }
         Box(group, "Half landing__1.50m_deep", new Vector3(midX, 1.725f, 2.4f), new Vector3(3.3f, .15f, 1.5f), finishes["stair"]);
         Box(group, "Next floor landing__+3.60m", new Vector3(midX, 3.525f, -2.4f), new Vector3(3.3f, .15f, 1.5f), finishes["stair"]);
         Vector3 supportA = new Vector3(inner, 1.66f, 1.65f), supportB = new Vector3(inner, 3.31f, -1.65f);
