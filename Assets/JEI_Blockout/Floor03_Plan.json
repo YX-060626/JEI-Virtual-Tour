@@ -60,8 +60,8 @@
     },
     {
       "id": "03-C06",
-      "name": "LIFT RESERVE",
-      "nameZh": "\u65e0\u969c\u788d\u7535\u68af\u4e95\u9884\u7559",
+      "name": "LIFT",
+      "nameZh": "\u7535\u68af",
       "kind": "service",
       "x0": 9.4,
       "x1": 12.4,
@@ -110,8 +110,8 @@
     },
     {
       "id": "03-N02",
-      "name": "SEMINAR B",
-      "nameZh": "",
+      "name": "GENERAL CLASSROOM",
+      "nameZh": "\u666e\u901a\u6559\u5ba4",
       "kind": "teaching",
       "x0": -11.0,
       "x1": -3.4,
@@ -120,9 +120,9 @@
     },
     {
       "id": "03-N03",
-      "name": "RESEARCH STUDIO",
-      "nameZh": "",
-      "kind": "collaboration",
+      "name": "LARGE CLASSROOM",
+      "nameZh": "\u5927\u6559\u5ba4",
+      "kind": "teaching",
       "x0": -3.4,
       "x1": 5.6,
       "z0": 5.9,
@@ -130,9 +130,9 @@
     },
     {
       "id": "03-N04",
-      "name": "PROJECT ROOM",
-      "nameZh": "",
-      "kind": "collaboration",
+      "name": "PROGRAM OFFICE",
+      "nameZh": "\u6559\u5b66\u9879\u76ee\u529e\u516c\u5ba4",
+      "kind": "office",
       "x0": 5.6,
       "x1": 11.8,
       "z0": 5.9,
@@ -140,9 +140,9 @@
     },
     {
       "id": "03-N05",
-      "name": "TUTORIAL ROOM",
-      "nameZh": "",
-      "kind": "teaching",
+      "name": "ADVISOR OFFICE",
+      "nameZh": "\u5bfc\u5e08\u529e\u516c\u5ba4",
+      "kind": "office",
       "x0": 11.8,
       "x1": 17.85,
       "z0": 5.9,
@@ -170,9 +170,9 @@
     },
     {
       "id": "03-S03",
-      "name": "FACULTY OFFICE",
-      "nameZh": "",
-      "kind": "office",
+      "name": "COMPUTER LAB",
+      "nameZh": "\u8ba1\u7b97\u673a\u6559\u5ba4",
+      "kind": "collaboration",
       "x0": 6.0,
       "x1": 17.85,
       "z0": -12.85,
@@ -318,6 +318,11 @@
         {
           "at": 8.0,
           "width": 1.0,
+          "kind": "door"
+        },
+        {
+          "at": 10.9,
+          "width": 1.1,
           "kind": "door"
         },
         {

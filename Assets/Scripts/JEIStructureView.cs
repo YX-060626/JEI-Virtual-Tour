@@ -7,6 +7,9 @@ public class JEIStructureView : MonoBehaviour
 {
     public Transform target;
     public GameObject walkPlayer;
+    public Transform roof;
+    public bool startInFirstPerson;
+    public bool IsWalking { get { return walking; } }
     [Tooltip("Optional floors for 1/2/3 isolated structural inspection; 0 restores all floors.")]
     public Transform[] floors = new Transform[0];
     public float distance = 48f;
@@ -22,8 +25,8 @@ public class JEIStructureView : MonoBehaviour
     Camera[] walkCameras;
     AudioListener[] walkListeners;
     bool walking;
-    GUIStyle hintStyle;
     int selectedFloor;
+    bool showRoof = true;
     readonly System.Collections.Generic.Dictionary<Renderer, bool> floorRenderers = new System.Collections.Generic.Dictionary<Renderer, bool>();
 
     Vector3 FocusPoint { get { return target != null ? target.position : Vector3.zero; } }
@@ -70,6 +73,7 @@ public class JEIStructureView : MonoBehaviour
         overviewListener.enabled = true;
         ReleaseCursor();
         ApplyOrbit();
+        if (startInFirstPerson) SetWalking(true);
     }
 
     void Update()
@@ -79,6 +83,7 @@ public class JEIStructureView : MonoBehaviour
 
         if (walking) return;
         var keyboard = Keyboard.current;
+        if (keyboard != null && keyboard.rKey.wasPressedThisFrame) SetRoofVisible(!showRoof);
         if (keyboard != null && floors.Length > 0)
         {
             if (keyboard.digit0Key.wasPressedThisFrame) SetFloor(0);
@@ -108,7 +113,7 @@ public class JEIStructureView : MonoBehaviour
         transform.SetPositionAndRotation(FocusPoint + rotation * Vector3.back * distance, rotation);
     }
 
-    void SetWalking(bool value)
+    public void SetWalking(bool value)
     {
         // Do not leave the user without a view if the optional player has not been assigned.
         if (value && (walkPlayer == null || walkCameras.Length == 0)) return;
@@ -117,6 +122,7 @@ public class JEIStructureView : MonoBehaviour
         {
             // Isolation is visual only. Walking always restores the complete building.
             SetFloor(0);
+            SetRoofVisible(true);
             overviewCamera.enabled = false;
             overviewListener.enabled = false;
             for (int i = 0; i < walkCameras.Length; i++) walkCameras[i].enabled = i == 0;
@@ -147,6 +153,7 @@ public class JEIStructureView : MonoBehaviour
     {
         if (number < 0 || number > floors.Length || floors.Length == 0) return;
         selectedFloor = number;
+        UpdateRoofVisibility();
         for (int i = 0; i < floors.Length; i++)
         {
             if (floors[i] == null) continue;
@@ -164,22 +171,22 @@ public class JEIStructureView : MonoBehaviour
     void OnDisable()
     {
         foreach (var pair in floorRenderers) if (pair.Key != null) pair.Key.enabled = pair.Value;
+        if (roof != null) foreach (var renderer in roof.GetComponentsInChildren<Renderer>(true)) renderer.enabled = true;
     }
 
-    void OnGUI()
+    public void SetRoofVisible(bool visible)
     {
-        if (hintStyle == null)
-        {
-            hintStyle = new GUIStyle(GUI.skin.label);
-            hintStyle.fontSize = 13;
-            hintStyle.normal.textColor = Color.white;
-            hintStyle.padding = new RectOffset(11, 9, 8, 6);
-        }
-        GUI.Box(new Rect(16, 16, 460, floors.Length > 0 && !walking ? 86 : 65), GUIContent.none);
-        string hint = walking
-            ? "WALK MODE  |  WASD: move  |  Mouse: look\nEsc: free cursor  |  Tab: return to 3D overview"
-            : "3D OVERVIEW  |  Drag left / right mouse: orbit\nScroll: zoom  |  Tab: enter first-person tour";
-        if (!walking && floors.Length > 0) hint += "\n1 / 2 / 3: isolate floor  |  0: all floors  |  " + (selectedFloor == 0 ? "ALL" : "F" + selectedFloor);
-        GUI.Label(new Rect(16, 16, 460, 86), hint, hintStyle);
+        showRoof = visible;
+        UpdateRoofVisibility();
     }
+
+    void UpdateRoofVisibility()
+    {
+        if (roof != null)
+            foreach (var renderer in roof.GetComponentsInChildren<Renderer>(true))
+                renderer.enabled = walking || (selectedFloor == 0 && showRoof);
+    }
+
+    public int SelectedFloor { get { return selectedFloor; } }
+    public bool RoofVisible { get { return showRoof; } }
 }

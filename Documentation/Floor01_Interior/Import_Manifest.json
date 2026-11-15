@@ -1,0 +1,3057 @@
+{
+  "groups": [
+    "06_Approved_Interiors",
+    "07_Courtyard_Commons",
+    "08_Service_Areas",
+    "09_Public_Restrooms"
+  ],
+  "sourceObjects": 5736,
+  "sourceComponents": 27465,
+  "removedComponents": 3546,
+  "preservedExistingComponents": 8376,
+  "changedExistingComponents": 433,
+  "externalGUIDs": [
+    "0000000000000000e000000000000000",
+    "474bcb49853aa07438625e644c072ee6",
+    "933532a4fcc9baf4fa0491de14d08ed7",
+    "d0353a89b1f911e48b9e16bdc9f2e058"
+  ],
+  "assets": [
+    {
+      "source": "JEI_Furnishings\\Meshes\\C04_Corner_Arching_Grass_Blade.asset",
+      "originalGUID": "0015f47db71384a9185ccc26cfaf179f",
+      "importGUID": "ce10c82bc6cd50708df7c2dd27339fae",
+      "sha256": "cda6e749d8a56ef493d4baea2c6138bab5f2c0375b7d07580fe1174b84cfbd9a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C04_Art_Short_Oval_Tube.asset",
+      "originalGUID": "0033a3b02ffa642acaddf938aaf8ee6d",
+      "importGUID": "378a817706465f3db3506cc0b423bd5c",
+      "sha256": "8b6b95193feb211f454af5e90ffb84313d2eaf5168f7c571a94b3e1bfb8d560e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Corner_Recessed_Soil.mat",
+      "originalGUID": "016b2c16a6e4742f99ddb83a41070824",
+      "importGUID": "d6b727725ea65a538bd9a71e3bbc6927",
+      "sha256": "45e024778634ca72424f4950ae71af1bbbdedd1da1a1273743532a01ee117a3a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p56_1p544_159_226_0p009.asset",
+      "originalGUID": "01a4d3cc6f4074a6ea5cc70c4a1b99d3",
+      "importGUID": "c6f538a73e495bdca9cac01bed4e4ffd",
+      "sha256": "7fccf271aeac74e9f829541d4d8c50bb59d3d3cddcf2aad5c7fe85466dc808fa"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p3_0p025_0p45_0p018.asset",
+      "originalGUID": "01dbb1e88e67b47fcbf2212d406f76f1",
+      "importGUID": "efc8b32b03bf58cfbb9477a02f718c39",
+      "sha256": "38664d5c6f2692b9c5268fd4e82877d2ae5de9f911e2e409428e513138c857e9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p85_0p3_271p5_358p5_0p05.asset",
+      "originalGUID": "026acb95caede4e9092110b73cbfd0d9",
+      "importGUID": "f46e275b1038598890bf14efec6e5c8b",
+      "sha256": "d0379d6546d4e834ae41c0c55f83b3b9a82633079450f30f37ee17dca5b3d0e0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p23_0p34_0p035_0p012.asset",
+      "originalGUID": "0320c8434b7e04a50a08abe6bd7a90b4",
+      "importGUID": "0e25a0ed953b5eccae778f98ab263f63",
+      "sha256": "05624ed15079567ff7ec86dbf5a08523f49f7b434c6a9f7024dff83ba88644f3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p85_0p3_1p5_88p5_0p05.asset",
+      "originalGUID": "03831290b9922474287d9079a4fcd2ff",
+      "importGUID": "2fb3b61ca24855989bc4d96ee19c7cf5",
+      "sha256": "86bf088fb2e3a85ac64f5be3f2be66be821a325035617361b1a18a596c6ba032"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p1_0p055_0p65_0p1.asset",
+      "originalGUID": "060630873b92a4670950459e2a99528f",
+      "importGUID": "bf8afb8c977e538b8c67c7ef8dc14cf3",
+      "sha256": "89f4c3154c303c763b840e4eb1ab165a44bb654dfb31d2ee39d832c8f8705c98"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p055_0p025_0p39_0p012.asset",
+      "originalGUID": "06319a2611d734a13a54b2337e5adf6e",
+      "importGUID": "8c16f0e95f815b8999b7df113ced85ac",
+      "sha256": "69293ed1537b76b3ec8a010174687c034ae94d86253aaf1dbd034a1ec62e1121"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Graphite_Detail.mat",
+      "originalGUID": "06686875ef3f2454d842dc46e215ec0a",
+      "importGUID": "15dc14358e9b53e2b8debf50fdeeb909",
+      "sha256": "0bf9f0152be500fabf140c7af7c7bdee7277fef87c65fe3c4a1456c9f00c1145"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p21_0p006_0p27_0p007.asset",
+      "originalGUID": "078b1d145d5e6470cb7bab02416db300",
+      "importGUID": "f68b124aac4354e2b96e1f5ea1fded3b",
+      "sha256": "7b294bd10303052de930a4ac2dce8fc52f890d7170bf79462cf0b15d2373e87f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p14_0p42_0p32_0p015.asset",
+      "originalGUID": "07a01cce89a9f4cbb8bdcb5570f7f90e",
+      "importGUID": "da364a4f0ef055cdabf04de73fee7078",
+      "sha256": "bf3d73ba169e1b307b56ac348339db213cd35655277a2f42ce10f6b0c8d78018"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p7_0p055_0p72_0p035.asset",
+      "originalGUID": "07c467f9997834facae38492578cc43d",
+      "importGUID": "50df527f2b075d8ab77c02ee36bb14c2",
+      "sha256": "b2bb6f5af82819a157271334d8f43c3ef61857f04789f3c09265d0b72badc8dc"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p649_1p581_25_100_0p035.asset",
+      "originalGUID": "081095c1a7d3348788026a34a27189c1",
+      "importGUID": "34548b2e895a596fb1b374933d2651f9",
+      "sha256": "1212835951beb3f7b890d71d19da1fd3b4cd7206332e59e5010bd955150bd389"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Anti_Slip_Grey_Tile.mat",
+      "originalGUID": "082bcd706cc854d14bbb778a831027e7",
+      "importGUID": "09b9d8d87ce653b1b3aa56986099f665",
+      "sha256": "967441a915df87e4770710156c77c0d581e55d8695df61bc85d40d53676302bf"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Fabric_Teal.mat",
+      "originalGUID": "08478ce47d2af4f888e76b78314d59ee",
+      "importGUID": "35f3250b46be5b9888a97c548edabaa2",
+      "sha256": "4c309435160383dc6ee90b6b6ce2f1155b29822f8bec6e8265cbc00467d569a3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p45_0p067_0p42_0p07.asset",
+      "originalGUID": "0851eb52662f44ef3a883d55e11e675a",
+      "importGUID": "d13c04ed518e5057a9159f184bc83663",
+      "sha256": "8c9be401c0a679e53befde3d22f7f518fdabe3d184a914ee084bc7d1f6d09eab"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p14_0p67_0p86_0p012.asset",
+      "originalGUID": "086ba8ba4ea4a450cadb260925fbfc80",
+      "importGUID": "4afc5cc0eef65e8ea68eec37bf660ed3",
+      "sha256": "94d680b37e50f4c92a7f05ca2939f0404f68e5314859ac10c40b407476e11e35"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p13_0p15_0p02_0p009.asset",
+      "originalGUID": "09bc2945e99994de79a621220a94cad3",
+      "importGUID": "12b777cfd7855e3cba73f1ab0acc54d4",
+      "sha256": "9ce0310c7bd481fc7c05e356b1ea0d76e5c7b24d255e9f63d76b93cf2043cc16"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p14_0p14_0p025_0p0113.asset",
+      "originalGUID": "0a0e3bb5d130e43559940d0ead85af76",
+      "importGUID": "6b890743ab515fdd88d4fa23937f07b6",
+      "sha256": "72dfb1e224d7afd8dfc351b827332cd8d4a150cce512a124c95d81d058cfeaed"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p249_1p181_155_230_0p035.asset",
+      "originalGUID": "0add76a4044994cbd87804b42827d84b",
+      "importGUID": "3480f3b8113d515a9aa8b7890bd03044",
+      "sha256": "9e1b74e72ec5a6cf9dc61603330bb24950abe537bce0297dee2cd4e12c1b2bdc"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Oatmeal_Upholstery.mat",
+      "originalGUID": "0b908a97798ab4f2aa9765e1a8dfa87b",
+      "importGUID": "f2380e6b2d6d592bab0b4329c4a17995",
+      "sha256": "d17793c943240b4e565892c36748607d95f13f257568b7daea01f58279f4dda6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Cream_Service_Cabinet.mat",
+      "originalGUID": "0bd92ccfad4a94fb2b711a5ee9e8cfa3",
+      "importGUID": "c19d014e8fcc5c5690b3408f037fdcb8",
+      "sha256": "0dd8a8babd1c238f55c96a43c89908753ddd82a8a465dde8981f4923ad794f73"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Teacher_Sage_Upholstery.mat",
+      "originalGUID": "0c8f66758540e4b6aa7999429471724d",
+      "importGUID": "1ef5823bc9645297ae48690dac966b7f",
+      "sha256": "10ab0d6fc7bcd3f55994ba24793ce25acc59b737d1abf3fd522ee7038a6e4906"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Stairs.mat",
+      "originalGUID": "0c902a3773786429baeb0eafe545ccae",
+      "importGUID": "00aac8f6ed9c531b854164defd8e97c0",
+      "sha256": "5b5560134384b7afa334ac49035373c37c7325576b3b344ab0a507ab15b90e49"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Cleaning_Fibres.mat",
+      "originalGUID": "0c99a455b347249528210664acd76e85",
+      "importGUID": "b8b2f09f79a55a169bfb7ba9ca94ebb7",
+      "sha256": "a19dd015e920fc9bf1cdb017d87ecd79d32d16929eb7a19c12bb56a06e6cb539"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p13_0p22_0p08_0p018.asset",
+      "originalGUID": "0cb4a255a52134f158c8af4d0f974439",
+      "importGUID": "c73a7a9638a85e1a9ccb6f846c45ffc3",
+      "sha256": "9624c3791447e75b5d72596396a44dc96cea98918a65aef3c3f97cb7b5a65c0a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Warm_Limestone.mat",
+      "originalGUID": "0ce844a29ffdd4632b9a54e793bfcd31",
+      "importGUID": "015393a4f1015c8b9ea0d8122ccad082",
+      "sha256": "52dc3bf499ca04fb79411f71749d32823e6569733d43412d8d7235a656c9239a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p562_0p42_0p15_0p055.asset",
+      "originalGUID": "0e2a3976c2f51474cbb8c1e0b8304a1a",
+      "importGUID": "94e1df9f46575c9c907faf2afc281c32",
+      "sha256": "4e7487e390762f4c0547f7a23bc73e5396cf1f6735c25885e21e075958e26db7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p569_1p501_25_100_0p035.asset",
+      "originalGUID": "0e3c3a5d43e4942c7bd8bde8b788c38c",
+      "importGUID": "58071e55c78159caa0fd94b8ade5b647",
+      "sha256": "a4bb8e17a8dd14f94879eb841386bb20a060a92088d573d5e4502f2c719f3ad9"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Notice_Pale_Blue.mat",
+      "originalGUID": "0f44b0c5010ad4a44be857e5b312acb2",
+      "importGUID": "e44d440365145816a7108d12cf881afa",
+      "sha256": "060ee00d63b8ba645bb1c92df8b7d175e7bf86bc2c9ffd8ea115030177799f2b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Muted_Yellow.mat",
+      "originalGUID": "0fa0ec2c308574f35a52b75476c37378",
+      "importGUID": "56b2ad50d53c5aaaae9b2ea0689e9e2d",
+      "sha256": "3c0b1f9f317f630cbe5a311e6704d2d978a6383316434b213f15ded4fcb0ebf8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p41_0p24_0p37_0p018.asset",
+      "originalGUID": "0ff717f867ec54ef0b7fc071939f9842",
+      "importGUID": "8ada74b8eed356648ea9826c61473342",
+      "sha256": "63ff219fa488d7263b334bb2dbaa1c31b2c0c25711f5fc0a8a00f84463e67abd"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Appliance_Blue.mat",
+      "originalGUID": "1017ade337771426d9461a4ed9bd6ada",
+      "importGUID": "70fff17995ba564c867317aab0b93b21",
+      "sha256": "6c1eb4ad01136ca858e59de5cd5476448d004857876b8b29c025d5d8f04af519"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p055_0p018_0p045_0p009.asset",
+      "originalGUID": "10313ee22279f405cba37cc06421ca5f",
+      "importGUID": "6e68c663a060533284dd839b248f44d3",
+      "sha256": "2050d9942c934ad768b97817028d2847c91dfac61e3bbaeee958d9a65a9d9d28"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p569_1p501_155_230_0p035.asset",
+      "originalGUID": "1032b73b33928447ab71123125132680",
+      "importGUID": "0b4006d2201c5ca5bae38c60973c74a7",
+      "sha256": "53a68e5c61a334a97c8927ba3d085bbfb600fd8fcff7807624ea4aa76b68e69f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Screen_Pale_Blue.mat",
+      "originalGUID": "1102511fabfbc42e8adbc33204633c0a",
+      "importGUID": "bd9e50010737527b8232442b3067b120",
+      "sha256": "d488c53d0f100ba9e323d8a293bc361b183a39185fa129100e2dddcca57a3736"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Warm_Cork.mat",
+      "originalGUID": "11aa720072a0445e087e7b16ad0addb9",
+      "importGUID": "e2c0731d07225b9183423b74ecee5af4",
+      "sha256": "3aa383083e90de27ff331f1d3976c3bedb5bc1e16db43ce636ecc237e8fadf78"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p68_0p035_0p79_0p025.asset",
+      "originalGUID": "11b8ba78838db4a23a1e24ce1ba71d6c",
+      "importGUID": "ddaba94a4b0e5313bb89b6fcb9397bf9",
+      "sha256": "eac46c897979eb4ab86b5e5ef3c4410e0cd260fca18de3c8af702d4dd4ad451b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Sage_Data_Cable.mat",
+      "originalGUID": "12371d0598bb74a5d944dd5147e56bd3",
+      "importGUID": "79c8e66beda55a6089bda692524d8c31",
+      "sha256": "c2ee3526f504db0eab51c5a20164c103a2479910823c063daaa3eac4f4240ce3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p07_0p09_0p045_0p01.asset",
+      "originalGUID": "1351b92d094074f22b5180d913b4f1a8",
+      "importGUID": "314aedcfcb6d5fa9ac14e4af0b6e9c40",
+      "sha256": "5a91fdafba69457fe09bcc96bfbcd3330e7711036d609ac02a2dadcc28af109b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p43_0p49_0p35_0p035.asset",
+      "originalGUID": "136c2c6e3c1a64386bc660908352dfad",
+      "importGUID": "1167cd4a5ad55e86b8bec284bdd2bf2f",
+      "sha256": "9a20d0ac531a89b1af2d0200fdba3fb9f7ca8e881453aad6c8b09abcbc396a34"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Warm_Oak.mat",
+      "originalGUID": "1413d65b84c5542f792210c3bb4023b6",
+      "importGUID": "b1ec3a48720a527395fd883fea3a57b0",
+      "sha256": "add23f61d1cf43025d2c33b4a6ecad04613ac56acce83753137a7afb22a3951e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p91_0p075_0p46_0p05.asset",
+      "originalGUID": "143c213cf2b6b4106ba319f632938651",
+      "importGUID": "3bf7e1830fdf5e71bc51ae0405cb95a4",
+      "sha256": "a393885655d5267c4f07dad356583e5b722aaba79375e695486a4662a4381930"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Still_Pale_Water.mat",
+      "originalGUID": "14a261be928284b5da7f56eed13a6f37",
+      "importGUID": "8d619d643acf56589619c48c1207adbc",
+      "sha256": "3af9651c1945cd511d5cc9c93d6a07f0c47fcfd8d10f123dffe11670e26701f5"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Art_Warm_Clay_Ring.mat",
+      "originalGUID": "15cdb9db537b845c18d3521eecfdd03f",
+      "importGUID": "d72951c96d565fe7b791632d4c9799b5",
+      "sha256": "a2e4baaed8104c3902dc429a79dae4329f55e0e1d6b448bcf597e3685ca871f8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p053_0p012_0p004_0p0015.asset",
+      "originalGUID": "15d613d525e25408c8e4b0477d62ba8e",
+      "importGUID": "52485dab84a454a9852a77f1825d1848",
+      "sha256": "566b2861945ee42f2b556f6709ca0850fde3779420196e1499a4ebbbdbb3f92c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p85_1p9_0p44_0p015.asset",
+      "originalGUID": "15df791716670401a8dc50bb02fbc6c5",
+      "importGUID": "f650def3b5d75286bd63ea281f4c8c62",
+      "sha256": "c398bd1f2f1731292cd30b306c5bd7ce49dea0ed7a1b464d12b769aece754f24"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p36_0p035_0p1_0p014.asset",
+      "originalGUID": "164c4f18c99444a24ba94c65ce597b77",
+      "importGUID": "e514cf6bcded525bbb1f73f8d2158c87",
+      "sha256": "56f96ebf5778697871708e641ddb8ed4d6fd1f9d3c881504a1c487b0e3e4433d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Laptop_Silver.mat",
+      "originalGUID": "17afee1dc17544eea99201eac5a8030f",
+      "importGUID": "9571cb634c6759df95468c951edfaa86",
+      "sha256": "7ae3a28f5f1c782d47671c1150a7be9cd32c7c89188add3d7d910dd5f4e22137"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p6_0p03_0p45_0p025.asset",
+      "originalGUID": "187301be0326c49b084a0ace63cf3c2f",
+      "importGUID": "44e4a8742b03501aa391b859ef027bb7",
+      "sha256": "5b52705fe8a76a7f81dafbc8bbe39b51f81687d162b95563992874ca1354413d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p216_1p214_25p6_99p4_0p0008.asset",
+      "originalGUID": "1877c48ee3fdc426085a75dbaf88ce08",
+      "importGUID": "c7ee0b8f8cd6524a8cdd59786ae7cca1",
+      "sha256": "defc909a9974fb155328cb72c06c22cea007fe9ba369a8bba97a34084117ec92"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p9_0p775_0_360_0p03.asset",
+      "originalGUID": "194dbf01cb8624dbfac621ab9aba7dac",
+      "importGUID": "5e1127ffb17857f39022cd21f8e079fe",
+      "sha256": "9e4e9a0abb32acae5342267e5255596df3b5ce4f57c6f50c5e67a7d8bf90766f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p03_0p022_0p385_0p009.asset",
+      "originalGUID": "196bab9b005484ff1a775da9901381fb",
+      "importGUID": "1a5a80014bbe53adac4f4a3461b8c4fd",
+      "sha256": "6dadb2802a6c36313128942a195a16d76fd4cdce0e8faf1fa37777f24d9fc750"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p567_0p15_0p58_0p065.asset",
+      "originalGUID": "19d70c52c84d441c9944a2711263f282",
+      "importGUID": "cc5c7bb19f08559f82ecffd984a31b89",
+      "sha256": "b826a76494428b8a773e1c378e66f37415c79d2ae9fb39f79dd40040d455568a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Dark_Fitting.mat",
+      "originalGUID": "1a2920db67ce943e79d9f76bb0ce51e0",
+      "importGUID": "553069079c7b5ed68b0d4b8a4e0735e9",
+      "sha256": "f74124837b7f675356de3e5250b4c6c7fdbea002ee6e839fcdc7f1f053b98ff4"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Book_Pages.mat",
+      "originalGUID": "1a35e7f160bfe46a9b56edeb60d380f5",
+      "importGUID": "65151f0917bc5fcbbd7581916120e5d8",
+      "sha256": "00f9c7dcadde375b4e888a314b3c9cb25dc711059e801968aa3d73806b734706"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p35_0p055_0p7_0p1.asset",
+      "originalGUID": "1b033c6592a1b499a86fde75d32e59cf",
+      "importGUID": "285bfb53039b52c48ff6ed2afad05bb4",
+      "sha256": "930d43191880bed689ee8ae0ac32700b17611c5e0923877e17d2ca5539d1a7cc"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p028_0p02_0p34_0p008.asset",
+      "originalGUID": "1b3a4ecb7d7bb483da009833f08e33fb",
+      "importGUID": "718fa378736a57cc84fcd6c97bf3b203",
+      "sha256": "98a3780cebf9e0824609e82717ddb03ae86377e74b6a998ab570cd506dbfc1e3"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Sage_Metal_Frame.mat",
+      "originalGUID": "1b634ee16061847708152e3334d25c4e",
+      "importGUID": "41a052161dfb5bbd99faf068f9f8c857",
+      "sha256": "3bee6820ac5e69d23f0642edabf79bae5f597930b2732bf36f465e5ec721d2d2"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p6_0p062_0p8_0p15.asset",
+      "originalGUID": "1b8c7e32b99264568af173204ce73754",
+      "importGUID": "ce19efe5389d586fbe78b741959dbbd9",
+      "sha256": "9953e4e0f985e1bcfc51be6dc21083e4edf784c8a4e42ad6d25e449c70a39b9c"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\WC_Muted_Sage_Fitting.mat",
+      "originalGUID": "1b9785af087d744bab25065320df09df",
+      "importGUID": "5a2c796aecac5a15b6e045cdaca77cd6",
+      "sha256": "03985d48dc57d6b11fb9b45e314328d7c45012f14cbf925cc217466b89ad40c3"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Faculty_Privacy_Oak_Edge.mat",
+      "originalGUID": "1bb13a7119e664528a9fdc7381a05835",
+      "importGUID": "f5de28f3a3f05ca88a59f66e79a9b4f6",
+      "sha256": "99196130713e61c76237dae41d7a43bab88600eaa711ce2d13f0b970954af3ac"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p055_0p1_0p09_0p012.asset",
+      "originalGUID": "1c0fcc652a513462aaca88372905bc78",
+      "importGUID": "c568f49cc25257a2beb7242caddf0497",
+      "sha256": "3288c52b7a7d2676b70f558a0f285ca97b80e21afcaee80aa07553fe1a6e2555"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p05_0p035_0p49_0p012.asset",
+      "originalGUID": "1c8f95a0f0676406fb1a1be9ca29a712",
+      "importGUID": "8d9477544f0b52f1ac0999a704941b48",
+      "sha256": "e8f5de91497d7836c55ad3e4c9eb8bc74964e3650f7bee855789b58e5e1fbddf"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p65_0p025_0p055_0p012.asset",
+      "originalGUID": "1d0be4fcee5114a71a522e48fc1c3ffa",
+      "importGUID": "0f7b935d1e9a557c8184f95fdad1e6dd",
+      "sha256": "dd5967c8ba122382180af5a100671b999eb4aa8af158e3589f450f4f16e46e01"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p105_0p018_0p014_0p0063.asset",
+      "originalGUID": "1d343eeb6b7714d7fbfaa50c02f16df4",
+      "importGUID": "e5841c070c8158e88f8cd3e7f83f18a4",
+      "sha256": "c5fd85daecc217eb2302b2afe40fc573c3355fae7c27ba6a9a622c7f351c8839"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\WC_Dark_Fitting_Detail.mat",
+      "originalGUID": "1df936655d2eb4ed2abd4686b50d3662",
+      "importGUID": "dc426b4c013e59ab8cb38b4784b0318e",
+      "sha256": "4b57cb910155b6808f9ac24cbd2f6fa497ab57aa46f92533a234d518e886ab02"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Toilet_Oval_Seat_Ring.asset",
+      "originalGUID": "1efe9b8f0cc824c19bb4ebc7152403a9",
+      "importGUID": "c3d95ab2f0965e428909a41b1c1763cf",
+      "sha256": "779b119093829c5fa756fb0214a23cd3eced81be4e3e3f4bca7381169bf49eff"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p481_0p74_0p025_0p0113.asset",
+      "originalGUID": "1f5a41e08ad9f4d8eaaa3dab40d79800",
+      "importGUID": "4c76de11c0b1509ba7664458a87dfa5b",
+      "sha256": "77934d6719c4ed4505c3de1eb0ceb34db0486c9d9ae0e51482c4d93ed1d61f4d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\WC_Warm_White_Toilet_Seat.mat",
+      "originalGUID": "20f0ad1bcb646443cb5bf043108f29e8",
+      "importGUID": "0162223bd5735b7eb6b7f5f65386bdb5",
+      "sha256": "6d1ace0a80099388c5baf19413cbc76e7e70b3d20f721f12849be8378150e17a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C06_Door_seam.mat",
+      "originalGUID": "21bf8627a5f184ac3a346afd3dcafd92",
+      "importGUID": "39835da894365e0db17df02746319adb",
+      "sha256": "19eb4dec53abc9537b09d26e6c34c374d8ba5a115b107814b162681726b90d11"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p475_0p048_0p455_0p07.asset",
+      "originalGUID": "21d49ed4f872c47cb8c1978eac559161",
+      "importGUID": "16f126d2f8ff580cb0c33c2d982c87cf",
+      "sha256": "50e01f2aeaeb56b9556fa2c42ef2371e9657e4b77883d7ad9854278f58c1dddc"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Corner_Soft_Seedheads.mat",
+      "originalGUID": "223d1a86e38534273906ece8582ddd29",
+      "importGUID": "6e2ed39db8a25f60a3718a0e4058fa81",
+      "sha256": "f8db297441e3ca6fcbd9dea6d5ea4abe108f86e84c21276802186f6c592fea6b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Reception_Limestone.mat",
+      "originalGUID": "24296dd01e01c49d1bf2b10ab0685c80",
+      "importGUID": "aa65b2ade1fa546b99ab739c7240c860",
+      "sha256": "275cd4f5cdc699d77df003046c1e4d36e547840f60619f4ae48fd925ee548d92"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p36_0p028_0p21_0p02.asset",
+      "originalGUID": "24522dfd0021f44d4a0b24e447d9d8b9",
+      "importGUID": "4e93b4efcdda51198c13d64565b84a83",
+      "sha256": "fd3afd503c639a5c93e231ec1ca1b9c977f0fe56fea6f6969adaea027743631a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Sage_Upholstery.mat",
+      "originalGUID": "24686548770924ce19c59082c5d0d867",
+      "importGUID": "e87c34043cd35567a9e8b988c9676bca",
+      "sha256": "d52d3d6db8ce400793720f40ba7178b3dfe7a7addca3fd7a883b57b683d3c466"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Emergency_Pull_Ring.asset",
+      "originalGUID": "24b6b1357220b48ac83e6bdcafe51369",
+      "importGUID": "c6ea0ad90a90516db3deee74ee43bc2b",
+      "sha256": "07cf58048d0b02af0ed05dffc6437708ce752de10f994d2e4cd20f650ad74121"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p375_0p4_0p17_0p032.asset",
+      "originalGUID": "279dbd8f92fc94d999493e9019df592b",
+      "importGUID": "a44df05ea40c50e3bb4a09a3b1bec6fe",
+      "sha256": "b9aff72fa219125192f5725aea44a5200f3573f0f9b19bf41524bad5854030a8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p72_0p27_1p64_0p035.asset",
+      "originalGUID": "28b2eac37dd244482b5b8f59af00c5e4",
+      "importGUID": "1d4752c78e215a0885669c1e31cc2d9b",
+      "sha256": "8feda266f54688740fcd9fcd0cf1576f8e99bed4797178dbb4779058e97082cd"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p616_1p614_25p6_99p4_0p0008.asset",
+      "originalGUID": "291eebb17d9a44afd82c9ee1d644e159",
+      "importGUID": "2f95afed2a505513bebcfc8409cd97ee",
+      "sha256": "b15fb80955e3e0fd4fdbc14a956bc11de7ee4490f06bfa19b79111a3b526bfd6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Cream_Frame.mat",
+      "originalGUID": "2a02c6f3ca8664cdda40a9e432c0582f",
+      "importGUID": "facdaa1abda157fdb0ce3f2e22b502d7",
+      "sha256": "03f8be07e0ae29dad74569ec069d1b716c7bbcb3f55701a6ccc11bcac40450e4"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p047_0p035_0p254_0p018.asset",
+      "originalGUID": "2b072a75e450745dcb29f6825954def8",
+      "importGUID": "8ab755c4a3695e62b3d1e69abf5d5f99",
+      "sha256": "f59d6dda1fa642af4a303fa23501d493f8b045711bc109e94f1031b3e780283e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p89_0p79_0_360_0p29.asset",
+      "originalGUID": "2bf113f308d0a4fb9a62a69b1b8ced60",
+      "importGUID": "9bed5e85af885589b29e96a04a502238",
+      "sha256": "78caf3c193caddf8017ab49e202174353c13c83a55aab1b084e5a2fe2dff0dc9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p46_0p19_0p008_0p0036.asset",
+      "originalGUID": "2c44b1c837ca24cf788e05ebebf51c7c",
+      "importGUID": "7363789807bf579ca42881b2ce64c336",
+      "sha256": "dd6ae48737767f1155d453b01b2d22fdf5b8c6cdbe7bbe20a69de441c079286d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Screen_Pale_Blue.mat",
+      "originalGUID": "2cf2f9ad3c4c7435f9a31d619a46391c",
+      "importGUID": "86c5d7aa7a9e5dabb8f56fb34a29948b",
+      "sha256": "980d06085098cbb7409ec5b065d666d6017809c1858f1c735975a33dd7db85a5"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p085_0p009_0p105_0p006.asset",
+      "originalGUID": "2d330b6e502794775a9f791ab21ba6a7",
+      "importGUID": "be834ca4429055a2bf3f5c330a96fd89",
+      "sha256": "e153fe99d718fee9c8ece6a112d55001218d5a151ce44303aee1b07b871968b0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p49_0p055_0p47_0p1.asset",
+      "originalGUID": "2d8e3327f77fd4200bf6cb10ca65b341",
+      "importGUID": "75a7ff7de42d54e081cf5cdee296e158",
+      "sha256": "56dfad7e16265c9f82d0f51a372b4418a37f90bb23cea437518403e9e1ec8377"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5_0p075_0p39_0p065.asset",
+      "originalGUID": "2db4a659d07d049baa182f24dbfe52ee",
+      "importGUID": "14ea4225b02f547eb942ab7e5221edeb",
+      "sha256": "f582d5096ba32ff3912039de006f85dc1f56e588a29d573b2106e4b9a39f0a4e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Cream_Wainscot.mat",
+      "originalGUID": "2dfe78413314949cfaf2b3f5b27dad22",
+      "importGUID": "364b5cc8479858aab3488c22fca965fe",
+      "sha256": "887bd43c54243aca820a6a4b0d06ac14c04a984dde10b26fd8c46c984d61f728"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Whiteboard_Charcoal_Marker.mat",
+      "originalGUID": "2f45a5aef62ec44a78de680c4b9a3ad3",
+      "importGUID": "3720fcb3cfa157dc9c25f636d13f6801",
+      "sha256": "75b9b136b29118b6d044d1dfa75d58f4bc97474acb445aaa1f70559dba1c9aa7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p48_0p023_0p19_0p016.asset",
+      "originalGUID": "2f4a0ed08f376482596da3afee6e9e88",
+      "importGUID": "8003825b1f4d5cbf8f634e3080dc1862",
+      "sha256": "e857e9cb20f592d0ef4f495c4051ddce8e24743aaf69da09118c2ef6e6ac30eb"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Warm_Outdoor_Oak.mat",
+      "originalGUID": "2ff54706f992d446b9b14bddb808fb24",
+      "importGUID": "42124ed57539519eacf27b3644502723",
+      "sha256": "0bd685d6d3f228f14e25126fa3bc8df4009b0e8b3d324ed536dc22910d9f2089"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Notice_Cream.mat",
+      "originalGUID": "2ff8d1dc2d8764e228fcd73a9a7282bb",
+      "importGUID": "ece2051a6c9a546594a4ed28a1e99079",
+      "sha256": "fa71a542287a341fdd50f29ffba006634657ec8f25f6f4941a630897bdf9085d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Mop_Sink_Ceramic.mat",
+      "originalGUID": "310082c67f9274b65849c1947b3d4e08",
+      "importGUID": "64f850e9bc5951ebab15ffbe4f07ef0c",
+      "sha256": "25eeb5a27fcd66c10597b1d783830f83f46562a1719cfc7e58e74b350c700871"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p489_1p421_25_100_0p035.asset",
+      "originalGUID": "3148af70b465b4863be23ecbfa0806a5",
+      "importGUID": "d8cf5b4d238453cb87cf1facb9c136ef",
+      "sha256": "78295ce6d68aa9f45417cf0cc5beca11531fb0728a04ec8e62500ce382274ff8"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Honey_Oak.mat",
+      "originalGUID": "3278ba2efa84f4371b6e6497155573aa",
+      "importGUID": "2f96c3c660e459aaba502c70213adebb",
+      "sha256": "8f664c1854e13e711fc03f9e3c0896c1173705114927b4ac7ec5770ce7b66e19"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Staff.mat",
+      "originalGUID": "332ab1d21125c454e978408a052319b6",
+      "importGUID": "d535de62cd625cd8b709a17d7de7993e",
+      "sha256": "76aff9f02ab44518ee6f65665f86e81149226ab7b4694d68d74c7eade8678c8b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Oatmeal_Linen.mat",
+      "originalGUID": "332b6d75ecb68424fa759a936d6067da",
+      "importGUID": "c1c89556573d5453be9e07e744ab4be4",
+      "sha256": "8dc5b25f2f1bfc28a2c05628b58bdb1dcf46302578ba3ec4ae6cdba251d47a7d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p12_0p07_0p007_0p0032.asset",
+      "originalGUID": "3330dc380208640c8abed13b47139145",
+      "importGUID": "f9410499ca765bd2a56a9c48fb5c21bd",
+      "sha256": "9bbec4d3a22537f329c8a009c01143818384d586088061d2cb05eb678cea042d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Fine_Tile_Grout.mat",
+      "originalGUID": "339e926e8e59a4eee8e607a138f0fb45",
+      "importGUID": "45d0ced16f8159fb93a2a9dc853b13f6",
+      "sha256": "a3400f29b15e3d1aec5b1ea3425db81e4027de084e2678dddbf5c662e36e2ead"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p185_1p155_27_98_0p028.asset",
+      "originalGUID": "341523e2fa7954213a4312cf9e772d96",
+      "importGUID": "577bee5e177e5d528b2d29c34cb01509",
+      "sha256": "7fce4ff2439d10d94e24a2db0bcfe221c8da17d16dbed9d7f5105195b19de8c9"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_S03.mat",
+      "originalGUID": "346044e1170f8460db34e1c0e3de561a",
+      "importGUID": "d9278b7b805e5ea485a1f9804cacfbca",
+      "sha256": "b2a881030ef469e175db35336604402007fabf5bf0a3186165a160516f7e8c80"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Classroom_Display.mat",
+      "originalGUID": "346fa99ea63a449038f3969ec402345b",
+      "importGUID": "9f575078f20f5bbda1590d2678a7361c",
+      "sha256": "59f7a166f7cc1374b9fe0a5a50186dfc9d75b5777081c9b24c87a6cd2e6ea643"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p136_1p134_25p6_99p4_0p0008.asset",
+      "originalGUID": "34b06873dc1ff4cd7a8a392f65dfeea3",
+      "importGUID": "444102da2d365b3d8863d449efbae916",
+      "sha256": "284e6e9bd2b6c6c6984133395e77512161caabddd1ea651a6d956d302b48bfd7"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Planting_Soil.mat",
+      "originalGUID": "359673c63cb3745e082a32c24899d749",
+      "importGUID": "7b192e7830275dbe9595f3acfbf23f25",
+      "sha256": "14df1caeecaef409963960182e8c7779f3b1456c9ef2e9f8f78154f1896b8318"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Main_Display_Glass.mat",
+      "originalGUID": "36fde5dfba2e34f2a851e5f91804cedb",
+      "importGUID": "f2ac146bd46f52f9916990db291ffd42",
+      "sha256": "934e18a75ed015789b0265a802bb9b50f5104448d80a18dbd9fe9882912c08d2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C06_Indicator_green.mat",
+      "originalGUID": "383a680cbe6f2431ca1fa6039db9585c",
+      "importGUID": "1a86664856bd5f1e908e702a478e4d95",
+      "sha256": "d3ace4b2208a115647c2da95f40f077358706a51cf470b2c91216880a246c3e8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p738_1p44_0p028_0p008.asset",
+      "originalGUID": "3841cdd63dcc846cdad22804365d5f89",
+      "importGUID": "91575e1f091f529ea88db09369ce35f3",
+      "sha256": "e69758fe5695c4360cefb7733b56ea512349d675ba86c5f140e1affc78cd6adf"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p43_1p1_0p045_0p018.asset",
+      "originalGUID": "384f77b2d5ba2469bb05638ea40f6f68",
+      "importGUID": "4e422435be1a58ef875a63a2223539f6",
+      "sha256": "79ef82fe81f86698817bee674d50b5a8a3298c3a041cbd176f1b9d8ae03bf3e1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p28_0p32_0p1_0p02.asset",
+      "originalGUID": "385cdf778884d45d1bcd954dba22fe1b",
+      "importGUID": "33020b0f46455ff38db7cc093d22b2e0",
+      "sha256": "c516c1fa8a957568988fda224addefc69210a46aa0ae5e4591c4540e491cb419"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p64_0p17_0p008_0p0036.asset",
+      "originalGUID": "38a3016b8b32344c6a2c03bbf1d00dff",
+      "importGUID": "36c28a300cb055129aacb8e88cc3d626",
+      "sha256": "947d7b4948093b782775b7739f132a8f39c254121fac0caa7aea4052efc39837"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Whiteboard.mat",
+      "originalGUID": "38ae136cdcc264363b8ade830bf785bd",
+      "importGUID": "d7449ba9b7655f50b64167c0f11d6367",
+      "sha256": "08d3f16f11d258273ed68c0475a718964300849b478ee682ebafef5074d7fb9d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p78_1p8_0p035_0p014.asset",
+      "originalGUID": "38af620316cbb4e67940d695785345c1",
+      "importGUID": "f6b0dc8188f85673bd10ac07fc8b0d7e",
+      "sha256": "ac8a444d01f0a5a400598ba1fe8aeddd74481b3e438451e3c0bd268b75ba73e8"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Cream_Lacquer.mat",
+      "originalGUID": "391c98a7013fa4862b66c36a123610b9",
+      "importGUID": "fb9f89bd4cf55193a5da504ede0428b5",
+      "sha256": "895408c46b030ead13d3b52eed7ecc9fa20e75a1bfe2e6b447d3cb50ff9175bd"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p7_0p03_0p04_0p014.asset",
+      "originalGUID": "3ac761814d91745d58858080602131ab",
+      "importGUID": "33a997ef466f58c0b56ed9db6dc1b939",
+      "sha256": "82b06726142141c8def1305d3a817ad1e9a45c9822a0b33a2d79901ee8f29450"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Wall_Hung_Lavatory_Shell.asset",
+      "originalGUID": "3aee678d08f094a5d8523eae19ca9c2c",
+      "importGUID": "e1eced1bfd5654a3a086f15035c406a0",
+      "sha256": "24fdcc69bfe92575c31e715b29c10376e978e85a3d4ec2c8258166e0cbf9d10e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p095_0p004_0p045_0p006.asset",
+      "originalGUID": "3b386dc120d8249a3947d51f4489e622",
+      "importGUID": "bcc5294270275018b1980222b8432c7e",
+      "sha256": "bbe377426cf8f75ad9c49f3f2ed2cb4bed7d05c2a815e202e74a60ee9231776e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Young_Tree_Branches.mat",
+      "originalGUID": "3b702920e42c3405d86eda5eae2e47c3",
+      "importGUID": "eb13cea9301c521e9e794743e228d9b7",
+      "sha256": "a8fa71cb649d1fc610184083ebd4bf0b7887e55d5d32c1de8dd569f6bc15724e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Ivory_Curtain_Linen.mat",
+      "originalGUID": "3bbae4f28b3a04608b14c8703cd7b6e4",
+      "importGUID": "2baba3256bee588584d9fe3416afe2d8",
+      "sha256": "75ea40fce7ef728e07352e6e35570cad22953da63bc46cb54cffa927069845bb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p306_0p244_200_340_0p045.asset",
+      "originalGUID": "3c55e2f4b16dd4759afb4ec6bddcd722",
+      "importGUID": "f1cd133fd4bb52ba97ab1c88d1bf0185",
+      "sha256": "868593597c97844d0b74734c8147b52599e4ffb481eb1c7c769b9a72f526daf7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p15_0p77_0p56_0p045.asset",
+      "originalGUID": "3cf5efa5114df47ac8f2ed33e8fdb095",
+      "importGUID": "054d4ddfe84d5e6e96854d5ded8f3fca",
+      "sha256": "cf5013c1beb2f6e1a8357534f08e260aab3de0303e76d3e036aaf4a8845c2d3d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Sage_Graphite_Metal.mat",
+      "originalGUID": "3d7f6f97d02df4d7683dd212c88b6bb9",
+      "importGUID": "0d340bafad5d52fcba55f0b01b20c065",
+      "sha256": "308925132776b977957bf2b28a038bca06ae448d52f99c23d73d62b8770caccd"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Public.mat",
+      "originalGUID": "3d8633e35cd684c4e943eee3d8694d30",
+      "importGUID": "63c4764d1c135c8a82b516ee61fced43",
+      "sha256": "04577c8c3263ccaa6aab059766a5dff39177579a65baaeefd9eb210638c83265"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p53_0p06_0p51_0p018.asset",
+      "originalGUID": "3d8fae043af6f44d89630634232a6113",
+      "importGUID": "bc7a521a302257a5b6d7a1c22293fe5e",
+      "sha256": "6df065ef0899ad60339fb838dfeeb5f4c1ed2f61425a6790f618a20e7fc35691"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\FacultyOval_v1_1p9_1p05_0p06.asset",
+      "originalGUID": "3df25b4a18c834cf8a071cde651a1276",
+      "importGUID": "ec3c8d098222570faeb90f8ab2c2204b",
+      "sha256": "dcf7f03bfff588eddb959a1dc544507f08b9e9382ff313d39a6122147b20ff54"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p66_0p035_0p82_0p025.asset",
+      "originalGUID": "3e1451db2d03242f69883a86848b100d",
+      "importGUID": "9b0a1232fd275f0db345b74578e87d40",
+      "sha256": "5e7fa301beb1874f176462acc3d3eaa089970400fcc36177ec56c8d52494b276"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p7_0p075_0p54_0p045.asset",
+      "originalGUID": "3e942f0630dd942e68c260c52653253c",
+      "importGUID": "cd4a88d2061355d48391bc693914b393",
+      "sha256": "576bef453b721b90df090499bc0de678966ca8cfd87760628f4ee11bd0d2f629"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p407_1p8_0p025_0p01.asset",
+      "originalGUID": "3eb4e9600220b4bd5838a631493533c2",
+      "importGUID": "d05e7c21d83952a288c4953b480bdb30",
+      "sha256": "51219e37320fdedbe7be4a58cd2662b2d50ed0fc28b848e92baa856734be3e13"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p608_1p76_0p028_0p008.asset",
+      "originalGUID": "3ebf6c0d1ff16465da4f8dd7bdfc15a8",
+      "importGUID": "66ae7045557f5207b90c95ad4d96a85b",
+      "sha256": "5b88a0bb7ad552b6c349db38a92f1e688e1fa8ba2960c0a70c86657b895845c6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p409_1p341_155_230_0p035.asset",
+      "originalGUID": "3ebfd8bbaac024f0c8e7556f6e20cdf1",
+      "importGUID": "91f4e99c2248591aa6f41c405b47c65a",
+      "sha256": "09b6a48e34dd4e56acd69ada62cb6f13d059ac43cd8d5fed63db25d5eb51858c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p54_0p075_1p055_0p055.asset",
+      "originalGUID": "3ef41b9e09e684b549942bda9926808e",
+      "importGUID": "3acf914a716e53c6ba6e6a9ac6ee3c04",
+      "sha256": "00fe48ede65bd01fe21b1e22559640d085e13617813ccc491fcd20acb1e505e9"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Blue_Data_Cable.mat",
+      "originalGUID": "3f108f535fa8d471698fe4e54981af1c",
+      "importGUID": "01de609a4fc3513a8d1eb602cbd7e5b9",
+      "sha256": "0598f19170816c884c98f0acae812246d3ca47e9036e9a39c241db1295a1d4c7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Compact_Open_Toilet_Pan_v1.asset",
+      "originalGUID": "3f74b6dce815a422dbd1f44afdeac7e8",
+      "importGUID": "595ff0bf42775abab6c39f18e997ab58",
+      "sha256": "d7256b95ddcba2646b91c215c41c97d8cc02148e62daadde72a5591f5286fa9f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p77_0p265_0p025_0p01.asset",
+      "originalGUID": "3f97a14fa787849b2afa0d2b05834736",
+      "importGUID": "1ca7a932a9b25001a00f24a59caa78ff",
+      "sha256": "834e85d82ab299de2dd6cf855f4b78f2fa38bb0b0a0bc21a2c825d494bf42b1c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p86_0p035_0p13_0p012.asset",
+      "originalGUID": "403c7c2788c68449280dca2b340306eb",
+      "importGUID": "f4e2153f23e6518bb20d81f71a136e7e",
+      "sha256": "e214ae515e60a980648cd449b4f618092c3569a6984caffda17d4e55be95982d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Light_Oak.mat",
+      "originalGUID": "40d953da9fe424ba993992a3ca965465",
+      "importGUID": "4ed14910cad3535b8c69056d3e7642eb",
+      "sha256": "f4b70bcbbd3b49f83355304d8022c2fb4813bb3d30c18bee6a200e89b21d921a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p34_0p19_0p28_0p012.asset",
+      "originalGUID": "41713ae2f75a74a8f8e5fd79dca6b4cc",
+      "importGUID": "5cf94746a3015efea78a9d4736d50eb0",
+      "sha256": "5022a0b267d2d573233751ace45dd2a6946213f1cdaaca63cc0873858b3d23a6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p249_1p181_25_100_0p035.asset",
+      "originalGUID": "41a107a996dad47858bb68a3382c4833",
+      "importGUID": "ba36a6aadf4c53f0a303c25a0125e000",
+      "sha256": "059d837f2cf3fd824f31a404c4491e556d0abae5d29aa2be68f18339a244bab0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p53_0p295_0p075_0p025.asset",
+      "originalGUID": "42340f610aede415e9fe16944aa9f32c",
+      "importGUID": "6802668c2b495405b69912bf033d5d5c",
+      "sha256": "666cbbd1fc1b378070f328ce17bf8dd8d030ab32f0a71a732e187bf84b696cef"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p525_0p6_0p025_0p01.asset",
+      "originalGUID": "42eb29047218642fa8de07cbbdac1106",
+      "importGUID": "9be822a8fefa59fe9a09733753b55839",
+      "sha256": "e48119c9fb5e56b41d8fe0a6c702d81288a297cfd19dd4de9c9a483d756f1cab"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2p95_0p27_0p72_0p035.asset",
+      "originalGUID": "432990d46ace2480ba88b7c3f19fad28",
+      "importGUID": "385b81d2d8075dfea40c22a88f43315b",
+      "sha256": "b4fe7c482de29b90b99e3881fd3258b040ce771ded570914c5c3ff03581328c4"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5_0p025_0p39_0p065.asset",
+      "originalGUID": "433c8f02c2c59425da7f90ee94f42c2e",
+      "importGUID": "cb272debe9f85aa9a285184ae90aa767",
+      "sha256": "07a87422badd0a37ce74b0d26d12dc493cf6869b76910c6683249f5277abfcf3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p395_0p4_0p19_0p035.asset",
+      "originalGUID": "43da968e1118f4cd9be203245371cc16",
+      "importGUID": "a346b98367785c95b7e1b29f29d95c7d",
+      "sha256": "1c7c4469658022b8e4f9a2bdaf6ea8121fd9c69d60f6c3a21844ab3625bf41dc"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Muted_Gold_Data_Cable.mat",
+      "originalGUID": "4483ddfbb6a1a497abe4860e8907b192",
+      "importGUID": "0a7e16ddd7dd5870af9c1f38f7ca273a",
+      "sha256": "f7eef47fd7f5856632247e11bd13a7b4fca4b39af2415f353e6266d03af9135e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_3p4_0p055_0p6_0p035.asset",
+      "originalGUID": "449a2bfe19800405793d832eee9b170a",
+      "importGUID": "6a7bbacdbe7d596c9e8b6a0cbe9303c1",
+      "sha256": "9dee4855bb984e258c55e7c78fc6238a8ffd88d1464c87bdad7d25446cc37bd1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p51_0p045_0p29_0p009.asset",
+      "originalGUID": "44a0a7f71c9794db2b9b39a607125ed9",
+      "importGUID": "fccb5708baf5511a9274bca3be2cacb5",
+      "sha256": "6511a107bb09a7de1c46caed043dba0d9001a1d846b61d4101afcc28046bfbf4"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Depth_Tested_Font.mat",
+      "originalGUID": "44bf0032b6b4b46a6afd7ec1f24fbb54",
+      "importGUID": "2a1e4026ea925df5b97fec5986c21703",
+      "sha256": "5af3c0d0e770baf9d8480a44f6c245c51666c4efa47fd0968bdbbf21ea1fdd98"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Warm_White.mat",
+      "originalGUID": "4598e7428d31a4e729506d10e1e0c279",
+      "importGUID": "b5ce3720c5e5565e8e411123a880fcfd",
+      "sha256": "b74baf692b773b4593546136e02c86ef364588694ab67566b77fd3636a1ef2b2"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p136_1p134_155p6_229p4_0p0008.asset",
+      "originalGUID": "45e069388f4d14f1c8f05b442e3e8c0c",
+      "importGUID": "1ac5a9c623c95feeae32365daed912cf",
+      "sha256": "0fb305d5df8c8e1baf1d2582f745149796869681e6dac0d686c2d32dbee6d4f0"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Stone_Grout.mat",
+      "originalGUID": "4633f7c5665be4397b1548edf2cee474",
+      "importGUID": "d713b6b2ec5d545999cb5dcc2172aae7",
+      "sha256": "c1626d12e31634ca5b900f30246b493bc31f893fa01a56f0cb9eb9b2a3930013"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Pinboard_Linen.mat",
+      "originalGUID": "4687e609632f54002beac516b4ac1b68",
+      "importGUID": "09e0b3d30ea15e5b8f5cb28908e66037",
+      "sha256": "5e4b14a59e77e73fdabb3ae4a21d2cb90b0acc0ccebabf415b6cee2f9fd1c201"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Whiteboard_Green_Marker.mat",
+      "originalGUID": "46bc92fa3580e4259b60d1381ab5dbc3",
+      "importGUID": "664b61e1000a55c09f63c2f064ea225c",
+      "sha256": "a6586c790f00d7a4557fa6dda5e4826d7b64cf45b2b14e4d01d7ea77c01aa8c4"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p216_1p214_155p6_229p4_0p0008.asset",
+      "originalGUID": "46d351548d83745828fb9c0ae534fbcc",
+      "importGUID": "af79fb6eaa5a5336b13d7058d2e90975",
+      "sha256": "be36f2cf291febd2a902b253b660b092d2882eabd4ebe0bc0d5012d499c346fc"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p15_0p126_0_360_0p26.asset",
+      "originalGUID": "4889bb8bf3fb84995a4d1e8b0680d401",
+      "importGUID": "7a682781deaf5f5da2dcd3d6270b014f",
+      "sha256": "cc22ed9199742935e6b6d8561ee79b7e9671ac14b96df9c8566ced6a047157e8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p47_0p09_0p47_0p09.asset",
+      "originalGUID": "489f6cfa245c94062a858dd3f8270cd8",
+      "importGUID": "5af187bf23445303b0f81609656371ad",
+      "sha256": "92e3f6a7d849b20acebb75782be162660679a8fe5bf8e2bcfa0329e48deaf345"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Services.mat",
+      "originalGUID": "48f393143c0af438e825019748694a25",
+      "importGUID": "bd19aae6b29a5d5aba2fe11e3076c1be",
+      "sha256": "81249d9687c1876fafc69bca661d4df8b66e86a93de2427955ccf2b7dd14bacc"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Appliance_Metal.mat",
+      "originalGUID": "495994572e54b40389cc10405dfa3f95",
+      "importGUID": "15363b2ddcc951ec941ae0d60049237f",
+      "sha256": "b2742eb93cda003afb6ed878242696e36c94c96afae1fda9fa171e88ac38d7aa"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Tile_Grout.mat",
+      "originalGUID": "49b47cdac252d43a2a976142ffe0d1aa",
+      "importGUID": "eb376c8894645ac5adc53feefaa9dc58",
+      "sha256": "d7c2aa25d655078ccf51eb39d7445a5738a6669053411623d8e069e29092e4d6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p73_0p29_0p38_0p035.asset",
+      "originalGUID": "49b9567bf00324e3faba0e4475508e15",
+      "importGUID": "35834c6b8dbe5104b797ebf8aaa6b10d",
+      "sha256": "bf9367e8a3f52b88b6ac3e360f0f9a5bab95bef01606ba4604f4b33c6f27df3c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p4_0p255_0p018_0p0081.asset",
+      "originalGUID": "4ab987140c6a64dbfa0420911a2a936b",
+      "importGUID": "c3299516420b50a994f61fc5e16efaa3",
+      "sha256": "dd856ee4ebe0ff723a381e5278765b62d2996561b91ddf97e65058fb2b0370ec"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Display_Blue.mat",
+      "originalGUID": "4ae2f512a01ce4dcd97ef213de60fd46",
+      "importGUID": "60ad37f972d159c6ab4333860a878aae",
+      "sha256": "9de315e11f6587d4bbf11ba2018b4d0c2c13362367aaed35db7fcf5c668880fa"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p568_1p535_159_226_0p006.asset",
+      "originalGUID": "4af03bdb300d04f7eafbd67d52a2cdb4",
+      "importGUID": "58ebeddd50715711b2bd36bfe9db76c7",
+      "sha256": "76d9b43990ded18381806f20efd820ac20da879194f29f8d934b4c5dde8924cb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p465_0p065_0p445_0p075.asset",
+      "originalGUID": "4bd61876c0f4e4e16a653c4d1d425dab",
+      "importGUID": "4e4a8d7c25fd5530b0f0bc5454c3d7e1",
+      "sha256": "24dc38a682f3d70347af1d1c03878da4ed8cd7b3a35d7ffc5518f0a264279879"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p022_0p255_0p015.asset",
+      "originalGUID": "4c5fcf0c07c0c4c6c9464ad1d1339108",
+      "importGUID": "0d09b9b840a953569c3567d42692d6df",
+      "sha256": "8453aeb5ebaf0b12843aa741e2640481d4d4c42ef7a360f205458260846b1f0b"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Courtyard.mat",
+      "originalGUID": "4cd9bf36bebc64d9a8e10e01c5c32a66",
+      "importGUID": "2012914939b15cca99f1caca9956afca",
+      "sha256": "8d2c9ffcd8075ae7eb388c51530db1562b47399acd14321e3142689cd09b5cb1"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Corner_Low_Groundcover.mat",
+      "originalGUID": "4d789cf1bfcf94993b94591bb941e2e5",
+      "importGUID": "74a75a6e19a257e2a578a292e5746b06",
+      "sha256": "fdc4bfd31bf5163f30a6d104b4c355f9c0357533de60213687ee9992dcfc0832"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Supply_Label.mat",
+      "originalGUID": "4e3787c9a73ab4943ab3e242f89af265",
+      "importGUID": "61b8079227c35e33982be1be5fd7a38d",
+      "sha256": "09c98650467805e0ea9dbf6a2231a0b1c96e8a0576df37ac1ce7513b6d3249a6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Book_Dusty_Blue.mat",
+      "originalGUID": "4e80a8920f13e49da8a27275ec268145",
+      "importGUID": "510dc1aa44325ffcb717cb0a3b567a49",
+      "sha256": "31fd6e237a6f7f80abee9de9ea72af4632177e5220520cd39fea314057f23a93"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2p1_1p25_0p065_0p018.asset",
+      "originalGUID": "4f0e9819a48294150a9a8ef545f17715",
+      "importGUID": "4f6d8c9cf6e65156852d2e4d0c1dd916",
+      "sha256": "51f6b092740ba445ec450601d18cff69ac223dd4fa9759bde0b5fdb1058d39ff"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2p225_0p04_0p415_0p02.asset",
+      "originalGUID": "4f22fed94929a44259d2e40dfdc4e046",
+      "importGUID": "2f9696628f535f958a4c538d79b178ce",
+      "sha256": "1165d52698b7c57d27fd025f9152d8fa98fae4a179a2d246515e96eaa1299896"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Chair_Dusty_Blue.mat",
+      "originalGUID": "5177d8fb6cf9046528c37c663cdfb52e",
+      "importGUID": "7c21a1b0ac945a4cb405a460291f51d3",
+      "sha256": "90b97f6c3ba251d75ea2d0349b4f932508a582ffc56f50f7112de6aa151bee05"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Door_and_Window_Frame.mat",
+      "originalGUID": "51a7b615c1e864afd8675c386458660b",
+      "importGUID": "183e340d39a25fe492153204d5310251",
+      "sha256": "e04fd44ab90a6149f6659cf8baa198e9573b413808ab122a2760079dab280861"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\WC_Satin_Fitting_Metal.mat",
+      "originalGUID": "51dfc6e36a86f472e9fc9e8a5448016f",
+      "importGUID": "7b1cafa9ba4750f0aed69511ff2123e9",
+      "sha256": "dc2768ca5989e44588c520d0e7eb8f21a4ef81256f0a4d9ad0d7587b31150007"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Art_Recessed_Stone_Base.mat",
+      "originalGUID": "5218ea50689254297a7a210ae10b6392",
+      "importGUID": "d8d5aa7bb10f5ebcbc8d91e073f5418b",
+      "sha256": "bd1524a2d4d97d68fc12880bfd3fea942adb9ade1345990ca24b5e0caf57c7b2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\WC_Cream_Glazed_Porcelain.mat",
+      "originalGUID": "5265c3bb110a74e548ed5670eaa4f1ad",
+      "importGUID": "72548d9ebbaa5bbbaea9f8fea59b79ce",
+      "sha256": "2d02baa93ba366f7e54f95653f71a61f57b276b5da2916544153519bac0dceda"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Lighting_Cream_Housing.mat",
+      "originalGUID": "529ce5cd5521f4e869716afe6b7548a5",
+      "importGUID": "03b2eab46cfc596faa4719033e79b924",
+      "sha256": "a35ae41902dba60cc40d55864081febc06461a9818b7d1d1ce6fc03fe37b60e1"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Service_Cream.mat",
+      "originalGUID": "52a9216fe11de40af9c084d80d6f6f46",
+      "importGUID": "7c5e84bb8dc1506f8e1fb3e1d327f9ac",
+      "sha256": "20ef8acea7aa989b2723179dbee92138d697d4038f67c0c7eb91a76f30dbff2b"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Collaborative.mat",
+      "originalGUID": "52b27560a86cc4b7186fa141e22a208a",
+      "importGUID": "b111cfc856715e1eaea20c2e344ede36",
+      "sha256": "7a607d44789c614fd6f307ad0f3cdfb1f566acbf9ec0ae123d810b4fbb8b9948"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5003_0p42_0p15_0p055.asset",
+      "originalGUID": "52c501a2cd98c4aed98eacd6b3ba4c20",
+      "importGUID": "0aa3fa94d5aa5ff68a8186d17d608f2c",
+      "sha256": "23aa88f35aa3db8d2950206d339808fe3cf2bfcf01330a20b2ef4c868083583f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p55_0p24_0p76_0p12.asset",
+      "originalGUID": "5444933dd01eb4d6fb1d6eb7eb59b3ad",
+      "importGUID": "1d1c4186b6e35cbf820267cfebdf576a",
+      "sha256": "33d4f19d1b00349bff3c2429fa414a1d8919533558970f1e59d71b17e289a4b1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_3p025_0p04_0p435_0p02.asset",
+      "originalGUID": "569280da3bee7479bafcd58a24c6d180",
+      "importGUID": "8cbf0077cb8552e7ab05b90ee954ab59",
+      "sha256": "f14ec2c00b06320b3277bc2c0f48bf0f6bbd71d4d66aa9d160612c9ccfc2b370"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Sage_Partition.mat",
+      "originalGUID": "56d45faff390541de879233f8425774b",
+      "importGUID": "4175bda2f80953f5855cd75b8afc0f7d",
+      "sha256": "8ef879ad8358c22108fbdad16ee576a62fbeb59fd0f5b7d6c3f3378ce26c90c7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p7347_0p175_0p032_0p012.asset",
+      "originalGUID": "577ff312cc233414b991a2fe37727ef5",
+      "importGUID": "055806112e555fdd892257acc1365fc6",
+      "sha256": "e5df5cbe12737ba0f83888da499c6686b1fd6fd25fe2a3cd41e54d0207e025fb"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Paper.mat",
+      "originalGUID": "57f682b28618f4fb08e9fac6f27be08d",
+      "importGUID": "281de0dded275c6fa1d139fbfb15b814",
+      "sha256": "e0ff0a6fdfec0007463180a92bc0d7a9efa65ad45bec475bbfd6fa29f94448be"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Appliance_Graphite.mat",
+      "originalGUID": "58b78b2b60e2d4e98923db6a6d64a17c",
+      "importGUID": "09b66dfdae8d589396afacfeb013c92b",
+      "sha256": "eef8ca99e28504d8a8013a248c89d4ced3668453a290e5aa4aa6c1164cc4afc7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p385_0p025_0p178_0p032.asset",
+      "originalGUID": "58c9e5562c336441a94bb21c4cf90d5f",
+      "importGUID": "c1147c6027965e5b9729cadddc78dddc",
+      "sha256": "934970bf5455b0f77eb71bfb72a80e6decdafedabe672dd0991e647e19f6dda6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p13_0p07_0p007_0p0032.asset",
+      "originalGUID": "5a0951ee7faaa428d91050cd04c24e5d",
+      "importGUID": "9a37cf3c788651fea3877f3947b03755",
+      "sha256": "3dd3d49899c27c17130e3c014f589b6630203b0e130468049738c2ea512527fc"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p23_0p025_0p17_0p025.asset",
+      "originalGUID": "5a7163b6db2a34f1aa23e669313d10ca",
+      "importGUID": "75b89d16e6a154f9ac940d164583027b",
+      "sha256": "50dd566f3a25809ef37241b6bf20a2e5d078f2a50797fd2cbefb04522cb2e5d3"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Amenity_Brushed_Metal.mat",
+      "originalGUID": "5aff0f4f8fb6f43919d2baa8e207dd2b",
+      "importGUID": "4ec2f764c58a58d081de2de1d89d1a27",
+      "sha256": "76627c566a907278af1fbc41d3a62d6dbb6b2f7ae46847a33761ae324ebe617b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5_0p43_0p09_0p02.asset",
+      "originalGUID": "5b18ac30bad77491096610b2e2ee9fed",
+      "importGUID": "023b5d34f9c75811ac9b2c51bfc2aebc",
+      "sha256": "ddd0fb05b65f543e43c3011833ce89e92f2d00643875b44a78db725bf478bc09"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_N02.mat",
+      "originalGUID": "5bff50b99c5a1475aac5bb53336a73f0",
+      "importGUID": "0844e7ac25f15a4691d873b84cea012b",
+      "sha256": "d0469a5a2742255abaf573684da521830ef8295a57f68f1c99f78a874e943973"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p53_0p355_0p075_0p025.asset",
+      "originalGUID": "5d44398a28b5d4054bbafb52465809d6",
+      "importGUID": "17f69a3888295c5796676cc3c5ba95db",
+      "sha256": "040e82068f247fcbc26c787e5b65c37f64e930aeddf002abd9056d1e20f1fee6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p376_1p374_25p6_99p4_0p0008.asset",
+      "originalGUID": "5d55fcd66082743ad97df6e7fa5153da",
+      "importGUID": "eac3b64b797e5a6fb1f4d15aa54442ef",
+      "sha256": "0642a01092dbb4185381b3116438acc61c9f400eb95616bb2aa5da4da277392f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Chair_Muted_Yellow.mat",
+      "originalGUID": "5dab43bf41e774375bc57a5724423951",
+      "importGUID": "f8ddaf3fc1fe56bf9efea5fd2e8fa53f",
+      "sha256": "6da455eec640e8319de39ee2378220219aa456d572625e30e72f87d99b802f7d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p19_0p055_1p5_0p055.asset",
+      "originalGUID": "5e159014957554a06a05a1847f57adcf",
+      "importGUID": "5e4cfcf3eb34585cbcace5da36b2e0ea",
+      "sha256": "8cb57e0fc14cb0cf3106f4c3b487ce421143bcc63864b2c47b3e8ffdda1f56bb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p06_0p032_0p12_0p008.asset",
+      "originalGUID": "5f4aa1995ee664ca698d632a45638685",
+      "importGUID": "e05251c27be95bb2a1fc7a554bcd001d",
+      "sha256": "7d7dda4be0947d45f52fbb3bb7efde0477d049847fbf2c410ba13b28c2b933e7"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Dusty_Blue.mat",
+      "originalGUID": "5fd115ab9fe9d4aa9904a0ccf2618bc3",
+      "importGUID": "fe7025d1b9805bf7a8d39bc2102594e4",
+      "sha256": "322c71e03ae8f7ffd9a6abc2d7fdb90f30a0271f3171384b8fc43b37281110e9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p46_0p025_0p435_0p065.asset",
+      "originalGUID": "5ff8a2e2774b54334b5c759187fce58e",
+      "importGUID": "953bcd69e1a7535f8be244e27ee177cf",
+      "sha256": "3da0b14c19edc1d87dd6e50a06f60ada2df426d3697415476a0aa352877ffa2f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Rack_Graphite.mat",
+      "originalGUID": "60f24020df56d4ec7875a915c2dd5cf5",
+      "importGUID": "d0b644dc648c59e0ae3e07baa00e4cd3",
+      "sha256": "14c3869116c7a16c569a25b4af40a97168b7e20e813b1f1f0f74227d23e7554e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Classroom_Teal.mat",
+      "originalGUID": "61b3a2fd2eca342fa8ddcebb710066fc",
+      "importGUID": "782abd7424bd5116bd457d8368777e5d",
+      "sha256": "cf8438b5bdea6d4f2f6edfcfd66d1005c488cc34bbb99385aa3c04cc183c96e0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2p3_0p05_0p6_0p045.asset",
+      "originalGUID": "6265c2153505c4f7887e7da50ea42aa4",
+      "importGUID": "407aa74eff0f5efd98010e8e98ee1d2e",
+      "sha256": "0ff30708d4f29fa6a6515d5d68a2f2716761c4d95a9484147799f80a8b8c0b5a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p26_0p025_0p25_0p025.asset",
+      "originalGUID": "6291a058fa01b4af3b71737c72b6ef1c",
+      "importGUID": "8bbef5d6025257cc9d0dda1c41faf986",
+      "sha256": "aafe1e014cf6c525c29c9c56699c61dc875e8faad935e5fac4760fd713f095ef"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p74_0p03_0p6_0p025.asset",
+      "originalGUID": "669d52169a2be4ed0b2c4d8c8571fbdb",
+      "importGUID": "d51bfbf8b9fe59d68b6f6de24acb2db0",
+      "sha256": "e7d7f46f02a376b96659547f2f961661cb2b486d24ef79ee7d989a97e1b9e6fb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p045_0p35_0p022.asset",
+      "originalGUID": "66fb971b7f4cd4192af0745b820ff812",
+      "importGUID": "44b1a61ca466552584e7685187f05736",
+      "sha256": "630cbc3df5549c25f2ba9096a41337be4893fc80e76622ed200e446f9da09838"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_3p2_0p06_1p35_0p045.asset",
+      "originalGUID": "687c9798dd412415c83230af3fd2c8db",
+      "importGUID": "54b61f565b815cc1b59e36e4f38384ec",
+      "sha256": "1c76a32a48c6411ae2d8cb8fed0793dbbd97d38e66153b51465c856b3b1a71c9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p616_1p614_155p6_229p4_0p0008.asset",
+      "originalGUID": "68ac3f747a47245909f5258ca76041f5",
+      "importGUID": "a136c50745ed514ebcd36ed1792e7a8c",
+      "sha256": "d8e4105a5027a8354c4855c9488b7c90a6c52d457d761f5ad38098c07e56cf7e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_N04.mat",
+      "originalGUID": "68ef67fc5421d487fa6d3659b4023383",
+      "importGUID": "9876478ef570582d90411f60d1f66101",
+      "sha256": "31a9661711987739b66dc10c22b086b1462c9e0ce0a1f286ffae5a836f957dcd"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p05_0p035_0p36_0p012.asset",
+      "originalGUID": "692815bb3442e483c9dc34d9b40f59e1",
+      "importGUID": "e483624fd18d532ca5e578c71dff3e37",
+      "sha256": "cd8ebe5bf745d5d9864db9aefb0f146fe47702a766901082827a91cf340d6892"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p65_0p24_0p76_0p12.asset",
+      "originalGUID": "6accc21a9dbd349f89727c002571842a",
+      "importGUID": "0b2dbea47a6856e6b8f5c83c47a1f7d5",
+      "sha256": "d9b4fc33205653d8e8a2ed5f224a99dbdbbd15c0d006ec905b70e7f3cf67d620"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Floor_Tile_Grout.mat",
+      "originalGUID": "6af4ac2a5828a423fb62ba8eae3468a9",
+      "importGUID": "07cc667940a151fca863b56c7b542672",
+      "sha256": "91fefa6943813840689ef47b18701a69977bc04ec05362d32738705eac26d120"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p244_0p014_0p0063.asset",
+      "originalGUID": "6b573a648080d43958af0e03aa630d25",
+      "importGUID": "6416ebbea394508980c6ab8cd1da3f11",
+      "sha256": "81e7e551c7b06de29a36d6dc6ad2eaa8044c6c44a90a127ce875d96b21d701ce"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p688_0p61_0p028_0p008.asset",
+      "originalGUID": "6c13e8e29145f43489313c3564fc3fa8",
+      "importGUID": "1414f6ade5d15b54b1a74b145ba4fa3d",
+      "sha256": "724a17b212dc37bbf23d71866c4d70d43cc0412aa989130f5f3c74b948e49d84"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p5_0p05_0p42_0p025.asset",
+      "originalGUID": "6cc51fbdcb0eb4be0964e55517e894c1",
+      "importGUID": "f6e379476c495566be24f7cd00aa7097",
+      "sha256": "38a2695bbfd94dacd8545acedf5c4bd30aae01e51c9e919df01dfa892030a2e2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Warm_White_Toilet_Seat.mat",
+      "originalGUID": "6d4b519361b5b4a78b91fc7f96d3510e",
+      "importGUID": "f2db8fc1ac2352bcb50f41c4cf146ebc",
+      "sha256": "4b651631f9e2f1c7fedd314afd3402874531c111a39a4d83e8c6f5fd8a931f9b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p62_0p56_0p018_0p0081.asset",
+      "originalGUID": "6d552f1a4544240c9af9fb541e675067",
+      "importGUID": "2503ab1ab8aa54d79df6486a59b0bb49",
+      "sha256": "43f07cd8ce148a0eebd655bd2031667c2f091eddf5cd2c4df5bd1a16fe5da4e6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Corner_Cream_Stone.mat",
+      "originalGUID": "6ec162982388e47d29ecb970d455d590",
+      "importGUID": "cd47805d0e58505f95ec5e3e7a3ee29a",
+      "sha256": "5eb33afd738cc7e1a90acac789310062cd70ee95e41e71751feaa7931a3e2b14"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5053_0p15_0p58_0p065.asset",
+      "originalGUID": "6f49e9de6cbaf452c99feac550d35711",
+      "importGUID": "da9499f768a852e88b4451e031788136",
+      "sha256": "d752054c32f683d880b36436c6899ab1df25c62a78838b6bc03b1242c24b19f7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p25_0p045_0p08_0p012.asset",
+      "originalGUID": "6fe3030d0fe5949e783a1c54b285316e",
+      "importGUID": "a339a1ba746b5efc9cf3ad55cb311fab",
+      "sha256": "971c9e9ac7fd222409e6edbb8a3f1c60c01fddc810580cfb9619cb4136b2fed9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p17_0p012_0p09_0p015.asset",
+      "originalGUID": "724786cfcc0fe43fba9057b936b10c99",
+      "importGUID": "97405dc09bda5e8280fe069bd164a638",
+      "sha256": "e8a9523706fbacd0f3876c22e6ba495e01f488fa6f868be6c4cad0192c9c4a5e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p155_1p11_158_227_0p075.asset",
+      "originalGUID": "7499007416bb948da8afe613d5effb9e",
+      "importGUID": "6e1f876f613457ca8d27d67628dfc474",
+      "sha256": "a16888e6edb06e430ab61c11bc9b84f9547e62783f0413ed619d8ceadb8a08a5"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Warm_Oak.mat",
+      "originalGUID": "74d7f7ed2b19d46be86ff61c0d0c8fd6",
+      "importGUID": "9c98a5037ebe52958b6357083c0237f3",
+      "sha256": "caf4a1ac406e67daa32b3db0aa14cbb70c8cc24d50f1da5a9afe1e61909b5c5b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p28_0p026_0p3_0p025.asset",
+      "originalGUID": "7577bba4aa36c43cf8bedc4bfdeb8de5",
+      "importGUID": "c4bf689e841750308413862307e3954f",
+      "sha256": "e96c7d2b89f6eb6a0a6d79b8e8b871d29cbb7e4b3692f551feeba76dc2dcc868"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p169_1p101_25_100_0p035.asset",
+      "originalGUID": "762ebcf5c59db4b22a854e8b05f6537b",
+      "importGUID": "b6fc7cb842b452b2993e7889817e279b",
+      "sha256": "f36b88a142cb5d4b6a0c9ad90b247f368d8104357120018d244b894ba39dec4d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Amenity_Muted_Red.mat",
+      "originalGUID": "77915951355be4caa940f689a7f151d5",
+      "importGUID": "b20df397dc6a57aabf42850a1322d21b",
+      "sha256": "675064f3e7649635e551a2184f922921d45da423193b0af55b69872111512b10"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Whiteboard_Frame.mat",
+      "originalGUID": "77d7eae2e87024c6297c58397ea5deca",
+      "importGUID": "ba2a42e8621758dd821bf9a117146e9b",
+      "sha256": "7b85d2fd29c0da13b3ef66604c61328f0fbe89ca48698261f72ff91cd8d61772"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p74_0p22_0p73_0p105.asset",
+      "originalGUID": "78273885bf8e54649a5df2e4302f581c",
+      "importGUID": "fd7a09bfdf655729b937e651021730ea",
+      "sha256": "d35e687eb93034025732f7fadcf51d6b484c852bb4950589bd5e00da16dd33f8"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Sage_Partition.mat",
+      "originalGUID": "78984363b3dd44746a9f3c7d3ca3de57",
+      "importGUID": "ab22a14df6985cc9810c759d444d9186",
+      "sha256": "473b3cee36bd28db4b17584982ab36cb373d4e6a899569a0021795afe93a5d89"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p028_0p09_0p03_0p009.asset",
+      "originalGUID": "79ff4a3eaf53443daa139150e4b263c3",
+      "importGUID": "6c140d466cc85b9e94a3b44dd3ba7e5b",
+      "sha256": "e7c17cffa9f24d66b84090f5df67004e3459e981f98f429ff1615a36cbd13d93"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Paper_Ivory.mat",
+      "originalGUID": "7ab2ba910c0a548e5ab0b812b2c9de6d",
+      "importGUID": "adf1d60c330d54a586638630b47a5c3b",
+      "sha256": "d91429c58e9f38e099899001bc26dc62c2d8c801a793b382896c3fe24cad3ee5"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p25_0p035_0p16_0p025.asset",
+      "originalGUID": "7b399baaf237446ee9b6a481a4c5187c",
+      "importGUID": "ab019074434a5cf8a066bb0acf1781d4",
+      "sha256": "5d97012a3c6e1b74a6ca7f1d9c49cd317e1ea1b417c478fcc58b4d2f1a4d5d6a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p35_0p028_0p13_0p015.asset",
+      "originalGUID": "7b973fcdb17914237b28c5e079ad1916",
+      "importGUID": "ff76173bdc5f5119a951a9f8dd938252",
+      "sha256": "510ee75e23936c1d53fa1d710bc4a894a5ce4b54f31a9cae31e33a5a91f0b3f6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p85_0p3_91p5_178p5_0p05.asset",
+      "originalGUID": "7ba619a7929d74fed98c5f6362233af3",
+      "importGUID": "d624ec95317a572686a1240a8f46db9f",
+      "sha256": "fc90969e9c980780f1ebae5c87b5a004ce207c0d22749eb0ae95b14e7eeb399c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C04_Art_Tall_Oval_Tube.asset",
+      "originalGUID": "7c374edc082a14b2292488d1df9c701a",
+      "importGUID": "cf64233b6fe853c081b7d7353a62d338",
+      "sha256": "4cbf28314afc0e3b3b8a933da060d99746ec71951f189fe9600bba96cf395580"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Wall_Cut_Edges.mat",
+      "originalGUID": "7d950e95c141344298c9159f92a16f21",
+      "importGUID": "401f20e1429c58ee90f17fa081d227c0",
+      "sha256": "dd2a4649c564ab5c75f1711a593cd5cf6aa05ba3581079b8c72e1b7d6bd53d8a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Equipment_Brushed_Metal.mat",
+      "originalGUID": "7de244796575f4b78a79e867cd12f407",
+      "importGUID": "b44a148eda225fbbbaf46245868266ef",
+      "sha256": "9c724f92efc4739b78c5216cf616489b616bbb3b54ac3ed1041297a0032d239b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p4_0p025_0p28_0p015.asset",
+      "originalGUID": "7e197243909db4befb0920c00252d29a",
+      "importGUID": "fc3c0241a6a65b3b92cd8a0e8063fc7f",
+      "sha256": "989680da7c5058fd6ae0687733731c1383292b3b648a7fcc077c028a6678c317"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Paper_Ivory.mat",
+      "originalGUID": "7e7faa99766d9406ea76c5296daddee6",
+      "importGUID": "4d4bfc854e63539fb38a5cd8187d2a94",
+      "sha256": "031698263dee16554dddbddba910c94eacf596b9e285eb251745ae1d552a76f4"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Green_Status_LED.mat",
+      "originalGUID": "7ed34b3f24bd24b269226193cf01def5",
+      "importGUID": "89fa5a5e87f1573081c5da1e181275fa",
+      "sha256": "28288c8765ad3529ddcf21bb28ef2d1fc94c024d5ca45e77b93fc7e5e1cb62a0"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Dusty_Blue_Upholstery.mat",
+      "originalGUID": "7f0589a4040db423298124248a33acdc",
+      "importGUID": "7c3b705efc88583ba3cae30274073820",
+      "sha256": "c81245710b9d2774a32d53d124cf1ec3f27efb6bf03e11cc0f2f9f4ae1fecb55"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Non_slip_Grey_Tile.mat",
+      "originalGUID": "7f997c89536404c4296d76bfadbd9a30",
+      "importGUID": "a4553a6257695749a17ed6c1141a92ea",
+      "sha256": "2e3cdccea915ca68f71a70235662f749d096543af53660537096f59c77d7703d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p296_1p294_155p6_229p4_0p0008.asset",
+      "originalGUID": "7fef55228fc854fa39649241c93ba7f1",
+      "importGUID": "e0cf5910c4e35170a61ca7be40e5b6af",
+      "sha256": "f94c5661af50024824a041a78db1373a81edbac6da685d854484160ba0a5c0a4"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Vacant_Indicator.mat",
+      "originalGUID": "80a03e963503a4cee9be2a6d876a8202",
+      "importGUID": "73ef3378efac546baff6f3ea2eb5538d",
+      "sha256": "53ca0fdaf70df0a90894d5ed3125a518f7f2dae1b14d85e8817e5de92c7ee0c7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p73_0p06_0p39_0p025.asset",
+      "originalGUID": "80c17f03d367d417d8565cffde8dcb90",
+      "importGUID": "07bd56578e2759fe9d9926e52afae59c",
+      "sha256": "08fa9542df61de0879fc732812bb9fa94a9068bcf74555a982f22d6dcd5eb2e5"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Warm_Cream.mat",
+      "originalGUID": "80e90ddbe235a43e99f5d01f0e5c66a4",
+      "importGUID": "607cf483d20c55d0b9a5b6cd9a3ce988",
+      "sha256": "9610f158ba2291f7e3d4b09adf8a1483ed7b5721e5c3ab33cfe98585c5c6218e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p325_0p003_0p09_0p008.asset",
+      "originalGUID": "81060d2c9e20f4419bee31e8c32e90f0",
+      "importGUID": "24d19562a9235df4b6f953ad4dca83c0",
+      "sha256": "da38caaa9c0fd277ab607df0e3d4494fa514d1a908946a576986edb30c01a4ff"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Classroom_Warm_White.mat",
+      "originalGUID": "81cbc83ed2459495d8fdbd51d4d88ac3",
+      "importGUID": "dd50df985c16522096f97838cd81e462",
+      "sha256": "cb2443dbdfe0b4eb1945da24180d0d41179bf751927a34ba13e32bd2455fa0dc"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_S01.mat",
+      "originalGUID": "837b434d8a69243f9b2202fb9f645df7",
+      "importGUID": "446ced3f1fdf5ac4901ba39a61940ddc",
+      "sha256": "fa67f38d1587015a90f8b48ba431b748cc07e1f7db05d74d577addc2190900be"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Meeting_Taupe_Fabric.mat",
+      "originalGUID": "837eb7af37b684398831680a37ece21a",
+      "importGUID": "d1980adc79f455ddbee3bd9e84d556af",
+      "sha256": "92bf5db670b2b29d4dc4692e5bb65c7c87fb7768e65164baa73ed35f9273d435"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Pale_Grey_Floor_Tile.mat",
+      "originalGUID": "838e5bdc8699f4429932e17e3aa252d9",
+      "importGUID": "fe65b8e580c855bca1b2c6f7cb019312",
+      "sha256": "35cf0dad2fc7c41a1bc17231d750c8aac992b298b01c4cbd5c195fe6b88f2399"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p88_0p62_0p2_0p07.asset",
+      "originalGUID": "83fa882ab0de34e9c8e2b5ff1e154a95",
+      "importGUID": "ef19078e9dbf53fbb4eac8fb303d5609",
+      "sha256": "8690b8e5a03b2ed653da5c07bd43743a901e267d76ea9d91b34d09455f999526"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p536_1p534_25p6_99p4_0p0008.asset",
+      "originalGUID": "8480345f1637e4d88a068b6f9007a752",
+      "importGUID": "1f83aece8dd459d98cfd5b1118b403c1",
+      "sha256": "dd7e5d4f9d3e7428ee60fce5d929ce2c6639571126d852ede686d5300745648d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p376_1p374_155p6_229p4_0p0008.asset",
+      "originalGUID": "85117ea5b6931419c8deae1fd055dced",
+      "importGUID": "3651d83b639857e786003c4562f7d861",
+      "sha256": "dcd7ebfa9439cfb57df1cc8216a8bc48fafbbd22eecd2a562597ebb9d6978aca"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p8_0p062_0p8_0p15.asset",
+      "originalGUID": "8547b672f58ca4f1c9b18706f0602561",
+      "importGUID": "4aab527ade7f5f11952984f622401296",
+      "sha256": "7759bc539a471d8299d3965d43d4c353cd7f77f68b2d6953947f8d8621201ba0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p56_1p544_29_96_0p009.asset",
+      "originalGUID": "85ede7189d46b4b7690c16a1574a4bf0",
+      "importGUID": "b3b30e2eb930514680f7afa11b75ae39",
+      "sha256": "387b7f7f4c66605be7b0d7ebd01addadb36d3bdc5740f10c1963417f40fbd999"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p56_0p18_0p025.asset",
+      "originalGUID": "8676c74fb6d6d46e1b77ab744f2718d3",
+      "importGUID": "53fd3d8c22865629a40a99f0ffdc7354",
+      "sha256": "55e346cf227da53b64cc91c9ea0dad068aeee337676a3a2e529aa270306167bb"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Classroom_Mustard.mat",
+      "originalGUID": "86b4d32ee73854aab9065bacf3ec1d02",
+      "importGUID": "9a1c16837ccb5dee8763de6465a37c18",
+      "sha256": "0e635c9afc42495d85884d3751c54abe9ce9bcf29dddf09f57d9a550e85b552e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Cardboard.mat",
+      "originalGUID": "86e90bd1321b24180822964f7fd849ba",
+      "importGUID": "ff02932872bb50e986753283c630cfec",
+      "sha256": "49bb11de341d49e1eeb1a8280e54c46d0aa3629ac040f2353a80905a8d97b7f0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p58_0p62_0p2_0p07.asset",
+      "originalGUID": "86ff34a9dc7d6413a97f36f4115cdba1",
+      "importGUID": "a63fc2a8387158cc9e63a19a86bad2bb",
+      "sha256": "bc9a020a02209917544871f7c1ec6e62e1d9c6c3bd4570d31f2af7591957c8da"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Soft_Silver_Mirror.mat",
+      "originalGUID": "870ab88e098574b5e81b9b58ba8b3ff7",
+      "importGUID": "82e2873338795bc49ac4a0f2a7ff651f",
+      "sha256": "5b34c10249865a0972c06142c707515b2c63c419ad0b23d64fcd31da2177f948"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p47_0p025_0p44_0p065.asset",
+      "originalGUID": "871779ea0a75344ba9dc43886eb501b1",
+      "importGUID": "3dfa1eabf39c5f25be72c1a757eb4eb4",
+      "sha256": "a779891deef89bb8779da6332d4051bbef6bd8ad685dbfde1f4350826fa0c8f3"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Tree_Bark.mat",
+      "originalGUID": "8780f0780bf8f49fbbe0bb586f46a25a",
+      "importGUID": "cd790bca06115518b1dd57cd3887afb5",
+      "sha256": "d27069d792bd58de46be99b539af16c49676b07dbfc4a6a2d265d42f3d9dda86"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Paper_Ivory.mat",
+      "originalGUID": "87877be8cfe9e496aaa6be8acb96b314",
+      "importGUID": "c2e2293079255ac5900ec4b66ac1198d",
+      "sha256": "b2ee5e75eee8dace542cb303d34c9159b1a3e4933060c0ef344c5d0f6ec170e0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p585_1p555_157_228_0p028.asset",
+      "originalGUID": "886fa3d47cccc43eeb6116e56519ea37",
+      "importGUID": "b748dc25af06535bb151ed9ff1f65db3",
+      "sha256": "a6b97e4f4a85aebd4ee32b8ea5edcfd7733c22cde90dbfffc000ffe0491b2d3a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p456_1p454_155p6_229p4_0p0008.asset",
+      "originalGUID": "88f18bdcaae3e41ac923ac94d9893cf0",
+      "importGUID": "f5c41ac6cb83543089ebd1456527fbd9",
+      "sha256": "d152ae57e437bea58c74eee81f6c2656d59a282be29eebdcd42e4949f0f8f7d2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Deep_Green_Foliage.mat",
+      "originalGUID": "89a6779083a6a48438bfce965c2b6e85",
+      "importGUID": "17e6b98d4274561d84c1c2c5e6d3235c",
+      "sha256": "45a096a625b9aac3674beed8f7108a590bdff250d0c847665ce69c7867d417fb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p62_0p22_0p016_0p0072.asset",
+      "originalGUID": "89b7afb4d66ae46958c4f81cc11136da",
+      "importGUID": "3845d7dd4b4d53df83ecbabf77f3dc19",
+      "sha256": "15894c1f1d26158052af9b47dab677a4205edc43a67b52b7f5294193f4224e0a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p8555_0p555_0p033_0p013.asset",
+      "originalGUID": "8a41afd94ae274da2bd1fa36ca2c7cb2",
+      "importGUID": "450ed33ee45b53e0971e56e4a4620397",
+      "sha256": "02d9356953fe21a3ed7a80859b0fc87ac2b2a18ca8cb85dc8b978d1df9c87384"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p58_0p14_0p48_0p01.asset",
+      "originalGUID": "8a7ca37beaf9343cf84a7c6885df2746",
+      "importGUID": "6e92b5826ab15b0aa87504a5b1e38bd6",
+      "sha256": "335b9c34941eeead8d70e12bf68b6b774837a1e515ad89c5d0fee09321459654"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p11_0p004_0p055_0p008.asset",
+      "originalGUID": "8ace345ea17d644bcb2b9a2f12a4ebaa",
+      "importGUID": "091036c09ec15ac38044a024a38c0dfd",
+      "sha256": "a5eebacecac4602aa54c1545f9388c58614dfd60b2a9d2209a7ed38a8c40b7eb"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Art_Label_Ivory.mat",
+      "originalGUID": "8af83c2fb381b47e2a6799e6dbb1e851",
+      "importGUID": "4257bc4c1f865f36ac7ce3325c14b8e4",
+      "sha256": "f29ddc92bc3f7a9f3be0d28f3339ba629188b0aabedf58fe5893d36668f368a5"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p245_0p012_0p3_0p009.asset",
+      "originalGUID": "8b1fd70f2f748440e8effebf18d71255",
+      "importGUID": "5f8b826dba825c1daa322f8df4a3a1f3",
+      "sha256": "d9e89a4742a3c805354b861a2e5e63b1c92f8445fb2d81b811eae29496d66fc9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p86_0p04_0p72_0p03.asset",
+      "originalGUID": "8b750dedf263f453d9899f3fb2c95ea7",
+      "importGUID": "b188b035f21158dbba18936ce52988bb",
+      "sha256": "3212796ef2686011c399f389dec81b2b98f07d44d3ce7d13875817818436fee7"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Non_slip_Grey_Tile.mat",
+      "originalGUID": "8c3790665e9404f6cb04985fedf8df32",
+      "importGUID": "2898f5f990945c60b4a7559bbe6f5021",
+      "sha256": "fb5edac1bf70904723d26c1cedcf08bf2d6aa58c507ac2230df489fd6f756b6c"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Fabric_Grey.mat",
+      "originalGUID": "8c6fc9b31adaf40ecba6103450909099",
+      "importGUID": "c6a51510626c5fccaa72a963964aa3e2",
+      "sha256": "8bf440161405443ea3d3ae301da3d9882b80049543d33358a8ea24e35e7de36b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p75_0p035_0p57_0p035.asset",
+      "originalGUID": "8d8370d61a19a42afa2b90fa16f5b678",
+      "importGUID": "3a3487ebcd72549ba6fc1336752ead1b",
+      "sha256": "14e98a4b314a4d1a61ac496c7c2f24e97f985f3cdf7af0b584f7b0fca5e35d86"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Oatmeal_Fabric.mat",
+      "originalGUID": "8dee1c3b58b31483ba1652eebe380535",
+      "importGUID": "c90c912e91ba5dea9a9a7c96c4195571",
+      "sha256": "c0c0aab5677d9f46913ab5edf1aa19d6a036631d9e03222c436def03a0ceeaf8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p35_0p018_0p29_0p008.asset",
+      "originalGUID": "8e0aab56fa27840bc9876ad636145801",
+      "importGUID": "45e4f2ca3aad5a81b38fe109ec4495ea",
+      "sha256": "45d33107c5b7ee4c8920da9efa17f3e39a042a383de1f5d9ce35cc4dcca6d4d1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p24_0p31_0p1_0p02.asset",
+      "originalGUID": "8e97f03d7cb17441ca10cd0fe44d3531",
+      "importGUID": "bbc1fc14766d535789f9e34cfb4060c9",
+      "sha256": "7de7866ed341a1897d05e9810ffb74801187184c4662218b314a6a1f0c1bc4ee"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p925_0p075_0p54_0p055.asset",
+      "originalGUID": "8efdc4a3c4d134473bcaab4b7df26c2b",
+      "importGUID": "04ecb68b71a75fa7a9e901221fa509f9",
+      "sha256": "998b626482d3c2ddd55069faa51e14fc21c7a3d2d57b7e21de83fff10569a9f7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p35_0p125_0p025_0p0113.asset",
+      "originalGUID": "8f08fd2f3c66c402aa7bf14b98ae1627",
+      "importGUID": "7a8e5e434a1a5a4d8e2ec5d908469e00",
+      "sha256": "684c6c9bb48563e7162d43d4c460e2d895ff89c294fe34f91b83812c06765c7a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p435_0p032_0p35_0p06.asset",
+      "originalGUID": "8f0e4f3ccb47645abb40a1c866190587",
+      "importGUID": "c627e77e508b5e5892a324afb12aeca1",
+      "sha256": "1da4476ff124e40432646b07b77b533fea368e34b07e7d4d919797c83142574a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p617_0p15_0p58_0p065.asset",
+      "originalGUID": "8f20bfa7351324b549e452b996ee0b50",
+      "importGUID": "336d5386ca215c688016b13702518902",
+      "sha256": "f9e311b5868d6bb5dc05639bac7d70f9dc81101ab9b8bc3439e6439d091cea19"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Light_Green_Canopy.mat",
+      "originalGUID": "8f59f0ec0213d4b9e946fb0629281c5f",
+      "importGUID": "69b57096977550f0a1fe03ec3dd81cb4",
+      "sha256": "740d60227e744cce1289b6cee4261d16a199106ee5cb20263746061a7ffd1fcf"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p296_1p294_25p6_99p4_0p0008.asset",
+      "originalGUID": "8f8ce2a5d58d44134a2b12998c729726",
+      "importGUID": "9dd07b196d7c5b82a12505acf33c063f",
+      "sha256": "36259703201428f516d0d4b5650430bb5f52254ad438e456f20e42e61205ab9a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Dark_Fitting.mat",
+      "originalGUID": "9049d76c55ed240f9a84199b283e29da",
+      "importGUID": "441252e59617556c8bdac689d56ad1f9",
+      "sha256": "8f22af7ca5e51848e4d21fd1b6c37f18637de4a48c1d9ed09ae21ea2f217c5ac"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p34_0p026_0p22_0p03.asset",
+      "originalGUID": "90bc5a62863cc49898f6dd3dd7e263a5",
+      "importGUID": "8d1a33a200715f59b7af33edccf6c627",
+      "sha256": "dd4b66513504a8b228dc18d3e1455bd834aff7550d5de1a2ce34b61c7e47af4e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p7347_0p125_0p033_0p012.asset",
+      "originalGUID": "90d9cb596d2ae4b4783f57b75e78da3d",
+      "importGUID": "d3433fffbef05ea1bfa10639314eeb3d",
+      "sha256": "fa8f55921a800894d3243f2d25ac6c1a9bed0cf8b1daaa8ea79ce5a39581c61a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p43_0p18_0p64_0p025.asset",
+      "originalGUID": "91b9a02b3826642d7acfe53552e0b8d3",
+      "importGUID": "3e852a04609157debb043f908fe86a83",
+      "sha256": "d3eef51dc5e9e58d1492399140d854709da6b4b9caeaf0ce45e238ab7e959274"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Cream_Frame.mat",
+      "originalGUID": "92191bad4709c4f1cbfe0f52d9b103d4",
+      "importGUID": "65b3c015f08757b1af4040e31ee4a543",
+      "sha256": "250c2a3d5ac065318549cff0538743708925e0db80902e7120427e6260b0c7d6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Corner_Grass_Highlights.mat",
+      "originalGUID": "9285fa5f2b7694570bf8a80a8641e6aa",
+      "importGUID": "c9e6153b90c85dc5932b5846d121547a",
+      "sha256": "3c974a271167ac1003c995caba7b39ac6a2fd116182a4a89050c4536ec2a69a6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Main_Whiteboard_Surface.mat",
+      "originalGUID": "92c23e7cff8e54363a99efa0c326502e",
+      "importGUID": "e4ff134e7fe7566d9bedb60bd11fede5",
+      "sha256": "841563b9c27166d79a24118ea9f0cbad6ea5dd4d46c0e362c74b733d1fa308c4"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_N03.mat",
+      "originalGUID": "934289f618939410d95a04d2de5d4054",
+      "importGUID": "ba086f08ec9e5cbe9e470f645a3e5828",
+      "sha256": "a93b873281122d23e3f0dc011491acb899e8d3ab6e2d5cc0ca9f877e16a9de67"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Recessed_Vent_and_Port.mat",
+      "originalGUID": "93befc84ae0c146e2b8939cc3ef708ba",
+      "importGUID": "5417e7e21a51574d84ac669e662e0d14",
+      "sha256": "d7f6ca54b2c80627c25d1065d10eff7f33573bc41c2efd788a20a1ab0636d070"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5_0p025_0p48_0p065.asset",
+      "originalGUID": "9415da0a604ef4a049a8c1d977bb4476",
+      "importGUID": "22a242f84a1354a69491a4da873b9dc0",
+      "sha256": "b1d0e7879689180098f99018ab3faafaa8e02b645ae11d449e4d1886c3415628"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Plant_Leaf.mat",
+      "originalGUID": "9435d5fcfd8b245d2a763ddb5254c62c",
+      "importGUID": "ca80d0f58a2e55599a8e7a326920a216",
+      "sha256": "60c5043b23462a5ae42545d5e43a73411c74ee28be12d4b4b59431c56c2d7e36"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p568_1p535_29_96_0p006.asset",
+      "originalGUID": "94d3c2558cd3c4c8b821d1af62b05c08",
+      "importGUID": "9f7ee8db23bb57e7ace77e702e9d053c",
+      "sha256": "60d7a931d0012f12f47c4ee5489f8ed8f8ced24c0964339890b9db714d2c4238"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Art_Warm_Ivory_Plinth.mat",
+      "originalGUID": "94f09e9fe044644a5b61bc3fd3c2658d",
+      "importGUID": "591234f33e565b11a199886a94d19e2b",
+      "sha256": "c547dacc2b70f2ba23268bcdb88369170df8f53c02661539107ba218e6ce840f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Mirror_Silver_Blue.mat",
+      "originalGUID": "95326986e714f4e68915e64ba17df8aa",
+      "importGUID": "d09d3f40a4415b00a3ce98db02a21f98",
+      "sha256": "b915736217b9f6559be9bcfa30edeed0c1fe4b5b21f4ab2ffd9b0fd13e6fe8be"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Amenity_Paper_and_Ceramic.mat",
+      "originalGUID": "9535dbe133c8b4fd38285e440896d6d9",
+      "importGUID": "635aa7dcb89759d68ce0984302937ccc",
+      "sha256": "25c11d8d42467d80c82fbbf72de2f0ec089de56b3c0294ebe0133933c72d1791"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p764_0p7915_0p032_0p0144.asset",
+      "originalGUID": "960e4ef1cf3c8495baf4f3e194d48232",
+      "importGUID": "f5ba4160039e519e9686050b796367e1",
+      "sha256": "a0ee8e469d2124d724a43581c294522003f30bc97e9096dfdbb7963a9b02f937"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p48_0p09_0p46_0p08.asset",
+      "originalGUID": "96827b86c3f9a44dd80f71823107eb61",
+      "importGUID": "f712fed341885dadbb53e701b23cd00e",
+      "sha256": "1edcc5bf5c8842cebb0b96c1604cfe5d8c6b4c65dcdc09510dd9237b886e2b40"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Warm_Cork.mat",
+      "originalGUID": "9684931ac659d43039f25ef59255ca8b",
+      "importGUID": "5d9a4516b93351e4b2b681b1a5d43f16",
+      "sha256": "957c1484fe67b54a9d3df0b63e79a378c60e36876eebf3b91281fcb9d1cb2b6b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p17_0p46_0p75_0p075.asset",
+      "originalGUID": "96ac0867f76164921b6d14d7fc1e1dff",
+      "importGUID": "33f5cfc70a5d5c1283ccc946772c630c",
+      "sha256": "bb93e62a19e8fbb318fdb98f794f6ad5022d88f263fc5e12bba95853df48a060"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\WC_Still_Pale_Water.mat",
+      "originalGUID": "97f06505798cc45848cc009c838a3b30",
+      "importGUID": "c98c7f4bbaa856fabc3e19dd9f1bea90",
+      "sha256": "99ee3509a9b540ef6e326c9cc79d143810b0cf84a6708bfa6b67d31a59d3e3ca"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Graphite_Detail.mat",
+      "originalGUID": "9800de32e5bf9429cb7da47708277586",
+      "importGUID": "a6d8e332666e5a5992812387ccecc069",
+      "sha256": "6717232ad08f28030ee15773c3d1a01a6b5ea8f3273f552210cc2bc0c1ae97e6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p329_1p261_25_100_0p035.asset",
+      "originalGUID": "997716194f4fe420ea1092c3291780cf",
+      "importGUID": "299bbe20aadc53f1be493e72b4731f2e",
+      "sha256": "6892af62106af611fb6970421e9e63badf73481b4b6a5c83c151887e39dd8b5d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Fabric_Mustard.mat",
+      "originalGUID": "99fc95425cf784e28aad262dd83e4af7",
+      "importGUID": "7fa015d17b315f5b8287bde724477435",
+      "sha256": "55cbd2a16414342076d791cea2d6d466040d5e9ed069bf983e76def35ed92504"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p05_0p028_0p13_0p012.asset",
+      "originalGUID": "99fda345d990142bca0304de97f478d7",
+      "importGUID": "ee1c3cf991685d638e8c77ac0924d6ed",
+      "sha256": "7ce2997d46487ceda5663cf0ed57adece93dadd0d0435875ad541453c84972b2"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p41_0p29_0p37_0p018.asset",
+      "originalGUID": "9a39a01e32d3f44c08822d9e3a91c629",
+      "importGUID": "194be3c305fa5fabacca9aa11e658ccc",
+      "sha256": "abfba118e53744f99240a34158182a977ef2c88c6e6827429dc52f8c827a9c92"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Corner_Ornamental_Grass.mat",
+      "originalGUID": "9a3b2dfd9d7744254bf61703b6d1c07c",
+      "importGUID": "56815668e62c55589d4ce09e438e5c9d",
+      "sha256": "adee438fd082c8b411ad6b76aa01deb28a568df1b5532961ee345315aa672e7c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p3_0p246_200_340_0p34.asset",
+      "originalGUID": "9a4664ea283b44c0581aef663027e7da",
+      "importGUID": "31dd331269d659f580e635edc430bcf8",
+      "sha256": "e772d05ea51ade8748ac3284865e7d01fc79c884f158f083d543263b34be9e8b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p85_0p3_181p5_268p5_0p05.asset",
+      "originalGUID": "9afd331c425844c88886c9e2e6b37b1e",
+      "importGUID": "b125f918db2252b98eb89c01d6657fcd",
+      "sha256": "45ef5a4bf56dab17faee0895fc3f1f0593184c6839b383e76474acee664c29fa"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Planter_Stone.mat",
+      "originalGUID": "9b12d6874a6994ba2b01f128feaac971",
+      "importGUID": "f934bf0f9a8159eaaf219fb481a1b595",
+      "sha256": "cc5165194177e09d41546f737f008f7957679fa202ecbccaaa4021031f9b3096"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Service_Honey_Oak.mat",
+      "originalGUID": "9b8e070c25d044d2692ac9ec93dac150",
+      "importGUID": "368f9eed4ac15e889d3183b26f128778",
+      "sha256": "397f0ba69de81c814fe62c4e8206d968517202890613106aa718c5915adbbf3b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p73_0p005_0p46_0p01.asset",
+      "originalGUID": "9b972de0d2eb5480cb88a930b61dbcab",
+      "importGUID": "223e3b484bbf5b26accc2b292314954a",
+      "sha256": "500e096028378d816d5e901caa92f6b1fcdc96a32667f314664e16893feae16c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p49_0p055_0p48_0p075.asset",
+      "originalGUID": "9c848638721334cc5a0111b57b91f693",
+      "importGUID": "0ff513d48f2f5f42bf113804a2c04acc",
+      "sha256": "a70ff121959e652682c07e8c7af77dde27c16ab632bbf09217474a6183c3573b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p68_0p045_0p74_0p03.asset",
+      "originalGUID": "9ca8d0f02636348d7aef48f25494728f",
+      "importGUID": "14c90160152a55f4a43e6680c7e08af5",
+      "sha256": "1916188b0a1e2c458bdacaa22cd4caf8830ed1882d86285db62bf769c74d9dbd"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Anti_Slip_Grey_Tile.mat",
+      "originalGUID": "9d5b88eb0a7a641d5be696ab3bfba8d0",
+      "importGUID": "9ec816b38bb85a0fbd8855bb7b348e89",
+      "sha256": "429b203dc65f207d1cedcd824609b14a042efaa6a5c606325eb55cdcad4aba2b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Satin_Hardware.mat",
+      "originalGUID": "9d7c2123e37824521bbe4c37dfabf416",
+      "importGUID": "66fcd9e0d2be5d93838ed5152ab638cc",
+      "sha256": "2b5cb5a4851dc71b9f20e6f9e5281504b33386f3972059752b9943a2fa225865"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p13_0p22_0p67_0p0585.asset",
+      "originalGUID": "9e7505411af9d41c3a2bc354a818b28c",
+      "importGUID": "510ee7d38d9d52a9bf5ea67c61ef0e7f",
+      "sha256": "e8fbeaca7ddaa154e2e82b464bec10208c8e1b90252ba45e28534b88676460cf"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Quiet_Office_Carpet.mat",
+      "originalGUID": "9e760df68572042ada9e26462351fe47",
+      "importGUID": "c17fbe0c1b435217a0d2c5acb70e2d5d",
+      "sha256": "7600c6dd3fe2517819c71b35e71934c158f9abf8553f6a945d86bbb25c31decf"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p74_0p52_0p16_0p072.asset",
+      "originalGUID": "9ec97ddfe43a34b90855d636f0c7e576",
+      "importGUID": "aaccf37c021756c9a40704a710090fb4",
+      "sha256": "3e8a257eec0acd0794433fc2d4c6db93c02373412a66df19fdd3f011bbd8a934"
+    },
+    {
+      "source": "JEI_Furnishings\\Textures\\Pale_Oak_Floor.asset",
+      "originalGUID": "9ed1235b499c64a79bf884662afaad3a",
+      "importGUID": "b59846e797a750728efc5a316672639a",
+      "sha256": "8cedbfbf2bf2286b59806fe44f6d50213a35c9f4d464b434023b5428ad530739"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p075_2p12_0p085_0p0338.asset",
+      "originalGUID": "9ef26da2e910f4873ae9d32f8cc74963",
+      "importGUID": "13cfcd749a355852914232c5c1623d1e",
+      "sha256": "831c17d0d67a7e67ed0356b5fea21b6a4dfa528751f8bd8d2108f31a2b84a6f3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p16_0p059_0p006_0p0027.asset",
+      "originalGUID": "9fbd3962d8d1d42c486cdb872ccd9396",
+      "importGUID": "f7eb917e3a5a57b2b925b0bb2511b27f",
+      "sha256": "633978046cf6ca0992270b9e3027229a64fc72b951484dbd60f7b47431612f0c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p016_0p022_0p085_0p007.asset",
+      "originalGUID": "9fdd7d2cc426c4363a6539663aa12505",
+      "importGUID": "61964b97a78d5285a28fab09c0e60e47",
+      "sha256": "a17f781e36d000bbd69a26fc8971bfe62accc8ea8d62d9bcba876092e86a8044"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p25_0p012_0p3_0p015.asset",
+      "originalGUID": "a023d1dafb01d49a09d9ac7f08fcf059",
+      "importGUID": "a7ad3f0eff7e51368b5e1e7cfe25873f",
+      "sha256": "70fbd4b285a704687f769d63efd2f7e41c3923026eff85e9f1958bc14c541a69"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p025_0p2_0p18_0p01.asset",
+      "originalGUID": "a037ca7fdba8949dbb918a7c6139ae82",
+      "importGUID": "eab2b783ada358548cd1dbccfa4ca796",
+      "sha256": "b87e1957ef45a50f6d6c48e4aa33546828dee86dc7ac7442c0bee7f1c3e5bd43"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2_0p055_0p8_0p045.asset",
+      "originalGUID": "a0c6e9b66a86d4ffdb6d22ffaaf42340",
+      "importGUID": "67d0598edcf650b188c29d689ba15614",
+      "sha256": "2d62d84d5811ed2f3c6566f230a4ec18491c19f17d6fa8625f4b06d8bcaea994"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p51_0p08_0p49_0p075.asset",
+      "originalGUID": "a0cf5e5cd00db46b08a0d41ef079560d",
+      "importGUID": "ef8ead97356e5be3b572f4a6b7fd260e",
+      "sha256": "4acb8f2f099733def460884aba496c3a1cfa55c7ad2a73bda695680b4957d94e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p56_0p34_0p035_0p0158.asset",
+      "originalGUID": "a2dff7021d00e402fb74e05897a394ef",
+      "importGUID": "543365c7dcf957078153ee257bda81ab",
+      "sha256": "fc4e6c49315bef91376e005739b0b8afa1c5e8ac1a9241e198699ae361e825f6"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Dark_Fitting_Detail.mat",
+      "originalGUID": "a355d01ab828b447ba2e6230f08b79db",
+      "importGUID": "ae684270c7685431b18d2c8c53b2b599",
+      "sha256": "c7cae98225a0c229ce0a2da4af2a60a57a2e95fc3249e1bc255cddbe45b72152"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Amenity_Charcoal.mat",
+      "originalGUID": "a36a1c0c7d95a494b96ac4ef90209438",
+      "importGUID": "9c47336dec225df19859728b370e9b5f",
+      "sha256": "3064ceac1604a5150907bd8058a2349fcc7ad48fa2a3e325348e39b98b720db8"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p078_0p12_0p012_0p0054.asset",
+      "originalGUID": "a39b50f9441524b249c073424ec7995c",
+      "importGUID": "91dd41511efc52b4b1e6ed13f15335a7",
+      "sha256": "a7f51f9cce9642e08e5e0befd996a3036cc62c4e6a01c5c2ba84e86839bcfbbf"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p18_0p026_0p245_0p025.asset",
+      "originalGUID": "a3c4a3befb1aa4bf7899792de5905433",
+      "importGUID": "9aeffe33f2a95828add9ee33362014d6",
+      "sha256": "c26a26227ad68386dece1045aa0a54c45da866ca796ff1ecfc3069de12c7e148"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Chair_Sage.mat",
+      "originalGUID": "a4c70f0fe8f9e4cb28ab1369a93186ed",
+      "importGUID": "a709ffc5692e58f2a9bb22feaedc8b2f",
+      "sha256": "6ec7f78dc6e9612eebdce119c6a1098e1b279d875010169098dacac937c3d941"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p764_0p7055_0p032_0p0144.asset",
+      "originalGUID": "a51328b969e4b43418d445a1ddb65797",
+      "importGUID": "293903f9a036582789e02a47134cb4ba",
+      "sha256": "71f9ca44358e0176124e053c3b50ec5554876488579dee9ec831005937b8a241"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p28_0p36_0p43_0p025.asset",
+      "originalGUID": "a5478cefb3416424da9d3248d9a6f9f6",
+      "importGUID": "aa5fdabab6745276ae54874cb58e37bb",
+      "sha256": "8265e43352e618fe8d8845047a4673f8cc3dfd34350e9d88208d805274f423fc"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p006_0p13_0p012.asset",
+      "originalGUID": "a56af32096eec47eaa999718ce82b3dd",
+      "importGUID": "a8766262b5d752648755d851b70f354c",
+      "sha256": "ab569942c805de5e0400af41895bb0eaa229568f55437574fd942b7ac063e862"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C08_Clear_Rack_Door.mat",
+      "originalGUID": "a5bfdf09139dd444fa5f7b312e100e72",
+      "importGUID": "067d5f4ece9857b0b95df8993f733c36",
+      "sha256": "bdf812ff1e487c1f1c6f357244b4e3400157a4341bd2cdb2ddf5def791d27764"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Teaching.mat",
+      "originalGUID": "a622c31e8b61b464fa1900730ac70ef8",
+      "importGUID": "1f3d0753bc5a54c09f4cdbd930c1cc31",
+      "sha256": "8d2181239c314eae5d971eb157cebd27172c6d9c9b764c1325ee4f38489e107e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Warm_Hardware.mat",
+      "originalGUID": "a749f2b2c448a48a09f070d62d1f9cb5",
+      "importGUID": "e56748db0c495b768ecf480db7b4512b",
+      "sha256": "12c97fa04884c2f33a160838e598e9496a60c655e0f4cf1cf4287c408b8eb972"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Compact_Oval_Toilet_Seat_v1.asset",
+      "originalGUID": "a75a9d812d603426c829c153bc6fcd02",
+      "importGUID": "4b964e8d156958d7a045118a35d76c9a",
+      "sha256": "bb7a61f585b5af29fb79d1d563e237721f87a3655813acc84d7798010464a012"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p042_0p032_0p238_0p016.asset",
+      "originalGUID": "a835641c96dfb4efb851b3af76fd89dc",
+      "importGUID": "31110d0c55345c0491b94153eace25fa",
+      "sha256": "c27ffc9c7a45f26eb37f8364478b7907260799fe20cd2f81abcaacbdf48667de"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Fabric_Sand.mat",
+      "originalGUID": "a864abed682094e718baada14ecd48e9",
+      "importGUID": "3f97a9d0c18c558f80de16b1062c5df7",
+      "sha256": "6e337d08d2898c0e629de2d2b19aa12e276d25fb9b2795aca1c069085594c0b5"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p169_1p101_155_230_0p035.asset",
+      "originalGUID": "a86f35a1f2bbf413290f9a62bf667f46",
+      "importGUID": "26167eeb52e055d18828ea2c57424e6e",
+      "sha256": "d396d98a1aa6fc6f3e9b5cffc45d063efe8be71b2d7a07238de37195d1dfd948"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p035_0p38_0p035_0p007.asset",
+      "originalGUID": "a9ab3b37c8a60472b9bbe11b8d54f371",
+      "importGUID": "5c83d711aad257ed8dba5a6df640e6a4",
+      "sha256": "61e2f4c93852799dd1acfddaf7536a24fbad8e6bcff419fc3615ca45a5b4023b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p17_0p005_0p19_0p015.asset",
+      "originalGUID": "aa0c9b55bd4434b86b0d8618e7c3dada",
+      "importGUID": "34d64332f6fe5b2e8b1837b8651aa604",
+      "sha256": "c337b367b16fac27911bf3cc967599d07caedb49e3ebecb5da3de8eaf4df4545"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p052_0p045_0p31_0p0234.asset",
+      "originalGUID": "aa657120f94ca4141af8d65fb92f0fd7",
+      "importGUID": "e8ee23724e425ce5b4e64b8c7446514e",
+      "sha256": "93fc0c61421e762b0a9a28c8da281694ed3cd43f8e8da5cc692fa2824fa6ad05"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p045_0p035_0p28_0p018.asset",
+      "originalGUID": "aa7d9e74c59f041a4a01ebf2721edce9",
+      "importGUID": "796248119f9156d59cf1d963abc7fcb9",
+      "sha256": "f4285a1def009531a224e0f094c37832d8eb12a598b6a86c98df2ad3da26d7b1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p195_0p035_0p26_0p025.asset",
+      "originalGUID": "aafd4aa491d4344c6ba6f9e862815828",
+      "importGUID": "f95ab2e6dc7454f085f24ce7b6d3633a",
+      "sha256": "28c03f1a63a9b602b55084e45433787c3bf064b1732d7b4357fa90f5013770e6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Rounded_0p048_0p012_0p048_0p014.asset",
+      "originalGUID": "ab97ca117fb8f4377aa15072699f08a6",
+      "importGUID": "e2981e433d7e50bf9de91b7bb8f1047d",
+      "sha256": "202d142a4c8ad88f12945932a1a5ded3cd26f44e363de259567425a0537dd91c"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Classroom_Graphite.mat",
+      "originalGUID": "ac802fde1c1474fa4869ee3231bf788b",
+      "importGUID": "0072e2ee2ce858329565490e50faad88",
+      "sha256": "ca00018bebe71df5b9b9115c5fcd82461da704a20a1da76d93c4ac8b0a27abf4"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p725_0p66_0p025_0p01.asset",
+      "originalGUID": "ad3f40a83a64842bca9fd083d54aaadd",
+      "importGUID": "d46a60478c09595eb08e3362a6c5f748",
+      "sha256": "8f352a6de32c3f3776c45810d2860c98cd467a9f93d1cdf7d5440d7b9bc89fe3"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Clear_Office_Glass.mat",
+      "originalGUID": "add82ad1570ff4f5d99c017f14913bec",
+      "importGUID": "52662e72c1525b56bc93f418983849c5",
+      "sha256": "b544ccf284731e52454d074b65bd649b16d05e5bb94b7847c7a8ef9b26d89c56"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2_0p8_0p48_0p025.asset",
+      "originalGUID": "b08ff32e7854547f8899dc53b37552b0",
+      "importGUID": "68562dda8b9f5372ab6f9ad707aec0d9",
+      "sha256": "78441a5ed7dabe6216479d578ae63f0ef053a725da83a15ac7d2b5dde374b770"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Satin_Hardware.mat",
+      "originalGUID": "b18c068eaddd445e4b1acc08e0f1216e",
+      "importGUID": "caaee79016775d0f8cdc1ea4c797c94d",
+      "sha256": "f00fcc5fb3ccb59c6a1f8fcedc32f6a78f83eb6ff1ab6c31b2d4c68bf7e40a60"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p71_0p29_0p38_0p032.asset",
+      "originalGUID": "b1dd1eca7f07b437583026557e7bdae6",
+      "importGUID": "2d25046ba38c5af38f131b3a35a8877b",
+      "sha256": "a965a0eec854b268575855ac65f7abefb4249752f95a6add8a9b4e254ed74837"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Emergency_Red.mat",
+      "originalGUID": "b4162a2f8f0cc484e817c5d0e9cbf176",
+      "importGUID": "d92105c533f156739ec042f680fec2b2",
+      "sha256": "ce0b011adaf804f62871e607b972db09d1e7c7fbe5def5edeb881e51491817da"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2p035_0p054_0p505_0p026.asset",
+      "originalGUID": "b4717583d432442aa9d96f16c537073f",
+      "importGUID": "5b77341b0ae25942afff56985808d79f",
+      "sha256": "343cd1c7b984c792411dedecf67d888b793f2b81cd15dbe16221c328f2d9876d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Cream_Frame.mat",
+      "originalGUID": "b4c8e6a2f8ac04c488b8573551a6a204",
+      "importGUID": "d50e6a1f11715e7681cf67c99e14785c",
+      "sha256": "56e51311fd871fc395af9ac4f13871efb8d331db461fa25a05c8b7a998272b1a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Display_Light.mat",
+      "originalGUID": "b53a1604e47c3420b94d137e730751dd",
+      "importGUID": "b35c5b75c62755149ed409e51ef651f4",
+      "sha256": "86a5af43af952bf10001e31216d8f1abdb04f73a31fa8bcb49f5f6fe28a9a92d"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Structure_Walls.mat",
+      "originalGUID": "b5a0fb546f09e45e1a6f74085ddcf8d1",
+      "importGUID": "24ff9bd4c4155474bbfe00566549b856",
+      "sha256": "0c4eeda68f0d316adcba44f806ed60630f5f9473d76bf244ac0ccce9933ef8cb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p35_0p026_0p12_0p015.asset",
+      "originalGUID": "b5da6362dcc66452cbfe1b35a5938435",
+      "importGUID": "70a9637233075632b119b28b1859e9b9",
+      "sha256": "919c3a4e20bd59c368977ad15bca3341a460ed75633524c793a758627f6791f3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_3p55_0p05_0p62_0p045.asset",
+      "originalGUID": "b62080bfe1c114d3cacaad620ed6298f",
+      "importGUID": "d12176b443d35c9986f13887cbe018d7",
+      "sha256": "3f160f16ca216dcb0a2c32a74e6159b1eadc03b5639a097b5cafef9de5e8aece"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Amenity_Soft_Blue.mat",
+      "originalGUID": "b6f2bf048e1b34e2ba2d729885a0d19e",
+      "importGUID": "0d3d030f5daa54f290cad4afc35c5638",
+      "sha256": "b5626911b893287b8383edd72eca81da2dd1444fd41c547aa35c5a452667a172"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Glazing_Graphite.mat",
+      "originalGUID": "b7f5f53cd6a5449039765c86e454fb83",
+      "importGUID": "4141442dc9ea5e5cb7804e0b2e521741",
+      "sha256": "dadfbca8fb1b0e7772b802c81d78caa0716a6e242725aa24d55f6d9d9f65f936"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p075_0p46_1p02_0p0338.asset",
+      "originalGUID": "b8e4b32ccfcc14760bb26b73a3a22a08",
+      "importGUID": "a1d910c22b10506990141c80496d1902",
+      "sha256": "14e45c8df6cc8707a049a779b5e59bac89762f3514eab007f58858e4aa7ebc8d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p075_0p355_0p74_0p025.asset",
+      "originalGUID": "b9354a0164b804ea29aa92e8a7b13fc6",
+      "importGUID": "92fe2e27ad4e5a8a812842f7cade0915",
+      "sha256": "3b79aad3894b8a07a632605c9dd62d24fb98b1dad14f931c64d3434100563b58"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p585_1p555_27_98_0p028.asset",
+      "originalGUID": "b94526484c5384df194c9f709d522676",
+      "importGUID": "bbf41403415957c99104c0e8c6c94d0d",
+      "sha256": "b5be33bf70b3f7bfd5396c37d0c5f6857b6c340228a6451e643175f38877c11b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p2_0p008_0p255_0p01.asset",
+      "originalGUID": "ba12f4ce77a044ae4af56893bff2b654",
+      "importGUID": "34b90bbca7ea5e62a646e22d6615cc15",
+      "sha256": "6064e43a834cddf6aac2d6b96c02daed64f8b6f54d9ca068ee43831f573bca14"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p57_0p105_0p57_0p09.asset",
+      "originalGUID": "baf3013f2f6a04e89b1b415def94cf1b",
+      "importGUID": "b91766025b385991bd45d2e4f4583d13",
+      "sha256": "b93f05d5756dea4c7891fe278df6574bb7143ccb271595145fd0b55b2c271fab"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p8555_0p125_0p033_0p012.asset",
+      "originalGUID": "bc2eb3265fc5e469eb2f97f4c2f98e3f",
+      "importGUID": "bfdd4afa604e5900b054ed45c381be35",
+      "sha256": "725dba5dfc3e0754b6a738af50d4758ebeb5e8e785139f8679123bb54edb48b2"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p612_0p42_0p15_0p055.asset",
+      "originalGUID": "bc5b7012501a547bb93e1e9ca6f48dc1",
+      "importGUID": "43801074fb095455be5940d7f34f7f64",
+      "sha256": "9424518415435aeac3dbdcc316ce41278a6efcd329692d0bddfac26d746b131f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p14_0p22_0p09_0p02.asset",
+      "originalGUID": "bcba8a047e247431190207c4585fa431",
+      "importGUID": "5f77538d6264544fa9ab8224a0405a50",
+      "sha256": "909f56dc9ea118071b82f7afb89023381166b64270b89e8ec3e16f1eed578103"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Soft_Green_Canopy.mat",
+      "originalGUID": "bd08752518c214079aff24f47185475b",
+      "importGUID": "c3fa57ed452558b9bffa605c51feb87b",
+      "sha256": "d584bbc53ab71825a17c262850c6218b66fee54afbf562c91491d9ed2e0681f1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p12_0p12_0p035_0p012.asset",
+      "originalGUID": "be70ae59f19b24ed08ed81e002666b15",
+      "importGUID": "8b87e459693e5e159190cc42210003c8",
+      "sha256": "fe85cb700b0ede61bf1eb8568b39c9e2c84a1b67a4eba647a0d68ee53924b86b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Dusty_Blue.mat",
+      "originalGUID": "be861b04c7caa4ae69abdcf0bc2fff98",
+      "importGUID": "a83d8cd9cff95d61b10c8c8749f7fcde",
+      "sha256": "4076a0e22e0c73a01eabed1cfa5869504b2b45be169a6e4777b3b693ce0d560c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p14_0p1_0p25_0p018.asset",
+      "originalGUID": "bee2d454d194446c6afc32783bbba323",
+      "importGUID": "c24368760923536c830e00d50626d501",
+      "sha256": "d8f8735ba1f4bd88bcf6d9261d2743594376a1d01164a86472418652df4847eb"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C06_Indicator_ivory.mat",
+      "originalGUID": "bf942d23fa4fe4784b05cf6edec6228c",
+      "importGUID": "d2e2db1cbe72515abcceb7a81d894e33",
+      "sha256": "febfbf95cbc7e893b6e4f32b8cd9c3b3675a385f822cb6f83e643d3992c011f5"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Sage_Upholstery.mat",
+      "originalGUID": "bfe477cf8432049a1b0c9d9b1756affe",
+      "importGUID": "85e8574bd3ac5d3cb0bb38b74b596b57",
+      "sha256": "17c9a81be3ed0a77ef3566e7a339742b0100b905043eeb5de7c123ce39f1fb0f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Sage_Fabric.mat",
+      "originalGUID": "bff4a4e887f6f4e039fe8c825377da15",
+      "importGUID": "350e296297695a388d35717a1d23f06d",
+      "sha256": "c1754f4a44678220890fd6eaedada901fe52cb51a279486383b8452d5c39e913"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Sage_Grab_Rails.mat",
+      "originalGUID": "bfff4acd3d8894a4a99795da570ee805",
+      "importGUID": "f282b51d70835f6c9309980dae736665",
+      "sha256": "d33f2f7bbf463cba0852a969d7b46bf843fa9d28f3b65ea0f1bdceb14703ee5d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p49_0p023_0p19_0p016.asset",
+      "originalGUID": "c0d5a71d6d2ce4664accd3ae27e37400",
+      "importGUID": "a48312271ce45d2bac86692bbd982a19",
+      "sha256": "33e8daeba1aef37e86c08f6f3200d55ad33ea92e364f049700336d86d7066d83"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p8_0p32_0p027_0p01.asset",
+      "originalGUID": "c10b9ef50a3ac4525910da10d696b51c",
+      "importGUID": "d5d55d7eb35159aaabbfc9cd86624cb7",
+      "sha256": "0ebdb7a5b7ecf743c88042dbd21d258eccaa2d4a52a713656092b5aa812b975c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p43_0p03_0p24_0p025.asset",
+      "originalGUID": "c149e140b7ffc4d68abedebe5de8e775",
+      "importGUID": "59ba75a7846359718f1d85842a42aab8",
+      "sha256": "cf2d6300b2296b0d63c989167eee789462ca420af1c7959d2e03806b486e29c3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_0p285_0p245_200_340_0p38.asset",
+      "originalGUID": "c150aa86988d14215bf2dedb3fa6e9c0",
+      "importGUID": "30cde6947d545c518674269aa09f60c7",
+      "sha256": "a04c1df2dbd6bd2752e5a750b6dcf344c6d1d5e690a03e3b90f555e6d6d65f6f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Paper_White.mat",
+      "originalGUID": "c174a45a6010a4c23bbb3ff9d00d82a7",
+      "importGUID": "fb2dfc140755581aaa34ebd41379b08e",
+      "sha256": "259a68ad09d8cbacdeb8feef290db0151b0da0d983b11001f72f7e0cf5f740f9"
+    },
+    {
+      "source": "JEI_Prototype_Materials\\DepthText.shader",
+      "originalGUID": "c2fb0e8e7760d504e8065a7e84738580",
+      "importGUID": "b218eafe4e4f519a91419710a34a1455",
+      "sha256": "cf03fdebff0bbf30ca59915b5ae32670e668921db100e481dd5ca84a670a633f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p329_1p261_155_230_0p035.asset",
+      "originalGUID": "c33fea7f73aba47a19ad1997b46881b3",
+      "importGUID": "52f579f0dcfc57a19b8e1e45127a6ef6",
+      "sha256": "cb2fc671a3ca3fee92bd2a473a57c8e821301efb4cfeb84d33373e04abfe4e3d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p24_0p025_0p16_0p035.asset",
+      "originalGUID": "c4e2771c9d5fa49e6b05fb52f8951f23",
+      "importGUID": "0b4eacf5160a53bd927796cfba4d64b5",
+      "sha256": "8f4d4adf9b6b2dbf6e3aaee3168499989ac0d456118e79fe71d98c20eaefde1c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p649_1p581_155_230_0p035.asset",
+      "originalGUID": "c5a06e38465424e25a5b75e4dec54b28",
+      "importGUID": "20ab546ddd07552d8b4f832bb22018ea",
+      "sha256": "55cc6a6e17d781ece3b4778e750babd51da97e5d3b20a17205692e6500283f12"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Urinal_Open_Catch_Bowl_v1.asset",
+      "originalGUID": "c6859fa5a093c49c0b0aa133174163a0",
+      "importGUID": "93ec97b63d445a5481f330066575dd70",
+      "sha256": "94adf41fe9a9e1d3722a1d029e0ec4f47d89dfec4250e11fde81d252f5286073"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Sage_Metal_Frame.mat",
+      "originalGUID": "c690eaddb706246e78f4220fcddef261",
+      "importGUID": "a4475f2b2bcf53639dde81e35e0b635b",
+      "sha256": "df50f36830404a7065c2898eb9518c9e062c4961c80561104c65fbcea424cbd2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Clay_Accent.mat",
+      "originalGUID": "c6ae2913c879642528a3e0e53f9fec18",
+      "importGUID": "fb67f550deb45000a4a82adf61fd44d8",
+      "sha256": "3a1d8f6dc868cefc8661f21ec067d1d8301f5c1611a8086f66c45a86786af2ca"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Laptop_Paper_Screen.mat",
+      "originalGUID": "c6c85ebd7367b473ebdd67543c8a940e",
+      "importGUID": "0f1df62bed4c5571ac1fff27df2022fa",
+      "sha256": "c2e850a7b256a89836bdc75c34d4e7cfaebf73e6c2f0277a665b065ab753ec97"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Paper_Cream.mat",
+      "originalGUID": "c758c5489818d48c887efe831f9f7095",
+      "importGUID": "b90d8d3bee225b8c93eeded8b1f29654",
+      "sha256": "a761f74ed36d344fa08acdff51c101df6edfd3c97781d307060918be83eee5ae"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Print_Grey.mat",
+      "originalGUID": "c75c6b2a855bf4043ba0b4e5571c12ac",
+      "importGUID": "32aeab924eda51e082e3de5bf832bab9",
+      "sha256": "a2be267338450f569d225921e7881b40b2074266b089104fa018cc436b3410d5"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p155_1p11_28_97_0p075.asset",
+      "originalGUID": "c7d3b789077654ddab1111f35e362140",
+      "importGUID": "ab54c7d5b8625bfa81defb9c75315490",
+      "sha256": "dd5a2012973a81ad8af675c94e27790d21f1682eb5ca9172b725dd35b28bd777"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Potting_Soil.mat",
+      "originalGUID": "c7dde3b86c7ba489390328345986bc40",
+      "importGUID": "c6d769c27acd57c7bc2f2dbc3d18ed3a",
+      "sha256": "cb0f3fa5e740dc970d10ef6e0cfc243c1127991a46ad2499493c9e7eb772e5bd"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p409_1p341_25_100_0p035.asset",
+      "originalGUID": "ca4327f41952841fb91a95a0df155c38",
+      "importGUID": "fb664eec9e2d5d65a88f44b3a2885cb8",
+      "sha256": "7338151f888d67dce8046808b9872c8e50078c0f9f4f8ef62aa973b9e3cb7f40"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Cream_Glazed_Porcelain.mat",
+      "originalGUID": "caf42314b39e94766917af66f664274b",
+      "importGUID": "898da9f9518453f6a348638698bd1769",
+      "sha256": "d9542df8aee5f0fd5b34bcfa5d8de9d7b359dcc331c5a3bffeb0eca1b26c6088"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Warm_Ivory_Paint.mat",
+      "originalGUID": "cb122102330f24a349fdd6e6d6af2911",
+      "importGUID": "897fa67233265ea4a3b8932c688158e6",
+      "sha256": "8182c6eb4188e12798b6c2b17093778e1fc260ef0a4f4ed82eb15ef5a282bd52"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5_0p09_0p49_0p025.asset",
+      "originalGUID": "cbec49bb807304d328d968194df4338b",
+      "importGUID": "d2c3d7a0b1725a32a2a1732f7886bb7b",
+      "sha256": "b1ebbcab2f1bbdb8d5c784751e6a22a2fd14e43575721dd9b2c3717dbe539bd2"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p72_1p12_0p065_0p022.asset",
+      "originalGUID": "cc1020b6951f048128af99f2dc91aaf3",
+      "importGUID": "ed897144f6ba52c88adfbaec04639ce3",
+      "sha256": "54bd7cf26a27814fdc18fa13abc06c0abad77554f80ad2e09322a901ca74c201"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p235_0p006_0p29_0p007.asset",
+      "originalGUID": "cc80d1f16cf864eb8bb1ac642dc3f5e9",
+      "importGUID": "ac09e2f349d15891ac92f7691bfbce34",
+      "sha256": "e143159090a8ea06d7efaca2ec6f31f1ce15836b8b605fc062f4fff1ae29b6c1"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p456_1p454_25p6_99p4_0p0008.asset",
+      "originalGUID": "ccb321def4fb046f5b20d1c41cdea828",
+      "importGUID": "44d2fec99b345f38917b67d644414c0d",
+      "sha256": "6d354558a8e389e9d6e115b5bd2e0933fe4c1e754eb1a587f9bfb14e1cf1d315"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Wall_Hung_Basin_Shell_v1.asset",
+      "originalGUID": "ccb5acda94eda4fafbe01aeb3b1b9320",
+      "importGUID": "fdcc79a516455e0f81e2409a2e889b72",
+      "sha256": "ee30275b74cdf3c924258e3d575eef6558a90b027c8fa6e079d10840aec6108f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Warm_Oak.mat",
+      "originalGUID": "ccf5d5a82807d4297a547247348ffb04",
+      "importGUID": "b3649d26cea750f5aa23bdb6f756d5af",
+      "sha256": "a55db61e035480725e5b6650a4606176308a1bce33c3ab78c11cc56398cac04b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C07_Brushed_Chrome.mat",
+      "originalGUID": "cdc2c32ea361a4485907a3645d9d39c6",
+      "importGUID": "03fd92b872895e168a8dfb5fe7d61f63",
+      "sha256": "adde86867ca513e5af97faa8335d823f8dd8b718eaa74b1acee14832f1e0d55f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_S04.mat",
+      "originalGUID": "ce29ddf9ace1f468cb42fe36bfd321c9",
+      "importGUID": "d768f990c2595712933876b09e689aeb",
+      "sha256": "af3eef4b13f1c6806c48b9742924c2d8d4b9cbdf402047f4aa735905d7349008"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p2_0p025_0p035_0p009.asset",
+      "originalGUID": "ce62da50414544541b295184f61b0636",
+      "importGUID": "7ad2bca9835c5131a931d4f27b09a5fd",
+      "sha256": "d2f77563a548f19a60aab6a2d1f9ca0419a375c9424732bfa5c97c5dbfa521d4"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Subtle_Wood_Grain.mat",
+      "originalGUID": "ce98d4b92c9b04963962950f2ac81920",
+      "importGUID": "2a52c481d7875686b210e17092ac24d7",
+      "sha256": "4148280b478d6c6bb45956dba5df376e74218863ea42c4b388b9b2e0d60a4403"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p48_0p62_0p2_0p07.asset",
+      "originalGUID": "cee0e617853204c30ad0b48cae411a4b",
+      "importGUID": "48bebcff93a5585f9ae525df9b022216",
+      "sha256": "473e7b04c254cb53a95d9fdca98e84bf1c679653789208dae5aa9263d4b3d9d2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Dark_Detail.mat",
+      "originalGUID": "cf59cba52a6bf4cf495f84fedee3b572",
+      "importGUID": "6fce2ec76a7e5b7bae221626a78772d1",
+      "sha256": "8fbb4be088a5b3eda3d8f613f59cb9f2866d001e1abfaf79edbf943c95bf7bbc"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_2p95_0p16_0p77_0p055.asset",
+      "originalGUID": "d06023ecda3594b6b8b3e72b5c18d506",
+      "importGUID": "4eeeb94b7e6453ca93c74e85121993be",
+      "sha256": "e1ecc2dcc9815b9c2f6f3225a59a58be33e44d47a3297cbb9281d14cefd3193e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p305_0p045_0p022_0p0099.asset",
+      "originalGUID": "d1890064824f24df1bf1d604f58e99c8",
+      "importGUID": "7ef41ac7db705e37a646dcc48efeee17",
+      "sha256": "58458177d08eaf16ca96ea9e896dbf429302a8f94bd58c757e255b751cf5d6ec"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Sage_Linen.mat",
+      "originalGUID": "d1ce3633bf30348a8be1b18b4c524ee5",
+      "importGUID": "ed56f5f7a94f5ebea7a87c5074562f70",
+      "sha256": "6381661b235fc5e3d1837e8970b31fc10b44b52637a4c1742858067688bcf37f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p08_0p08_0p02_0p009.asset",
+      "originalGUID": "d1f598f5caef941e1979caf74b7dfc97",
+      "importGUID": "752d9d69daa05a8cb988df7c853ed363",
+      "sha256": "de69972a35ca0d2b6902bcea60be97a2492ca5be979202ebf18e194ae6f270ec"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p95_0p24_0p76_0p12.asset",
+      "originalGUID": "d24b2497564b445169fae18c2e93287b",
+      "importGUID": "9340374796305b0a94fe3c637ac837b1",
+      "sha256": "51eea0e5082b1b28c2caee0558a537e2df0a831850f080c900d60895b87a2094"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p52_0p05_0p36_0p02.asset",
+      "originalGUID": "d2a4fb6275dfb4e788bf29a43427ef30",
+      "importGUID": "f820f3e954625b8e805b0cafdaf7aeaf",
+      "sha256": "9bd83e7956ae4053b9f119a777c2a2d5d71fc70277e034f7cc58268beedd85c7"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Cream_Stone_Rim.mat",
+      "originalGUID": "d32dc1ea8c682466bb6f10c42e48b8e8",
+      "importGUID": "77cb039a928750bda40c7c424d25962c",
+      "sha256": "53cf67f472a0669dc23c69f05e71fce107a070f06e685b4f2fb36c0a9b572ae5"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p5_0p09_0p47_0p085.asset",
+      "originalGUID": "d34d6995f68d5411889db923b49ba12e",
+      "importGUID": "30567cf2e6cb5669ac499367a2c17748",
+      "sha256": "00f483780d54e434820b9e8afdd0eb09af8c68463f72b10d0d1e2cf6f57f2aea"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p54_0p075_0p3925_0p04.asset",
+      "originalGUID": "d3e91281e407945e9bc6dc36437a13f2",
+      "importGUID": "ea9cf966a4515a24a0302f6a663b8d79",
+      "sha256": "7458497785752d2497ea98f7091de007fff8c97a2870d9113bdd824c7d29cb75"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Appliance_Muted_Red.mat",
+      "originalGUID": "d4e95e13e50114a3ca7d30ed2e37d984",
+      "importGUID": "883f51e769c454148c7dd1580fcd0dd9",
+      "sha256": "77bf84e4b2ad4ae53ae7bc8c231d0d6b2e88af868ac12ad5907359617f9129fe"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Graphite_Metal.mat",
+      "originalGUID": "d51ba4eac2fb340b6a276d78eadc47c8",
+      "importGUID": "fc99f3196a0353a09d3e3b56b7181e57",
+      "sha256": "7ced4d8c608db6d2f731ac0c3bbb418c8cc43450df21c6e85ef5e5eb0f5e691e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C06_Brushed_lift_steel.mat",
+      "originalGUID": "d68a2203ebb684605850f7a9f0c23f54",
+      "importGUID": "01276333e3835ec6b577c8949cfb8f27",
+      "sha256": "6aa42f356811ab65bb2c49ab7bd6b0eaaf4a1377a930495994e061aacc58813b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_White_Tissue.mat",
+      "originalGUID": "d6b0eee8615aa488da901e2af6b84a38",
+      "importGUID": "e28d80497a9557299ec2f7b0d27bd17c",
+      "sha256": "c0e2fd1e42dab5463a495c03947c47d56ae9220b9f31a6abcd2c3aa41346a698"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p02_0p08_0p08_0p009.asset",
+      "originalGUID": "d7725f2fd212a4822a6ecc9617136c2b",
+      "importGUID": "08e021fb032859d8b47bbe8339ea7f3b",
+      "sha256": "0a9017f83adde7cfd5d93d4b7df0800a0cc4d3ea80e75489061370b487f41191"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p025_0p09_0p07_0p008.asset",
+      "originalGUID": "d7ba37adf74584451ae1957189a6ea20",
+      "importGUID": "a6859e42139156ebb59e47a9c0e89a51",
+      "sha256": "dade48972536606f1dd993f1d03e2516150ce8efb23fbc6fd819ad1feba2e329"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p75_0p06_0p39_0p025.asset",
+      "originalGUID": "d81cd89854f084088950c753e7c643b4",
+      "importGUID": "36b2e21e2d9e5380a06c3105bd712bec",
+      "sha256": "62b2ae3fbf380ac455c95189628bab7a9aff853c1d80606b94a9e662964d4e6f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p15_0p004_0p68_0p008.asset",
+      "originalGUID": "d8c9a27f78f754df1ae776490496a78d",
+      "importGUID": "8296d0105b635dcf8b94efa24f6a91da",
+      "sha256": "78abdcc58df8c8ba80e3ffc1b1b2578363f793ba11b09ad429e20cf0fa4f843b"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Fabric_Navy.mat",
+      "originalGUID": "d9307bc7ebee341138aae954e23f5447",
+      "importGUID": "3396952e19a95fc6a398c73080a1c9c0",
+      "sha256": "a6f7d2f9c8d87bec386e467eefa094fc534a3049bd05acf2a2577b46aaa52f60"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Fine_Tile_Grout.mat",
+      "originalGUID": "d952130a6d26d490a8fab14679864edd",
+      "importGUID": "b40fe97cd838526084530c2d3a559963",
+      "sha256": "57eefbf1a7ba75cb396f59d0e6ce4ec139d8d445a1b4ba5951de9d3fb3d68cef"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Keyboard_Keys.mat",
+      "originalGUID": "d9fcb84c3ce7140f3834b8cfc8746b6a",
+      "importGUID": "3a4d84b7cfb45c3686e2b5c04b1619d6",
+      "sha256": "238348acf4892afa2c725e1e034229eda07a3442c4cfe6a50a279d4635772d93"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Soft_Silver_Mirror.mat",
+      "originalGUID": "da408a2b768984c9aaff78cd0518ba5e",
+      "importGUID": "d5ac821f152f513db88726a3a9477b54",
+      "sha256": "4ccc1ae1088360583700a89dd4c3a79c1ad0d8f6fda7883cb4ba0a3ed2d61b71"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C06_Indicator_dark.mat",
+      "originalGUID": "da6d0273b3b154e96ae9d48e870dce4f",
+      "importGUID": "a4581049feb85d1cb1a709f012fa45ba",
+      "sha256": "5d650d4772c90487c630ac7405f10a376f591e87db129c483f5d78dcd7bafcd7"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C06_Sage_portal_trim.mat",
+      "originalGUID": "da930e6f265a94101af1957f5a58e4e0",
+      "importGUID": "36d40e32a5f356f4bfa8316adb4d4673",
+      "sha256": "dbb1e50129af3d67186f10867f62b4687af6b7a5963cafc4becf60c1377c8f40"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Art_Sage_Metal_Ring.mat",
+      "originalGUID": "da9b79bb8f2dc4fd9bd0a63cb3f550dc",
+      "importGUID": "89d6056c33ff53c7971829433399ffcd",
+      "sha256": "9dd7d5c8f100084ff905572a77d1b340913e08b1661e9a59769725e75d52842c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p49_0p09_0p47_0p11.asset",
+      "originalGUID": "dad027e697a524fb1897d33a86367921",
+      "importGUID": "a967a09e5d87565391e0fe3a0c7f32e8",
+      "sha256": "a65532367c05837353526c85ddceda2055c69e476acecbe1e63779304937bb6b"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p536_1p534_155p6_229p4_0p0008.asset",
+      "originalGUID": "dadb77f430c984e059c8d6910c5153aa",
+      "importGUID": "1a681b5ad9705b5d84946e585ff34f04",
+      "sha256": "a01fb8a3906b25c89fb12cbffe59c0f940065ca1b6a70ec0ca671e6b1205813a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Main_Whiteboard_Warm_Metal.mat",
+      "originalGUID": "dafb7324b1bcd4631b3dec26414bd985",
+      "importGUID": "a0659f2884d85ecfa585f1ef1beba57d",
+      "sha256": "bf3e28a1aba30444364be61998b9796da84c6c8a7a8e22cbee3006135b396e50"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p045_0p04_0p29_0p02.asset",
+      "originalGUID": "db08d28313b9b4fb2a0b483f526780c7",
+      "importGUID": "88d822c6fa365eaabfe350fa765ee22f",
+      "sha256": "6b49dc07d2e0e80543486d84ae99f22065e6a08a00b38f1b07ba8be9d851050a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p16_0p77_1p64_0p05.asset",
+      "originalGUID": "db91ead73803446e79a3b32ceacab7ec",
+      "importGUID": "2b816c71c5f456fdbf532b29667fc001",
+      "sha256": "1ef1167f7a7518d6ea917b03b0660ee08ceef55401a7e515bc87918efaeddaa7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p055_0p015_0p055_0p01.asset",
+      "originalGUID": "dd3d2e405d38a4ee98e682ec78549533",
+      "importGUID": "51450651c771561c9003d1a7e307ef82",
+      "sha256": "9e90834ecc28615485055fb348403f0814ae64519eb6540897a3ccb6eb62d282"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Compact_Raised_Toilet_Lid_v1.asset",
+      "originalGUID": "dd67f051af712449380b5f3ec5c8a755",
+      "importGUID": "34ca618d6ed05380880677cc7c29ada5",
+      "sha256": "9abd45f2b4f2841c5aba4e1ee7b65690d505cb1f5615e07c2daab5fddc384322"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Toilet_Open_Pan_Shell.asset",
+      "originalGUID": "dd9a4ab5727584e5a8ba0d020e145726",
+      "importGUID": "0ba42b09a6e65b2393ddf5c1fa4dc381",
+      "sha256": "0bee2373c7d6f0721e0078571c1c535e4da700a9d7540d16820185f57702e173"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p31_0p025_0p29_0p02.asset",
+      "originalGUID": "e0af82e5185e849aabf6c49b69dcf25a",
+      "importGUID": "f4cabf8657a15a7393e84a21bed7f7b3",
+      "sha256": "628b6b7958ff63592688c5402cd8c90a6d3caacd663887c95faa150d056796da"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Oak_Floor_N01.mat",
+      "originalGUID": "e1a03810300e24587acc6d1596d025bd",
+      "importGUID": "1dfe432813655a3eb6473f4f14f7ed0e",
+      "sha256": "1fb40dbdaf06237e56d5b008c03bba9592436eabfd38fe5f4491fb7a167150ec"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p055_0p04_0p28_0p023.asset",
+      "originalGUID": "e1b1144cbaec04310a143417322708c6",
+      "importGUID": "71d7de0205eb5306ab3b7f3240a60f5f",
+      "sha256": "af47e8d2d8b1716ba683731db431e188346583dd5a632709059b584361019918"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p2_0p075_0p1_0p018.asset",
+      "originalGUID": "e1c5cbada7adb45e782e66b07c05203b",
+      "importGUID": "24abf8a6d0ca5b49b69cff43f4085662",
+      "sha256": "460c4a39bf374110bd19c7d851fe5bb0f9f35ef9cee4cd927cba81b0acd1ac10"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p19_0p025_0p23_0p01.asset",
+      "originalGUID": "e30425ec672124c72b23200034cd0fa9",
+      "importGUID": "5bf463e44b1258a9b7d4095e9b91f644",
+      "sha256": "635d2b3bdb971e68d4836658fc733690b1818d109f6d702ba31fa87124d1702d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Lighting_Deep_Sage_Metal.mat",
+      "originalGUID": "e33f33f3d9fe5426f9fc05f6cfbe88ab",
+      "importGUID": "5fffb2cc4b8e5600b787e1f3561f3aa1",
+      "sha256": "0f7c801975d9c9de248a853c35dc21ef6e379a26abb9b10fdbc0b80ed83cc23a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Faculty_Privacy_Sage.mat",
+      "originalGUID": "e397992453a1946e68f49ede67f55379",
+      "importGUID": "0ebc05be893e5368aa6c4d462115cf0a",
+      "sha256": "d18058b63fa47de415e2e0292addc4b1cbfc87d688f3dd247285825af73c3567"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S01_Faculty_Laptop_Keys.mat",
+      "originalGUID": "e55226b6a4b3a438697836e40e44e88a",
+      "importGUID": "699a43850c9159fea22efa5079b59c5c",
+      "sha256": "7b96969140c37cee0d7937c20fa5ec64e31fcff7cc60ef6b51492028051032c1"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Whiteboard_Blue_Marker.mat",
+      "originalGUID": "e57315a3b46db4372b69d60b5f7d11f5",
+      "importGUID": "cbc6fa5a80155598a8e68798ab948118",
+      "sha256": "ba07c7650d19b29cd4ac553836d73584e52c2de24f5c67303159093509b310d2"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Main_Display_Canvas.mat",
+      "originalGUID": "e695e0ceb9fd04deda7148a993d47535",
+      "importGUID": "759b6ae645d954f6bd73638850e6976f",
+      "sha256": "c9356a9ce915738ae32b0cb8f3ef09dda1c38106d4dd5723b461eed5b71f962a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Keyboard_Keys.mat",
+      "originalGUID": "e6e8e2b5601ed47289f768348db6dbb8",
+      "importGUID": "ecdbfc04cdec53a18d162527ea302f95",
+      "sha256": "7b8ea40a3cdfe26f49246ad16927df316d6e7d60ef2679a6c5b0bfc33d39191e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_White_Tissue.mat",
+      "originalGUID": "e8fb6cc3f2f454e4190a480243c09aae",
+      "importGUID": "6b833013efad508399c5fa41a72581eb",
+      "sha256": "224c557bcc27550ebd2454c8f2bbd82ddf65aa68ff9ee7caf2f8b2a82f99ce2c"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Identity_Deep_Teal.mat",
+      "originalGUID": "ea0a4f24f17ae4c3a8729b4636dbff37",
+      "importGUID": "3c0fb36ff7205345b0e894cfdf35426a",
+      "sha256": "e541684f6d5bfe9f3dd51352258d2021aabf1d52bb943cc8272dace1f82cae08"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p24_0p018_0p0081.asset",
+      "originalGUID": "ea323fab104fc45d493587bf8c5569eb",
+      "importGUID": "90b77215c519513797ee74f6763986ce",
+      "sha256": "e2df0c3229800569e3448e412f347812bf2dc5ee2acc364c02e26ae03dae5f3d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p018_0p022_0p095_0p008.asset",
+      "originalGUID": "ea444e6056cc7418bb7f9620240c7319",
+      "importGUID": "0d2560e663b55e029cd1f5ab57a5d146",
+      "sha256": "e926b9e29455d122ccef0616690d231dc838789eb816bd35e1f5162b269f5bc7"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N01_Whiteboard_White.mat",
+      "originalGUID": "ea4f959721dd548e98612736312f6246",
+      "importGUID": "5fcc9875aa5b5cf5a06b086210a8a37b",
+      "sha256": "7826c091e67db9d5c1d8c5b1c2e7b1213da63729a4657fbba706266b7c553dcd"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Cream_Cabinet.mat",
+      "originalGUID": "ec1a6bd0c35b045d1b60fe8c01f63d12",
+      "importGUID": "b356e9151ad657dcba23d33b20068b49",
+      "sha256": "9591c0058b36710602b2f98a0bfa859ea3ea18888d2d4159cde60bd4aad14f06"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p68_0p62_0p13_0p018.asset",
+      "originalGUID": "ecbd4819db10c4455856393151fcaaa1",
+      "importGUID": "e2b74b83a08c5a608bd758a3e53b676d",
+      "sha256": "61e45f957af0258c0755d6ff4dceeba56b066a4260d7f25a6791f54332068042"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p185_1p155_157_228_0p028.asset",
+      "originalGUID": "ecdc0046d48e7490fab67b5716d1fe8e",
+      "importGUID": "1954e926a13754b09975bb6afd316202",
+      "sha256": "137b26a117a9e457684b1e7e8924cbe106776beec4305040fe2dcbd8ac63f16d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Whiteboard.mat",
+      "originalGUID": "edcaa5dfc51654d0dbaa3097e7f115a7",
+      "importGUID": "bf6a46d4b4ed568a8764373622c1e238",
+      "sha256": "c171ab87b158da3d455a87af3a6d562a6876941132c0091458f5fc0188e24165"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Lighting_Warm_Emissive_Diffuser.mat",
+      "originalGUID": "eddac3b8af8f74be69f8aee60a6f64a0",
+      "importGUID": "854fd6cd365a5699928d05a261de307e",
+      "sha256": "40da472c3e4379c61500cb42e5935988b05f6b1d79c7195bd3a44f17fefc558d"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Warm_Skirting.mat",
+      "originalGUID": "eed05da14a48a433d9b4bade0816c2f6",
+      "importGUID": "b8b7b508cb9253239775e5cf3d275d39",
+      "sha256": "9da4dd812a85884b2a0a43bcd829f444ba350ea2116642784c6aad11f7e9a9df"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C04_Light_Oak_Slats.mat",
+      "originalGUID": "f07354cfb8f174ff4bdb9bdec541a518",
+      "importGUID": "7f1459106ed75efcbf27e0196b129409",
+      "sha256": "bf7edc06e1af32f2df6ded4efc66fc50ca0b95afef1e35e691e5786b649d6a2d"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p25_0p31_0p24_0p025.asset",
+      "originalGUID": "f0a9a974808a74719abebb32966284df",
+      "importGUID": "956ffe8e79ce51368bea99d8719ca467",
+      "sha256": "a7b3da43a5caad43366e04b8a7a3cd908151594416cee2972cf4d8d1fc48d22f"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\Sign_Deep_Teal.mat",
+      "originalGUID": "f14d8d2e88e8a46328851dd3553d264d",
+      "importGUID": "3d82a022358b5ca992af865bb9e54784",
+      "sha256": "be6d71d36e5bcc7d9d13d81fa37444199f11f069ecfe78e614e5e479cd867d04"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Warm_Hardware.mat",
+      "originalGUID": "f1cc4a57a5ff248ac99eac7f6d1e0a19",
+      "importGUID": "94f8cb86386250ee93894ef744a8fd7e",
+      "sha256": "2192c40931a4d2a411ee663134aad7bb58bbefed9d5fec178c2d8371b4639671"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S03_Appliance_Paper_Ceramic.mat",
+      "originalGUID": "f24711b4f34524bc49ad432700fda1c8",
+      "importGUID": "ae18a80b951551e09847c2a17a8ab8c2",
+      "sha256": "bee54eb28f2da7fce7b46285cd60f13e4039311940138020e7e1e6d204e7dce4"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p54_0p33_0p035_0p0158.asset",
+      "originalGUID": "f2c1a3d1a0cc74e4587b6d80fc4277a6",
+      "importGUID": "8e9f05d0b911522f93eb6b9248d8da2b",
+      "sha256": "cac7d79d63a8d198abe4c11d22c9bda3056397d994c28f1a1054a526cc3d5b79"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Raised_Toilet_Lid.asset",
+      "originalGUID": "f2c33df1fb47149deaf2f4e63fc2c547",
+      "importGUID": "39188c5a148254c0b46132e50cccf996",
+      "sha256": "815697f5b5251a394ad7e35871958af71e5c48dd1707f72b104540e99273ea44"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Supply_Dusty_Blue.mat",
+      "originalGUID": "f3c597ebaa63945d3b2e3095c3593a84",
+      "importGUID": "825a340655b25ae8af604fc7af904ef4",
+      "sha256": "0a3b0b225bbb05070592b32e88068158e4d5958981c155439f96e1cde0ec442e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p95_0p055_0p64_0p1.asset",
+      "originalGUID": "f40fd24d563324e178a27b475cfac48e",
+      "importGUID": "63c92d43a2e15bcbb1a2186357df1c6e",
+      "sha256": "e9d0876a7e2db64d8baa3b89336786610fc7603df2a2a7026bc3856478ebea74"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Light_Oak_Shelf.mat",
+      "originalGUID": "f4a1083fa4ef34e448edfae5540f1ec1",
+      "importGUID": "707e43dd221c593a9aa79be36f37fa56",
+      "sha256": "92c41e7dcb4b645a4c4532a8e725931c16e54f9937a7a19775358e0821bb3c9a"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Vacant_Indicator.mat",
+      "originalGUID": "f4b1890cc0d634df5a5baffedf9ea5f5",
+      "importGUID": "6f6b94d20ccc506ba8d3994701b23e4d",
+      "sha256": "c8ac777ff37097b5e5a905e5d92cde7cf2b83dc6934d2c1a91e7dbd7f792b3eb"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p27_0p34_0p29_0p025.asset",
+      "originalGUID": "f576aa54883bc485fb2a851d710cd20f",
+      "importGUID": "760d7497cd5351de94625b9f24310e69",
+      "sha256": "24d6630d896ead3a8d56b9acf5e58e347254a382a157e654cfe8e149fa7d4d53"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p38_0p024_0p26_0p012.asset",
+      "originalGUID": "f5bd4b8ca058a448ea7db2490897ce05",
+      "importGUID": "7e9d2eb83e98506f8d2a5d3691130e41",
+      "sha256": "2f628099e6d35797737d86d7e0addaa7f406381cb99e8e2ac3d87eb9806e1b35"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p39_0p022_0p26_0p02.asset",
+      "originalGUID": "f60886a5ca9d54183933c67902836f2f",
+      "importGUID": "2bbf3694d6d256e989f45453cac98296",
+      "sha256": "95fea1151815ebf4ac5104c5ffb00d000810aade77220a4167835234cd47fde9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p17_0p009_0p22_0p008.asset",
+      "originalGUID": "f6f69959f7cc74fb8a859b968a249da6",
+      "importGUID": "745c2035725755ab8c761a44967cf976",
+      "sha256": "472b77ea5d5f3974bfadd840c2e6a4161bd8f5861cff4a316df6157f866f43ce"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N04_Project_Graphite_Detail.mat",
+      "originalGUID": "f7507b008aecc40f4a146b66de8215eb",
+      "importGUID": "7e084a32673f519e81742822cddd45b7",
+      "sha256": "e6ed1223ab316f09514c0a5b44fe8e6ab139c752d0fced6292c46f165ee081f3"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p72_0p53_0p025_0p01.asset",
+      "originalGUID": "f77be2757ee084a109591fb3e047f23c",
+      "importGUID": "cee78885b45256b395a7436fc4ebfc0f",
+      "sha256": "e984273391c8985020ad10fb968083b60ada50147c6a01bf023e0e08e0fa1e77"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p22_0p03_0p14_0p012.asset",
+      "originalGUID": "f7a205907f0d64efcabd70b31c012716",
+      "importGUID": "21c4af99dd4f5a9885be94db17638d79",
+      "sha256": "fe61c2f9365deede33b0bb18f44d4d82edffb89a96a207f53b6a535330d59910"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p7347_0p56_0p033_0p013.asset",
+      "originalGUID": "f80369f1fae6d4528970492f5962384a",
+      "importGUID": "70df71ac09e25b19ac906a02dba73f12",
+      "sha256": "cdb04a8cdf0f8418821ce6d543810dd8c4c6fd1e6ba71eaf7f915bf8a2095d45"
+    },
+    {
+      "source": "JEI_Blockout\\Materials\\Administration.mat",
+      "originalGUID": "f83ef05f843f24010bdcc704a9069dbb",
+      "importGUID": "de619ad2f1235fa2b0d34888e3df8810",
+      "sha256": "aae4ddb5ef9edc2ba27a2f5a47676620a9b12c4220490e447f95de54198ef0ee"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p8_0p61_0p66_0p035.asset",
+      "originalGUID": "f853228fe256445d4945ac467dd3ca42",
+      "importGUID": "ce2f6a44d751511c99f840169d2edacc",
+      "sha256": "3ae9e7138a0c20deb9cd16f33844d9de08311b329b6dff6a4695334aef5bbe5a"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p46_0p045_0p445_0p075.asset",
+      "originalGUID": "f8b4dddee321441f7b4ad50853320cdb",
+      "importGUID": "e4632a9f16615e35b29fad712494b3db",
+      "sha256": "7feca7e8be3cd761ba16439c30cc8c28967bef357b902468a7415f171993c474"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\N03_Warm_Cork.mat",
+      "originalGUID": "f8bd2e8bb9cfc45e894f3bf751afd9aa",
+      "importGUID": "59c3478919365ee0a5da1881e46f7a96",
+      "sha256": "55b69cfe6addba6f2eb0e39513d45ec1e423be7c648d8c3298f5bff2062232d9"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\C07_Rounded_0p405_0p025_0p198_0p035.asset",
+      "originalGUID": "fa880f192a6704171a1f1b746cb7b95a",
+      "importGUID": "344150d9536f54449103fbfe6e2d897e",
+      "sha256": "258d5cc4c91d41155facf3e15f218cccdbe4dff4ee4e5aa8055041c3f85f058e"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C05_Tile_Grout.mat",
+      "originalGUID": "faabd21657d5241f49f13053f0e90ac1",
+      "importGUID": "aa776dd5bf13587bb990de04e974b4c8",
+      "sha256": "5bd33281e876989a7f1c7aef381d2c1902044e90a648bca0fa8fe2f9f046e41c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p04_0p56_0p34_0p016.asset",
+      "originalGUID": "fb782e1c002bf41bdb5f2af4c30dfde9",
+      "importGUID": "181f254369f958e29dd9701449adecc1",
+      "sha256": "388ab21f73b8fef52abaa70782525330e2b212d15e0381bd98bad060967a6d97"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C03_Cream_Wainscot.mat",
+      "originalGUID": "fc0c2469700e244468a4bd1fdc353f4b",
+      "importGUID": "85d1f1cf177c5322bdc5a5db60dc264a",
+      "sha256": "d08909ab9821026dfafa07efeafa3f0a518a8094d1be4d53257003e3df6c77b0"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Arc_v2_1p489_1p421_155_230_0p035.asset",
+      "originalGUID": "fd54fa48384fa4fcb99b1b5b8eb0b463",
+      "importGUID": "3c93261afcd95c009684f80a6ea87432",
+      "sha256": "a16e1229294a4b9599aaae796ed63cc32895867bf0cb82b878d9475895d901e6"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p8555_0p375_0p032_0p012.asset",
+      "originalGUID": "fda3d9d7c49894ba99dc2905b8968fac",
+      "importGUID": "ac497408ea1f514b87a5d56ddb68f3b6",
+      "sha256": "1c302fbf7872fd17316f34ea3cd51572dc5bfc8d54bd31fac9b802758cf0c0d7"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\WC_Urinal_Concave_Upright_Back_v1.asset",
+      "originalGUID": "fe1df312b50b946498dabb008352fb44",
+      "importGUID": "a5333cbd32b657b0a7c6d1d6fb8fcf5f",
+      "sha256": "0f174fffe75129c34e03c0ab7ec0346211f3faf8f6fb89ba42fa76d15700c73c"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p105_0p003_0p052_0p006.asset",
+      "originalGUID": "fe774e767a23d4e959a4d6df3d6f3711",
+      "importGUID": "9a0db151be0e51b8ad4365d0374d40a3",
+      "sha256": "8fe3f480158da2ce2fc1b1c5ccb8b392de4670a1bcec0c4baa77bc87f251a4d9"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\S04_Honey_Oak.mat",
+      "originalGUID": "fe96570c7ec0b4bf8ae5c5372a11bffd",
+      "importGUID": "e5d1661ea9ab5ef982e1c3894966a9eb",
+      "sha256": "021b2841aea0e6d61abb034d949c88edbcb937987278e099c6a60c1afd3b9065"
+    },
+    {
+      "source": "JEI_Furnishings\\Materials\\C02_Sage_Metal_Frame.mat",
+      "originalGUID": "feea6725578b04153b242ff2ada26f54",
+      "importGUID": "1fe450711be25e028560e62b24ad8a0b",
+      "sha256": "c3fd18160e7d6bfb66583585065fa8c65bcba615e9b5a466fbbb6621d7c6ea8e"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_0p68_0p018_0p5_0p012.asset",
+      "originalGUID": "ff4bac6fcaedf4a5885cbc9e84a2b840",
+      "importGUID": "5171b1f5416e5371adf98a260cd9b2cf",
+      "sha256": "6106de84c8664ac545bbedf67ac98ca8c42287334f8eb1bbb33f282c3d130b4f"
+    },
+    {
+      "source": "JEI_Furnishings\\Meshes\\Rounded_1p2_0p045_0p55_0p045.asset",
+      "originalGUID": "ffc2566f370cf4cfdb323da6d60c1c35",
+      "importGUID": "f1b9b4cfcfea5d72b4d6e40951333877",
+      "sha256": "7512a54d5e7e78ab8d70007e241bfa60cf43d8ea4ab0f33e3e29713358a86351"
+    }
+  ]
+}

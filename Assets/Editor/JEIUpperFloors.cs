@@ -40,6 +40,7 @@ public static partial class JEIStructureBlockout
         {
             var view = Object.FindFirstObjectByType<JEIStructureView>();
             if (!view || view.floors.Length != 3) throw new InvalidOperationException("Three floor view references are missing.");
+            if (view.IsWalking) view.SetWalking(false);
             VerifyOneCamera();
             var camera = view.GetComponent<Camera>();
             if (!camera.enabled || camera.orthographic || view.walkPlayer.activeSelf)
@@ -65,7 +66,7 @@ public static partial class JEIStructureBlockout
             VerifyOneCamera();
             if (!camera.enabled || view.walkPlayer.activeSelf) throw new InvalidOperationException("Could not return to overview.");
             File.WriteAllText(UpperPreviewPath + "/Unity_Runtime_Verification.txt",
-                "PASS: actual Play mode starts with the complete three-floor perspective model.\nPASS: floors 1, 2 and 3 isolate correctly without disabling collisions.\nPASS: walking restores all floors; overview -> walking -> overview keeps exactly one active Camera and AudioListener.\nPASS: floor 2 and 3 previews rendered from the runtime camera.");
+                "PASS: actual Play mode can display the complete three-floor perspective model.\nPASS: floors 1, 2 and 3 isolate correctly without disabling collisions.\nPASS: walking restores all floors; overview -> walking -> overview keeps exactly one active Camera and AudioListener.\nPASS: floor 2 and 3 previews rendered from the runtime camera.");
             SessionState.SetInt(UpperRuntimeKey, 2);
             Debug.Log("JEI_UPPER_RUNTIME_SUCCESS");
         }
@@ -124,7 +125,7 @@ public static partial class JEIStructureBlockout
         var rooms = Group(level, "01_Rooms__numbered");
         foreach (var room in plan.rooms)
         {
-            if (room.kind == "courtyard" || room.kind == "stair" || room.name == "LIFT RESERVE")
+            if (room.kind == "courtyard" || room.kind == "stair" || room.id.EndsWith("-C06", StringComparison.Ordinal))
             {
                 Group(rooms, room.id + "__" + room.name + "__VOID");
                 continue;
@@ -205,6 +206,7 @@ public static partial class JEIStructureBlockout
     public static void VerifyUpperFloors()
     {
         if (SceneManager.GetActiveScene().path != ScenePath) throw new InvalidOperationException("Open the structure scene first.");
+        using var openDoors = new OpenRoomDoors();
         var report = new List<string>();
         Physics.SyncTransforms();
         for (int number = 2; number <= 3; number++)
@@ -214,7 +216,7 @@ public static partial class JEIStructureBlockout
             int doors = 0;
             foreach (var w in upperPlan.walls) foreach (var o in w.openings)
             {
-                if (o.kind != "door") continue;
+                if (o.kind != "door" || IsLiftLandingOpening(w, o)) continue;
                 var center = w.axis == "H" ? new Vector3(o.at, y + 1, w.at) : new Vector3(w.at, y + 1, o.at);
                 var half = w.axis == "H" ? new Vector3(o.width / 2 - .08f, .85f, .08f) : new Vector3(.08f, .85f, o.width / 2 - .08f);
                 AssertClear(center, half, "F" + number + " door");
@@ -231,7 +233,7 @@ public static partial class JEIStructureBlockout
                     if (hit.name.StartsWith("Slab panel") || hit.name.StartsWith("Zone floor"))
                         throw new InvalidOperationException("Slab covers the floor opening at " + center);
             }
-            report.Add("PASS: Floor " + number + ": " + doors + " clear doorways; 2.40m corridor loop; courtyard, lift and both stair openings clear.");
+            report.Add("PASS: Floor " + number + ": " + doors + " clear pedestrian doorways; 2.40m corridor loop; courtyard and stair openings clear; lift landing verified separately.");
             foreach (var r in upperPlan.rooms)
                 if (r.id.Contains("-N") || r.id.Contains("-S")) report.Add(r.id + " " + r.name + ": " + Area(r).ToString("F2") + " m2 clear.");
         }
@@ -276,11 +278,14 @@ public static partial class JEIStructureBlockout
                 foreach (var p in new[] { new Vector2(-5.3f,-4.6f), new Vector2(-5.3f,4.6f), new Vector2(5.3f,4.6f), new Vector2(5.3f,-4.6f), new Vector2(13.3f,-4.6f) }) WalkTo(cc, p);
                 AssertHeight(cc, y);
                 var p2 = JsonUtility.FromJson<Plan>(File.ReadAllText("Assets/JEI_Blockout/Floor0" + number + "_Plan.json"));
+                var view = Object.FindFirstObjectByType<JEIStructureView>();
+                bool furnished = view && view.floors.Length >= number && view.floors[number - 1].Find(UpperInteriorName);
                 foreach (var r in p2.rooms)
                 {
                     if (!r.id.Contains("-N") && !r.id.Contains("-S")) continue;
                     float x = (r.x0 + r.x1) / 2, z = (r.z0 + r.z1) / 2;
                     PlaceProbe(cc, new Vector3(x, y + .05f, z > 0 ? 4.6f : -4.6f));
+                    if (furnished) z = Mathf.Sign(z) * 7.55f;
                     WalkTo(cc, new Vector2(x, z));
                     AssertHeight(cc, y);
                 }

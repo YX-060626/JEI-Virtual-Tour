@@ -1,0 +1,4 @@
+PASS: roof covers all occupied third-floor rooms, corridors, stairwells and service cores.
+PASS: 7.80 x 6.40m central courtyard remains open through the roof.
+PASS: roof underside +10.50m, top +10.80m; 0.70m parapet.
+PASS: both stairs and all upper rooms remain walkable with roof present.

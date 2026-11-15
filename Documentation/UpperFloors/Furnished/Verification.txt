@@ -1,0 +1,22 @@
+PASS: 51 wood-finish triangular signs, with unnumbered restroom signs and no stall numbers.
+PASS: the reception academy sign uses an opaque oak print with English lettering, and active scene labels contain no Chinese text.
+PASS: lift geometry protects all three shaft landings when the cabin is absent.
+PASS: 02-N01 LARGE CLASSROOM is furnished and accessible from the corridor.
+PASS: 02-N02 TEACHING STUDIO is furnished and accessible from the corridor.
+PASS: 02-N03 COMPUTER LAB is furnished and accessible from the corridor.
+PASS: 02-S01 TEACHER OFFICE is furnished and accessible from the corridor.
+PASS: 02-S02 FACULTY OFFICE is furnished and accessible from the corridor.
+PASS: 02-S03 GROUP STUDY is furnished and accessible from the corridor.
+PASS: 02-S04 LECTURE CLASSROOM is furnished with 24 student desks and accessible from the corridor.
+PASS: 02-S05 MEETING ROOM is furnished and accessible from the corridor.
+PASS: floor 2 restroom and service entrances are reachable, and the atrium is open to the sky.
+PASS: 03-N01 SEMINAR A is furnished and accessible from the corridor.
+PASS: 03-N02 GENERAL CLASSROOM is furnished with 24 student desks and accessible from the corridor.
+PASS: 03-N03 LARGE CLASSROOM is furnished with 32 student desks and accessible from the corridor.
+PASS: 03-N04 PROGRAM OFFICE is furnished and accessible from the corridor.
+PASS: 03-N05 ADVISOR OFFICE is furnished and accessible from the corridor.
+PASS: 03-S01 RESEARCH OFFICE is furnished and accessible from the corridor.
+PASS: 03-S02 OPEN STUDY ROOM is furnished and accessible from the corridor.
+PASS: 03-S03 COMPUTER LAB is furnished with 30 computer workstations and accessible from the corridor.
+PASS: floor 3 restroom and service entrances are reachable, and the atrium is open to the sky.
+PASS: both stairs and upper corridors passed the existing three-floor traversal check.

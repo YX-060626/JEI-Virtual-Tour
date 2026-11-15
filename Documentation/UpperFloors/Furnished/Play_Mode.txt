@@ -1,0 +1,5 @@
+PASS: all 51 plaques use opaque meshes; restroom signs and cubicles have no numbers.
+PASS: upper floor isolation switches plaques and furnishings together.
+PASS: returning to walking restores the three floors and one active camera/listener.
+PASS: English tour HUD and visible scene text.
+PASS: the actual walking capsule entered the lift and rode between all three floors.

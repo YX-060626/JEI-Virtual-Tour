@@ -1,0 +1,6 @@
+PASS: Shift toggles persistent walk/run mode (both Shift keys); measured 3.20 / 5.80 m in one second.
+PASS: Space jumps 1.03m, rejects a second airborne jump, and lands on the floor.
+PASS: low ceiling stops upward motion without penetration; player lands normally.
+PASS: the actual updated movement controller walks AND runs up/down both staircases through all three floors.
+PASS: articulated legs alternate, arms counter-swing, idle blends out, and airborne / run poses are supported.
+PASS: first/third-person switching retains one camera and hides the full new avatar in first person.

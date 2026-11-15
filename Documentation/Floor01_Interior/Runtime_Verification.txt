@@ -1,0 +1,4 @@
+FAIL: System.InvalidOperationException: Door input did not select the expected state.
+  at JEIStructureBlockout.FinishRoomDoorMotion (JEIRoomDoor leaf, System.Boolean expectedOpen) [0x00088] in C:\Users\86156\Desktop\JEI-Virtual-Tour\Assets\Editor\JEITourRefresh.cs:155 
+  at JEIStructureBlockout.VerifyRoomDoorInteraction (JEIStructureView view) [0x001ef] in C:\Users\86156\Desktop\JEI-Virtual-Tour\Assets\Editor\JEITourRefresh.cs:190 
+  at JEIStructureBlockout.PollFitout () [0x0033b] in C:\Users\86156\Desktop\JEI-Virtual-Tour\Assets\Editor\JEIFitoutVerification.cs:130 

@@ -1,0 +1,3 @@
+Floor 1: 2393 serialized records checked, 0 changed.
+Floor 2: 2330 serialized records checked, 0 changed.
+Floor 3: 1982 serialized records checked, 0 changed.

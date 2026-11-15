@@ -60,8 +60,8 @@
     },
     {
       "id": "02-C06",
-      "name": "LIFT RESERVE",
-      "nameZh": "\u65e0\u969c\u788d\u7535\u68af\u4e95\u9884\u7559",
+      "name": "LIFT",
+      "nameZh": "\u7535\u68af",
       "kind": "service",
       "x0": 9.4,
       "x1": 12.4,
@@ -130,9 +130,9 @@
     },
     {
       "id": "02-S01",
-      "name": "TUTORIAL ROOM",
-      "nameZh": "",
-      "kind": "teaching",
+      "name": "TEACHER OFFICE",
+      "nameZh": "\u6559\u5e08\u529e\u516c\u5ba4",
+      "kind": "office",
       "x0": -17.85,
       "x1": -11.8,
       "z0": -12.85,
@@ -140,9 +140,9 @@
     },
     {
       "id": "02-S02",
-      "name": "SEMINAR ROOM",
-      "nameZh": "",
-      "kind": "teaching",
+      "name": "FACULTY OFFICE",
+      "nameZh": "\u6559\u5e08\u529e\u516c\u5ba4",
+      "kind": "office",
       "x0": -11.8,
       "x1": -5.2,
       "z0": -12.85,
@@ -160,9 +160,9 @@
     },
     {
       "id": "02-S04",
-      "name": "STAFF OFFICE",
-      "nameZh": "",
-      "kind": "office",
+      "name": "LECTURE CLASSROOM",
+      "nameZh": "\u6388\u8bfe\u6559\u5ba4",
+      "kind": "teaching",
       "x0": 2.0,
       "x1": 9.4,
       "z0": -12.85,
@@ -318,6 +318,11 @@
         {
           "at": 8.0,
           "width": 1.0,
+          "kind": "door"
+        },
+        {
+          "at": 10.9,
+          "width": 1.1,
           "kind": "door"
         },
         {

@@ -1,0 +1,2 @@
+PASS: F input selects, opens and closes a room door in first and third person. The walking capsule traverses the open door.
+PASS: lift and floor switching remain functional.

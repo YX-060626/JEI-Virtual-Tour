@@ -21,14 +21,14 @@
     {"id":"C03", "name":"WC - MEN", "nameZh":"男卫生间（占位）", "kind":"service", "x0":-12.4,"x1":-6.6,"z0":-3.3,"z1":0.0},
     {"id":"C04", "name":"OPEN COURTYARD", "nameZh":"采光庭院 / 各层留洞预留", "kind":"courtyard", "x0":-4.0,"x1":4.0,"z0":-3.3,"z1":3.3},
     {"id":"C05", "name":"CLEANER / STORE", "nameZh":"清洁 / 储物间", "kind":"service", "x0":6.6,"x1":9.4,"z0":0.0,"z1":3.3},
-    {"id":"C06", "name":"LIFT RESERVE", "nameZh":"无障碍电梯井预留", "kind":"service", "x0":9.4,"x1":12.4,"z0":0.0,"z1":3.3},
+    {"id":"C06", "name":"LIFT", "nameZh":"电梯", "kind":"service", "x0":9.4,"x1":12.4,"z0":0.0,"z1":3.3},
     {"id":"C07", "name":"ACCESSIBLE WC", "nameZh":"独立无障碍卫生间预留", "kind":"service", "x0":6.6,"x1":9.4,"z0":-3.3,"z1":0.0},
     {"id":"C08", "name":"IT / SERVICES", "nameZh":"设备 / 弱电间", "kind":"service", "x0":9.4,"x1":12.4,"z0":-3.3,"z1":0.0},
     {"id":"C09", "name":"STAIR B", "nameZh":"东侧封闭楼梯 B", "kind":"stair", "x0":12.4,"x1":17.85,"z0":-3.3,"z1":3.3}
   ],
   "walls": [
     {"axis":"H","at":5.9,"start":-17.85,"end":17.85,"external":false,"openings":[{"at":-10.7,"width":1.2,"kind":"door"},{"at":-5.0,"width":1.2,"kind":"door"},{"at":4.5,"width":1.5,"kind":"door"},{"at":13.3,"width":1.2,"kind":"door"}]},
-    {"axis":"H","at":-5.9,"start":-17.85,"end":17.85,"external":false,"openings":[{"at":-8.0,"width":1.2,"kind":"door"},{"at":0.0,"width":2.4,"kind":"door"},{"at":6.6,"width":1.2,"kind":"door"},{"at":13.3,"width":1.2,"kind":"door"}]},
+    {"axis":"H","at":-5.9,"start":-17.85,"end":17.85,"external":false,"openings":[{"at":-8.0,"width":1.2,"kind":"door"},{"at":0.0,"width":2.4,"kind":"door"},{"at":7.3,"width":1.2,"kind":"door"},{"at":13.3,"width":1.2,"kind":"door"}]},
     {"axis":"V","at":-9.3,"start":5.9,"end":12.85,"external":false,"openings":[]},
     {"axis":"V","at":-0.75,"start":5.9,"end":12.85,"external":false,"openings":[]},
     {"axis":"V","at":10.4,"start":5.9,"end":12.85,"external":false,"openings":[]},

@@ -1,0 +1,18 @@
+PASS: occupied room doors and external exits remain clear; reserved lift shaft has a closed placeholder door.
+PASS: entry into N01 CLASSROOM A with a 1.80m-tall CharacterController.
+PASS: entry into N02 CLASSROOM B with a 1.80m-tall CharacterController.
+PASS: entry into N03 COLLABORATIVE LEARNING with a 1.80m-tall CharacterController.
+PASS: entry into N04 SEMINAR ROOM with a 1.80m-tall CharacterController.
+PASS: entry into S01 TEACHERS OFFICE with a 1.80m-tall CharacterController.
+PASS: entry into S02 ENTRANCE / RECEPTION with a 1.80m-tall CharacterController.
+PASS: entry into S03 ADMIN / STUDENT SERVICES with a 1.80m-tall CharacterController.
+PASS: entry into S04 MEETING / INTERVIEW with a 1.80m-tall CharacterController.
+PASS: entry into C02 WC - WOMEN with a 1.80m-tall CharacterController.
+PASS: entry into C03 WC - MEN with a 1.80m-tall CharacterController.
+PASS: entry into C04 OPEN COURTYARD with a 1.80m-tall CharacterController.
+PASS: entry into C05 CLEANER / STORE with a 1.80m-tall CharacterController.
+PASS: entry into C07 ACCESSIBLE WC with a 1.80m-tall CharacterController.
+PASS: entry into C08 IT / SERVICES with a 1.80m-tall CharacterController.
+PASS: full lobby path, circulation loop and both staircases through all three floors remain traversable.
+PASS: 51 unique room/area plaques across floors 1, 2 and 3, matching Room_Numbers.csv.
+PASS: all four roof wings have slopes; courtyard opening remains unobstructed above +10.90m.

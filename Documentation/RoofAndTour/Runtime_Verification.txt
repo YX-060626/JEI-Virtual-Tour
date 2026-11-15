@@ -1,0 +1,6 @@
+PASS: Play starts in first person with one active camera/listener.
+PASS: Input System keyboard events V, V, Tab, R, Tab trigger perspective, overview and roof controls.
+PASS: first/third person switch preserves player position; avatar shown only in third person.
+PASS: third-person camera retracts before the solid wall, avoiding clipping.
+PASS: overview and floor isolation hide the roof visually, retain collisions, and restore it when walking.
+PASS: both staircases remain traversable from floor 1 to 3 and back in actual Play mode.

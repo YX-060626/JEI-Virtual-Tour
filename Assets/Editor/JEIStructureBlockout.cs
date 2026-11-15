@@ -14,7 +14,7 @@ using Object = UnityEngine.Object;
 public static partial class JEIStructureBlockout
 {
     const string PlanPath = "Assets/JEI_Blockout/Floor01_Plan.json";
-    const string ScenePath = "Assets/Scenes/JEI_Floor01_Structure.unity";
+    const string ScenePath = "Assets/Scenes/JEI_Floor_Structure.unity";
     const string RequestPath = "Library/JEI_Structure.request";
     const string ResultPath = "Library/JEI_Structure.result";
     const string PreviewPath = "Documentation/Floor01_Blockout";
@@ -536,6 +536,7 @@ public static partial class JEIStructureBlockout
         {
             var view = Object.FindFirstObjectByType<JEIStructureView>();
             if (!view || !view.target || !view.walkPlayer) throw new InvalidOperationException("3D view references are incomplete.");
+            if (view.IsWalking) view.SetWalking(false);
             var overview = view.GetComponent<Camera>();
             if (overview.orthographic || !overview.enabled || view.walkPlayer.activeSelf) throw new InvalidOperationException("Default view is not the perspective overview.");
             VerifyOneCamera();
