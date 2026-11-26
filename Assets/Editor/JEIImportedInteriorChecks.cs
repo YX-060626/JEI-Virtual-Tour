@@ -47,19 +47,25 @@ public static partial class JEIStructureBlockout
         var probe=new GameObject("Temporary imported interior walk probe");var cc=probe.AddComponent<CharacterController>();
         cc.height=1.8f;cc.center=new Vector3(0,.9f,0);cc.radius=.3f;cc.skinWidth=.035f;cc.stepOffset=.25f;
         var doors=floor.GetComponentsInChildren<JEIGlassOfficeDoor>(true);
+        bool hasCafe = floor.Find("07_Courtyard_Commons/C04__Courtyard_Commons/" + CourtyardCafeRoot) != null;
         try
         {
             foreach(var door in doors)door.SetOpenImmediate(true);Physics.SyncTransforms();
             ImportedPerimeterRoutes(cc);
             ImportedServiceRoutes(cc);
             ImportedRestroomRoutes(cc);
-            ImportedRoute(cc,new[]{new Vector2(0,-4.6f),new Vector2(0,-2.4f),new Vector2(1.1f,-2.0f),new Vector2(1.3f,.55f),new Vector2(1.3f,2.4f),new Vector2(1.3f,.55f),new Vector2(1.1f,-2.0f),new Vector2(0,-2.4f),new Vector2(0,-4.6f)});
-            // Full circuit outside the curved benches from the user's original courtyard design.
-            var ring=new List<Vector2>();for(float a=0;a<=360;a+=2.5f)ring.Add(new Vector2(-1.15f+Mathf.Cos(a*Mathf.Deg2Rad)*2.12f,.55f+Mathf.Sin(a*Mathf.Deg2Rad)*2.12f));
-            ImportedRoute(cc,ring.ToArray());
+            if (hasCafe) WalkCourtyardCafe(cc);
+            else
+            {
+                ImportedRoute(cc,new[]{new Vector2(0,-4.6f),new Vector2(0,-2.4f),new Vector2(1.1f,-2.0f),new Vector2(1.3f,.55f),new Vector2(1.3f,2.4f),new Vector2(1.3f,.55f),new Vector2(1.1f,-2.0f),new Vector2(0,-2.4f),new Vector2(0,-4.6f)});
+                // Full circuit outside the curved benches from the user's original courtyard design.
+                var ring=new List<Vector2>();for(float a=0;a<=360;a+=2.5f)ring.Add(new Vector2(-1.15f+Mathf.Cos(a*Mathf.Deg2Rad)*2.12f,.55f+Mathf.Sin(a*Mathf.Deg2Rad)*2.12f));
+                ImportedRoute(cc,ring.ToArray());
+            }
         }
         finally{Object.DestroyImmediate(probe);foreach(var door in doors)door.SetOpenImmediate(false);Physics.SyncTransforms();}
-        report.Add("PASS: actual CharacterController traversed all eight teaching/office rooms, service rooms, both public restrooms, courtyard entrance and bench circuit.");
+        report.Add("PASS: actual CharacterController traversed all eight teaching/office rooms, service rooms, both public restrooms and " +
+            (hasCafe ? "the courtyard cafe seating and counter." : "the courtyard entrance and bench circuit."));
         report.Add("PASS: retained 1-007 plaque mounted to the left of the imported S03 doorway at X=7.30m.");
         File.WriteAllText(FitoutDocs+"/Import_Verification.txt",string.Join("\n",report));
     }

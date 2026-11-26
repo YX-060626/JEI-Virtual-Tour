@@ -1,12 +1,9 @@
 # JEI-Virtual-Tour
-3D Virtual Tour of the JEI Building
 
-Open `Assets/Scenes/JEI_Floor_Structure.unity` in Unity 6.3 and press Play.
+3D virtual tour of the JEI Building. Open **Assets/Scenes/JEI_Floor_Structure.unity** in Unity 6.3 and press Play.
 
-WASD moves, mouse looks, Space jumps, Shift toggles walking/running, V switches first/third person, and Tab switches between walking and the building overview. In overview, 1/2/3 isolate a floor, 0 shows all floors, and R toggles the roof. Esc releases the cursor; click the Game view to resume.
+WASD moves, the mouse looks around, Space jumps, Shift toggles walking/running, and V changes perspective. Tab switches between walking and the building overview. In overview, 1–6 show a single floor and 0 shows the full building. Esc releases the cursor. Click the Game view to resume. F1 opens the control guide.
 
-In walking mode, look at a nearby room door and press F to open or close it. At the lift off the north corridor, press E. Once inside, press 1, 2, or 3 to select a floor. F1 opens the control guide.
+Look at a nearby room door and press F to use it. At the lift off the north corridor, press E to call it, then press 1–6 inside the cabin. Both side staircases also reach the sports hall and roof garden.
 
-See [roof and tour controls](Documentation/RoofAndTour/README.md) for details and verification results.
-
-The articulated character has procedural walk, run and jump poses. See [character movement](Documentation/CharacterMovement/README.md) for settings and tests.
+The ground-floor atrium has a café and lounge, and the fourth-floor gallery keeps the atrium opening. The fifth-floor indoor sports hall spans two original storeys and includes basketball, badminton, table tennis, changing rooms, and showers. Its roof is the sixth-floor open-air garden with a circular promenade, reflecting pool, planted beds, and seating.

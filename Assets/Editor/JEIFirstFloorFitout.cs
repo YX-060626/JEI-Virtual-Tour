@@ -102,7 +102,8 @@ public static partial class JEIStructureBlockout
     {
         var g=Group(parent,"Text__"+value.Replace('\n','_'));g.localPosition=position;g.localRotation=Quaternion.Euler(0,yaw,0);
         var t=g.gameObject.AddComponent<TextMesh>();t.font=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");t.text=value;t.fontSize=64;t.characterSize=size;
-        t.anchor=TextAnchor.MiddleCenter;t.alignment=TextAlignment.Center;t.color=color;g.GetComponent<Renderer>().sharedMaterial=t.font.material;
+        t.anchor=TextAnchor.MiddleCenter;t.alignment=TextAlignment.Center;t.color=color;
+        AssignWorldTextDepth(t);
     }
     static Material FloorFinish(Room r)
     {

@@ -7,6 +7,43 @@ public static partial class JEIStructureBlockout
     const float LiftCorridorProbeZ = 4.6f;
     const float LiftCabinProbeZ = 1.9f;
 
+    static void VerifyExpandedLift(JEIStructureView view)
+    {
+        var lift = FindTourLift(view);
+        if (lift.FloorCount != view.floors.Length)
+            throw new InvalidOperationException("The elevator does not serve every tour floor.");
+
+        Physics.SyncTransforms();
+        if (view.floors.Length > 3)
+        {
+            // Check the cabin's profile through the upper shaft, including the full rise to the roof.
+            float bottom = view.floors[3].position.y - .32f;
+            float top = view.floors[view.floors.Length - 1].position.y + 2.51f;
+            var shaftCenter = new Vector3(JEILiftController.ShaftX, (bottom + top) * .5f, 1.72f);
+            var halfSize = new Vector3(1.26f, (top - bottom) * .5f, 1.466f);
+            var blockers = Physics.OverlapBox(shaftCenter, halfSize, Quaternion.identity,
+                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+            if (blockers.Length > 0)
+                throw new InvalidOperationException($"Slab or finish blocks upper lift shaft: {blockers[0].name}");
+        }
+
+        VerifyLiftGeometry(view);
+        bool playerWasActive = view.walkPlayer.activeSelf;
+        view.walkPlayer.SetActive(true);
+        try
+        {
+            VerifyLiftRuntime(view);
+        }
+        finally
+        {
+            lift.SetEditorLanding(1, false);
+            view.walkPlayer.SetActive(playerWasActive);
+            Physics.SyncTransforms();
+        }
+
+        Debug.Log($"JEI_LIFT_SUCCESS: verified boarding, rider travel and door interlocks across {lift.FloorCount} floors.");
+    }
+
     static void VerifyLiftGeometry(JEIStructureView view)
     {
         var lift = FindTourLift(view);
@@ -65,8 +102,9 @@ public static partial class JEIStructureBlockout
             if (lift.CurrentFloor != 1) throw new InvalidOperationException("Door interlock failed to hold the first floor clear.");
             WalkTo(player, LiftProbeTarget(LiftCabinProbeZ));
 
-            foreach (int destination in new[] { 2, 3, 1 })
+            for (int leg = 1; leg <= lift.FloorCount; leg++)
             {
+                int destination = leg % lift.FloorCount + 1;
                 if (!lift.TrySelectFloor(destination)) throw new InvalidOperationException("Cannot select lift floor " + destination);
                 AdvanceLiftUntil(lift, () => lift.IsMoving);
                 VerifySealedLiftDoors(view, 0);
@@ -83,14 +121,15 @@ public static partial class JEIStructureBlockout
             }
 
             // A visitor who has taken the stairs can call an empty car from another floor.
-            float floorTwo = view.floors[1].position.y;
-            PlaceProbe(player, LiftProbePosition(floorTwo + .08f, LiftCorridorProbeZ));
-            if (!lift.TryCall()) throw new InvalidOperationException("The second-floor landing could not call the empty car.");
+            int topFloor = lift.FloorCount;
+            float topHeight = view.floors[topFloor - 1].position.y;
+            PlaceProbe(player, LiftProbePosition(topHeight + .08f, LiftCorridorProbeZ));
+            if (!lift.TryCall()) throw new InvalidOperationException("The top landing could not call the empty car.");
             AdvanceLiftUntil(lift, () => lift.IsMoving);
             if (!player.enabled) throw new InvalidOperationException("Calling the elevator carried a visitor standing in the corridor.");
-            AdvanceLiftUntil(lift, () => lift.IsOpen && lift.CurrentFloor == 2);
-            VerifyLiftElevation(player, floorTwo, "calling from the second-floor corridor");
-            VerifySealedLiftDoors(view, 2);
+            AdvanceLiftUntil(lift, () => lift.IsOpen && lift.CurrentFloor == topFloor);
+            VerifyLiftElevation(player, topHeight, "calling from the top-floor corridor");
+            VerifySealedLiftDoors(view, topFloor);
         }
         finally
         {
@@ -103,7 +142,9 @@ public static partial class JEIStructureBlockout
 
     static void AdvanceLiftUntil(JEILiftController lift, Func<bool> reached)
     {
-        for (int i = 0; i < 480 && !reached(); i++) lift.AdvanceLift(1f / 60f);
+        const int stepsForTwentySeconds = 20 * 60;
+        for (int i = 0; i < stepsForTwentySeconds && !reached(); i++)
+            lift.AdvanceLift(1f / 60f);
         Physics.SyncTransforms();
         if (!reached()) throw new InvalidOperationException("The elevator did not finish the expected transition.");
     }

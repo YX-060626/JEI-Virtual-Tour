@@ -24,6 +24,8 @@ public class JEITourController : MonoBehaviour
     bool ignoreLookFrame;
     CharacterController controller;
     Renderer[] avatarRenderers;
+    bool? avatarVisible;
+    readonly RaycastHit[] cameraHits = new RaycastHit[16];
     JEIAvatarMotion avatarMotion;
     float baseStepOffset;
 
@@ -134,9 +136,19 @@ public class JEITourController : MonoBehaviour
         {
             Vector3 direction = rotation * Vector3.back;
             float clearDistance = thirdPersonDistance;
-            foreach (var hit in Physics.SphereCastAll(eye, cameraRadius, direction, thirdPersonDistance,
-                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
+            RaycastHit[] hits = cameraHits;
+            int hitCount = Physics.SphereCastNonAlloc(eye, cameraRadius, direction, hits, thirdPersonDistance,
+                Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+            if (hitCount == hits.Length)
             {
+                // Keep the nearest valid collision when the fixed buffer fills in a tight space.
+                hits = Physics.SphereCastAll(eye, cameraRadius, direction, thirdPersonDistance,
+                    Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+                hitCount = hits.Length;
+            }
+            for (int i = 0; i < hitCount; i++)
+            {
+                var hit = hits[i];
                 if (hit.collider.transform.IsChildOf(transform)) continue;
                 clearDistance = Mathf.Min(clearDistance, Mathf.Max(0, hit.distance - .06f));
             }
@@ -147,7 +159,11 @@ public class JEITourController : MonoBehaviour
             view.SetPositionAndRotation(eye + direction * followDistance, rotation);
         }
         else view.SetPositionAndRotation(eye, rotation);
-        if (avatarRenderers != null)
-            foreach (var renderer in avatarRenderers) renderer.enabled = IsThirdPerson && CameraDistance > .65f;
+        bool visible = IsThirdPerson && CameraDistance > .65f;
+        if (avatarRenderers != null && avatarVisible != visible)
+        {
+            foreach (var renderer in avatarRenderers) renderer.enabled = visible;
+            avatarVisible = visible;
+        }
     }
 }

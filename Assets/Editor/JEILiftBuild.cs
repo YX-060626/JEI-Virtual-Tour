@@ -6,7 +6,8 @@ using Object = UnityEngine.Object;
 
 public static partial class JEIStructureBlockout
 {
-    const string TourLiftRoot = "Elevator__three_stops";
+    const string TourLiftRoot = "Elevator__tour_stops";
+    const string LegacyTourLiftRoot = "Elevator__three_stops";
     const string TourLiftLanding = "10_Elevator_Landing";
 
     static void BuildTourLift(JEIStructureView view)
@@ -14,11 +15,12 @@ public static partial class JEIStructureBlockout
         var first = view.floors[0];
         var buildingRoot = first.parent;
         RemoveGeneratedLift(buildingRoot.Find(TourLiftRoot));
+        RemoveGeneratedLift(buildingRoot.Find(LegacyTourLiftRoot));
         for (int i = 0; i < view.floors.Length; i++) RemoveGeneratedLift(view.floors[i].Find(TourLiftLanding));
 
         var reservedDoor = first.Find("08_Service_Areas/C06__Lift_entrance_reserve");
         if (reservedDoor) reservedDoor.gameObject.SetActive(false);
-        for (int i = 1; i < view.floors.Length; i++) EnsureLiftWallOpening(view.floors[i]);
+        for (int i = 1; i < Mathf.Min(3, view.floors.Length); i++) EnsureLiftWallOpening(view.floors[i]);
 
         var shell = FitMat("Lift_Warm_Sage", new Color(.42f, .5f, .46f));
         var door = FitMat("Lift_Satin_Green", new Color(.25f, .35f, .32f));
@@ -30,24 +32,63 @@ public static partial class JEIStructureBlockout
         var standby = FitMat("Lift_Standby_Lamp", new Color(.12f, .28f, .20f));
         var whiteLamp = LiftLamp("Lift_Ceiling_Lamp", new Color(1f, .93f, .81f), .75f);
 
+        var upperShaft = view.floors.Length > 3
+            ? FitMat("Lift_Upper_Shaft", new Color(.72f, .74f, .70f))
+            : null;
         var stops = new JEILiftController.Landing[view.floors.Length];
         for (int i = 0; i < stops.Length; i++)
         {
             var level = view.floors[i];
             var landing = Group(level, TourLiftLanding);
             landing.gameObject.AddComponent<JEIGeneratedObject>();
+            if (i >= 3)
+            {
+                float height = i + 1 < stops.Length
+                    ? level.InverseTransformPoint(view.floors[i + 1].position).y
+                    : 3.3f;
+                bool rooftop = i == 5 && i == stops.Length - 1;
+                BuildUpperLiftShaft(landing, height, upperShaft, rooftop);
+            }
             stops[i] = BuildLiftLanding(landing, level, i + 1, door, trim, panel, steel, standby);
         }
 
         var root = Group(buildingRoot, TourLiftRoot);
         root.gameObject.AddComponent<JEIGeneratedObject>();
         var cabin = Group(root, "Moving elevator cabin");
-        BuildLiftCabin(cabin, shell, trim, panel, steel, floorFinish, whiteLamp);
+        BuildLiftCabin(cabin, stops.Length, shell, trim, panel, steel, floorFinish, whiteLamp);
         var left = LiftDoor(cabin, "Cabin left sliding door", JEILiftController.CabinFrontZ - .027f, door, trim);
         var right = LiftDoor(cabin, "Cabin right sliding door", JEILiftController.CabinFrontZ - .027f, door, trim);
         var controller = root.gameObject.AddComponent<JEILiftController>();
         controller.Configure(view, cabin, left, right, stops, ready, standby);
         Physics.SyncTransforms();
+    }
+
+    static void BuildUpperLiftShaft(Transform landing, float height, Material finish, bool rooftop)
+    {
+        const float shaftX = JEILiftController.ShaftX;
+        const float frontZ = JEILiftController.LandingZ;
+        const float rearZ = .10f;
+        const float shaftWidth = 2.80f;
+        const float wallThickness = .16f;
+        const float doorWidth = JEILiftController.DoorWidth;
+        const float doorHeight = JEILiftController.DoorHeight;
+
+        D(landing, "Shaft rear wall", new Vector3(shaftX, height * .5f, rearZ),
+            new Vector3(shaftWidth + wallThickness, height, wallThickness), finish, true);
+        foreach (int side in new[] { -1, 1 })
+        {
+            D(landing, "Shaft side wall", new Vector3(shaftX + side * shaftWidth * .5f, height * .5f, (rearZ + frontZ) * .5f),
+                new Vector3(wallThickness, height, frontZ - rearZ), finish, true);
+            D(landing, "Landing portal wall", new Vector3(shaftX + side * (shaftWidth + wallThickness + doorWidth) * .25f, height * .5f, frontZ),
+                new Vector3((shaftWidth + wallThickness - doorWidth) * .5f, height, .20f), finish, true);
+        }
+
+        D(landing, "Landing portal lintel", new Vector3(shaftX, (height + doorHeight) * .5f, frontZ),
+            new Vector3(doorWidth, height - doorHeight, .20f), finish, true);
+
+        if (rooftop)
+            D(landing, "Weather cap over elevator", new Vector3(shaftX, height + .10f, (rearZ + frontZ) * .5f),
+                new Vector3(shaftWidth + .38f, .20f, frontZ - rearZ + .38f), finish, true);
     }
 
     static void RemoveGeneratedLift(Transform item)
@@ -153,7 +194,7 @@ public static partial class JEIStructureBlockout
         return leaf;
     }
 
-    static void BuildLiftCabin(Transform cabin, Material shell, Material trim, Material wood, Material steel,
+    static void BuildLiftCabin(Transform cabin, int floorCount, Material shell, Material trim, Material wood, Material steel,
         Material floor, Material lamp)
     {
         const float x = JEILiftController.ShaftX;
@@ -173,10 +214,11 @@ public static partial class JEIStructureBlockout
         }
         var station = Group(cabin, "Floor selector");
         station.localPosition = new Vector3(x - .956f, 1.3f, 3.098f);
-        D(station, "Selector panel", Vector3.zero, new Vector3(.20f, .48f, .034f), steel);
-        for (int number = 1; number <= 3; number++)
+        const float buttonSpacing = .132f;
+        D(station, "Selector panel", Vector3.zero, new Vector3(.20f, .084f + buttonSpacing * floorCount, .034f), steel);
+        for (int number = 1; number <= floorCount; number++)
         {
-            float y = (number - 2) * .132f;
+            float y = (number - (floorCount + 1) * .5f) * buttonSpacing;
             D(station, "Floor " + number + " button", new Vector3(0f, y, -.025f), new Vector3(.081f, .088f, .024f), trim);
             LiftDigit(station, number, new Vector3(0f, y, -.041f), .063f, lamp, true);
         }
@@ -196,7 +238,7 @@ public static partial class JEIStructureBlockout
 
     static Transform LiftDigit(Transform parent, int number, Vector3 point, float height, Material material, bool fromShaft)
     {
-        string[] digits = { "bc", "abged", "abgcd" };
+        string[] digits = { "bc", "abged", "abgcd", "fbgc", "afgcd", "afgecd" };
         var glyph = Group(parent, "Embossed floor " + number);
         glyph.localPosition = point;
         if (!fromShaft) glyph.localRotation = Quaternion.Euler(0, 180f, 0);
@@ -205,9 +247,9 @@ public static partial class JEIStructureBlockout
         foreach (char segment in digits[number - 1])
         {
             bool horizontal = segment == 'a' || segment == 'd' || segment == 'g';
-            float x = horizontal ? 0f : segment == 'e' ? -width * .5f : width * .5f;
+            float x = horizontal ? 0f : segment == 'e' || segment == 'f' ? -width * .5f : width * .5f;
             float y = segment == 'a' ? height * .5f : segment == 'd' ? -height * .5f :
-                segment == 'g' ? 0f : segment == 'b' ? height * .25f : -height * .25f;
+                segment == 'g' ? 0f : segment == 'b' || segment == 'f' ? height * .25f : -height * .25f;
             D(glyph, "Digit stroke", new Vector3(x, y, 0f),
                 horizontal ? new Vector3(width, stroke, .006f) : new Vector3(stroke, height * .5f, .006f), material);
         }
@@ -241,9 +283,10 @@ public static partial class JEIStructureBlockout
 
     static JEILiftController FindTourLift(JEIStructureView view)
     {
-        var root = view.floors[0].parent.Find(TourLiftRoot);
+        var buildingRoot = view.floors[0].parent;
+        var root = buildingRoot.Find(TourLiftRoot) ?? buildingRoot.Find(LegacyTourLiftRoot);
         var lift = root ? root.GetComponent<JEILiftController>() : null;
-        if (!lift) throw new InvalidOperationException("Missing three-stop tour elevator.");
+        if (!lift) throw new InvalidOperationException("Missing tour elevator.");
         return lift;
     }
 }

@@ -8,6 +8,64 @@ using System.IO;
 public static class JEITourPerformanceSetup
 {
     const string Folder="Assets/JEI_TourSettings";
+    const string TourScene = "Assets/Scenes/JEI_Floor_Structure.unity";
+    const string TourPipeline = Folder + "/Tour_Pipeline.asset";
+    const string ClearPipeline = Folder + "/Tour_Clear_Pipeline.asset";
+
+    public static void TourBatch()
+    {
+        EditorSceneManager.OpenScene(TourScene);
+        ApplyToStructure();
+    }
+
+    [MenuItem("Tools/JEI/Tour/Install Display Profiles")]
+    public static void ApplyToStructure()
+    {
+        var scene = SceneManager.GetActiveScene();
+        if (scene.path != TourScene || EditorApplication.isPlayingOrWillChangePlaymode || scene.isDirty)
+            throw new System.InvalidOperationException("Open and save the structure tour in Edit mode.");
+        InstallOnTour(Object.FindFirstObjectByType<JEIStructureView>());
+        if (!EditorSceneManager.SaveScene(scene))
+            throw new IOException("Could not save the tour performance settings.");
+        AssetDatabase.SaveAssets();
+        Debug.Log("JEI_TOUR_PERFORMANCE_READY: Clear and Smooth profiles installed for both tour cameras.");
+    }
+
+    public static void InstallOnTour(JEIStructureView view)
+    {
+        if (!view || !view.walkPlayer)
+            throw new System.InvalidOperationException("The tour controller or walking camera is missing.");
+        var pipeline = AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(TourPipeline);
+        if (!pipeline)
+            throw new System.InvalidOperationException("The existing smooth tour pipeline asset is missing.");
+        var clearPipeline = ConfigureClearPipeline();
+
+        // The overview object stays active when switching between its own camera and the walking player.
+        var temporary = view.walkPlayer.GetComponent<JEITourPerformance>();
+        if (temporary) Undo.DestroyObjectImmediate(temporary);
+        var performance = view.GetComponent<JEITourPerformance>();
+        if (!performance) performance = Undo.AddComponent<JEITourPerformance>(view.gameObject);
+        Undo.RecordObject(performance, "Install display profiles");
+        performance.ConfigureProfiles(clearPipeline, pipeline);
+        performance.enabled = true;
+        EditorUtility.SetDirty(performance);
+        EditorSceneManager.MarkSceneDirty(view.gameObject.scene);
+    }
+    static UniversalRenderPipelineAsset ConfigureClearPipeline()
+    {
+        if (!AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(ClearPipeline)
+            && !AssetDatabase.CopyAsset(TourPipeline, ClearPipeline))
+            throw new IOException("Cannot create the clear tour pipeline.");
+        var clear = AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(ClearPipeline);
+        clear.renderScale = 1f;
+        clear.msaaSampleCount = 2;
+        clear.upscalingFilter = UpscalingFilterSelection.Auto;
+        clear.fsrOverrideSharpness = false;
+
+        EditorUtility.SetDirty(clear);
+        return clear;
+    }
+
     public static void Batch(){
         EditorSceneManager.OpenScene("Assets/Scenes/JEI_Floor01_Prototype.unity");
         Apply();

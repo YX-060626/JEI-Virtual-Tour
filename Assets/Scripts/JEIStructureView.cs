@@ -10,7 +10,8 @@ public class JEIStructureView : MonoBehaviour
     public Transform roof;
     public bool startInFirstPerson;
     public bool IsWalking { get { return walking; } }
-    [Tooltip("Optional floors for 1/2/3 isolated structural inspection; 0 restores all floors.")]
+    public bool CanToggleRoof => roof != null && floors.Length < 6;
+    [Tooltip("Optional floors for number key isolation; 0 restores all floors.")]
     public Transform[] floors = new Transform[0];
     public float distance = 48f;
     public float yaw = -35f;
@@ -27,7 +28,19 @@ public class JEIStructureView : MonoBehaviour
     bool walking;
     int selectedFloor;
     bool showRoof = true;
-    readonly System.Collections.Generic.Dictionary<Renderer, bool> floorRenderers = new System.Collections.Generic.Dictionary<Renderer, bool>();
+    readonly struct FloorRenderer
+    {
+        public readonly Renderer Renderer;
+        public readonly bool OriginallyEnabled;
+
+        public FloorRenderer(Renderer renderer)
+        {
+            Renderer = renderer;
+            OriginallyEnabled = renderer.enabled;
+        }
+    }
+
+    FloorRenderer[][] floorRenderers;
 
     Vector3 FocusPoint { get { return target != null ? target.position : Vector3.zero; } }
 
@@ -36,10 +49,13 @@ public class JEIStructureView : MonoBehaviour
         overviewCamera = GetComponent<Camera>();
         overviewListener = GetComponent<AudioListener>();
         overviewCamera.orthographic = false;
-        foreach (var floor in floors)
-            if (floor != null)
-                foreach (var renderer in floor.GetComponentsInChildren<Renderer>(true))
-                    floorRenderers[renderer] = renderer.enabled;
+        floorRenderers = new FloorRenderer[floors.Length][];
+        for (int i = 0; i < floors.Length; i++)
+        {
+            if (!floors[i]) continue;
+            var renderers = floors[i].GetComponentsInChildren<Renderer>(true);
+            floorRenderers[i] = System.Array.ConvertAll(renderers, renderer => new FloorRenderer(renderer));
+        }
 
         // Keep this component active in both modes so Tab can always return to overview.
         if (walkPlayer != null && (walkPlayer == gameObject || transform.IsChildOf(walkPlayer.transform)))
@@ -83,13 +99,16 @@ public class JEIStructureView : MonoBehaviour
 
         if (walking) return;
         var keyboard = Keyboard.current;
-        if (keyboard != null && keyboard.rKey.wasPressedThisFrame) SetRoofVisible(!showRoof);
+        if (CanToggleRoof && keyboard != null && keyboard.rKey.wasPressedThisFrame) SetRoofVisible(!showRoof);
         if (keyboard != null && floors.Length > 0)
         {
             if (keyboard.digit0Key.wasPressedThisFrame) SetFloor(0);
             if (keyboard.digit1Key.wasPressedThisFrame) SetFloor(1);
             if (keyboard.digit2Key.wasPressedThisFrame) SetFloor(2);
             if (keyboard.digit3Key.wasPressedThisFrame) SetFloor(3);
+            if (keyboard.digit4Key.wasPressedThisFrame) SetFloor(4);
+            if (keyboard.digit5Key.wasPressedThisFrame) SetFloor(5);
+            if (keyboard.digit6Key.wasPressedThisFrame) SetFloor(6);
         }
         Mouse mouse = Mouse.current;
         if (mouse == null) return;
@@ -152,14 +171,22 @@ public class JEIStructureView : MonoBehaviour
     public void SetFloor(int number)
     {
         if (number < 0 || number > floors.Length || floors.Length == 0) return;
+        int previous = selectedFloor;
         selectedFloor = number;
         UpdateRoofVisibility();
-        for (int i = 0; i < floors.Length; i++)
+
+        if (floorRenderers != null && number != previous)
         {
-            if (floors[i] == null) continue;
-            foreach (var renderer in floors[i].GetComponentsInChildren<Renderer>(true))
-                if (floorRenderers.TryGetValue(renderer, out bool enabled))
-                    renderer.enabled = enabled && (number == 0 || number == i + 1);
+            if (number == 0 || previous == 0)
+            {
+                for (int i = 0; i < floorRenderers.Length; i++)
+                    SetFloorRenderers(i, number == 0 || i == number - 1);
+            }
+            else
+            {
+                SetFloorRenderers(previous - 1, false);
+                SetFloorRenderers(number - 1, true);
+            }
         }
         if (target != null)
             target.position = number == 0
@@ -168,9 +195,22 @@ public class JEIStructureView : MonoBehaviour
         ApplyOrbit();
     }
 
+    void SetFloorRenderers(int index, bool visible)
+    {
+        var renderers = floorRenderers[index];
+        if (renderers == null) return;
+        foreach (var item in renderers)
+        {
+            bool enabled = visible && item.OriginallyEnabled;
+            if (item.Renderer && item.Renderer.enabled != enabled) item.Renderer.enabled = enabled;
+        }
+    }
+
     void OnDisable()
     {
-        foreach (var pair in floorRenderers) if (pair.Key != null) pair.Key.enabled = pair.Value;
+        if (floorRenderers != null)
+            for (int i = 0; i < floorRenderers.Length; i++) SetFloorRenderers(i, true);
+        selectedFloor = 0;
         if (roof != null) foreach (var renderer in roof.GetComponentsInChildren<Renderer>(true)) renderer.enabled = true;
     }
 

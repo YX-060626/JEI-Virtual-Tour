@@ -53,6 +53,7 @@ public sealed class JEILiftController : MonoBehaviour
     Font promptFont;
 
     public int CurrentFloor => currentFloor;
+    public int FloorCount => landings?.Length ?? 0;
     public bool IsOpen => phase == Phase.Open;
     public bool IsMoving => phase == Phase.Moving;
     public Vector3 CabinPosition => cabin.position;
@@ -88,6 +89,9 @@ public sealed class JEILiftController : MonoBehaviour
                 if (keyboard.digit1Key.wasPressedThisFrame || keyboard.numpad1Key.wasPressedThisFrame) TrySelectFloor(1);
                 if (keyboard.digit2Key.wasPressedThisFrame || keyboard.numpad2Key.wasPressedThisFrame) TrySelectFloor(2);
                 if (keyboard.digit3Key.wasPressedThisFrame || keyboard.numpad3Key.wasPressedThisFrame) TrySelectFloor(3);
+                if (keyboard.digit4Key.wasPressedThisFrame || keyboard.numpad4Key.wasPressedThisFrame) TrySelectFloor(4);
+                if (keyboard.digit5Key.wasPressedThisFrame || keyboard.numpad5Key.wasPressedThisFrame) TrySelectFloor(5);
+                if (keyboard.digit6Key.wasPressedThisFrame || keyboard.numpad6Key.wasPressedThisFrame) TrySelectFloor(6);
             }
         }
         AdvanceLift(Time.deltaTime);
@@ -278,12 +282,12 @@ public sealed class JEILiftController : MonoBehaviour
         int landing = NearbyLanding();
         string message;
         if (carryingPlayer) message = $"Lift moving to floor {destinationFloor}";
-        else if (IsInsideCabin()) message = $"Floor {currentFloor} · Press 1, 2, or 3 to select a floor";
+        else if (IsInsideCabin()) message = $"Floor {currentFloor} · Press 1–{FloorCount} to select a floor";
         else if ((phase == Phase.Open || phase == Phase.Opening || phase == Phase.Closing) && DoorwayOccupied())
             message = "Step fully inside or return to the corridor";
         else if (landing == 0) return;
         else if (IsMoving || phase == Phase.Closing) message = $"Lift moving to floor {destinationFloor}";
-        else if (currentFloor == landing && (phase == Phase.Open || phase == Phase.Opening)) message = "Step inside · Press 1, 2, or 3";
+        else if (currentFloor == landing && (phase == Phase.Open || phase == Phase.Opening)) message = $"Step inside · Press 1–{FloorCount}";
         else message = "E   Call lift / Open doors";
 
         if (promptStyle == null)
