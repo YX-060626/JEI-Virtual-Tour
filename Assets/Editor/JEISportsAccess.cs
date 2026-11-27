@@ -1,12 +1,20 @@
 using System;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Object = UnityEngine.Object;
 
 public static partial class JEIStructureBlockout
 {
     const string SportsGalleryName = "Floor_04__Atrium_Gallery__Level_10.80m";
     const string SportsStairExtensionName = "05_Stairs__to_floor_04";
+    const string GalleryBalustradeName = "02_Atrium_Glass_Balustrade";
+    const string GalleryGlassSideName = "Full-height glazed side";
+    const string GalleryRailMaterialPath = "Assets/JEI_Blockout/Materials/Door_and_Window_Frame.mat";
+    const string GalleryGlassSourcePath = "Assets/JEI_UserInteriors/JEI_Furnishings/Materials/S01_Clear_Office_Glass.mat";
+    const string AtriumCeilingPanelName = "Slab panel over the atrium";
+    const float SportsSlabThickness = .30f;
 
     static Transform BuildSportsAccess(JEIStructureView view)
     {
@@ -21,9 +29,9 @@ public static partial class JEIStructureBlockout
         var extension = floor3.Find(SportsStairExtensionName);
         if (extension) Object.DestroyImmediate(extension.gameObject);
 
-        var railMaterial = LoadSportsAccessMaterial("Assets/JEI_Blockout/Materials/Door_and_Window_Frame.mat");
+        var railMaterial = LoadSportsAccessMaterial(GalleryRailMaterialPath);
         var stairMaterial = LoadSportsAccessMaterial("Assets/JEI_Blockout/Materials/Stairs.mat");
-        var glazing = LoadSportsAccessMaterial("Assets/JEI_UserInteriors/JEI_Furnishings/Materials/S01_Clear_Office_Glass.mat");
+        var glazing = LoadSportsAccessMaterial(GalleryGlassSourcePath);
         var facade = FitMat("Gallery_Limestone", new Color(.73f, .75f, .73f));
         var gallerySlab = FitMat("Gallery_Terrazzo", new Color(.61f, .64f, .63f));
         var benchWood = FitMat("Oak_Furniture", new Color(.64f, .43f, .25f));
@@ -45,7 +53,8 @@ public static partial class JEIStructureBlockout
 
         BuildSportsFloorPlate(gallery, true, gallerySlab);
         BuildGalleryFacade(gallery, facade, railMaterial, glazing);
-        BuildGalleryAtriumGuard(gallery, railMaterial, glazing);
+        float soffitHeight = SportsFloorElevation - gallery.localPosition.y - SportsSlabThickness;
+        BuildGalleryAtriumGlazing(gallery, soffitHeight, railMaterial, glazing);
         var galleryStairs = Group(gallery, "04_Stairs__to_floor_05");
 
         // The existing switchback geometry aligns with the shaft and the third-floor access doors.
@@ -99,14 +108,14 @@ public static partial class JEIStructureBlockout
         SportsSlabPanel(slab, -17.6f, -14.2f, -3.2f, -1.65f, slabMaterial);
         SportsSlabPanel(slab, 14.2f, 17.6f, -3.2f, -1.65f, slabMaterial);
         if (!openAtrium)
-            SportsSlabPanel(slab, -3.9f, 3.9f, -3.2f, 3.2f, slabMaterial, "Slab panel over the atrium");
+            SportsSlabPanel(slab, -3.9f, 3.9f, -3.2f, 3.2f, slabMaterial, AtriumCeilingPanelName);
     }
 
     static void SportsSlabPanel(Transform slab, float xMin, float xMax, float zMin, float zMax, Material material,
         string name = "Slab panel")
     {
-        Box(slab, name, new Vector3((xMin + xMax) * .5f, -.15f, (zMin + zMax) * .5f),
-            new Vector3(xMax - xMin, .3f, zMax - zMin), material);
+        Box(slab, name, new Vector3((xMin + xMax) * .5f, -SportsSlabThickness * .5f, (zMin + zMax) * .5f),
+            new Vector3(xMax - xMin, SportsSlabThickness, zMax - zMin), material);
     }
 
     static void BuildSportsArrivalGuards(Transform floor5, Material railMaterial)
@@ -193,27 +202,120 @@ public static partial class JEIStructureBlockout
         }
     }
 
-    static void BuildGalleryAtriumGuard(Transform floor, Material metal, Material glass)
+    public static bool InstallGalleryAtriumGlazing(Transform gallery, Transform sportsFloor)
     {
-        var balustrade = Group(floor, "02_Atrium_Glass_Balustrade");
-        foreach (float z in new[] { -3.24f, 3.24f })
-            BuildGalleryGuardFace(balustrade, new Vector3(0, 0, z), 0, 7.88f, metal, glass);
-        foreach (float x in new[] { -3.94f, 3.94f })
-            BuildGalleryGuardFace(balustrade, new Vector3(x, 0, 0), 90, 6.48f, metal, glass);
+        if (!gallery || !sportsFloor) throw new InvalidOperationException("The gallery and sports floor are required.");
+        var slab = sportsFloor.Find("00_Slab/" + AtriumCeilingPanelName);
+        if (!slab) throw new InvalidOperationException("The slab above the gallery atrium is missing.");
+
+        float height = gallery.InverseTransformPoint(slab.TransformPoint(Vector3.down * .5f)).y;
+        var metal = LoadSportsAccessMaterial(GalleryRailMaterialPath);
+        var sourceGlass = LoadSportsAccessMaterial(GalleryGlassSourcePath);
+        bool changed = BuildGalleryAtriumGlazing(gallery, height, metal, sourceGlass);
+        if (changed) EditorSceneManager.MarkSceneDirty(gallery.gameObject.scene);
+        return changed;
     }
 
-    static void BuildGalleryGuardFace(Transform parent, Vector3 center, float yaw, float length,
-        Material metal, Material glass)
+    static Material LoadGalleryAtriumGlass(Material source)
     {
-        var guard = Group(parent, "Atrium edge");
-        guard.localPosition = center;
-        guard.localRotation = Quaternion.Euler(0, yaw, 0);
-        AddOpeningGlass(guard, "Guard glazing", new Vector3(0, .561f, 0), new Vector3(length, 1.04f, .04f), glass, true);
-        foreach (float y in new[] { .045f, 1.09f })
-            D(guard, "Continuous guard rail", new Vector3(0, y, 0), new Vector3(length, .06f, .08f), metal);
-        for (int i = 0; i <= 4; i++)
-            D(guard, "Balustrade post", new Vector3((i / 4f - .5f) * (length - .06f), .55f, 0),
-                new Vector3(.045f, 1.1f, .065f), metal);
+        const string name = "Gallery_Clear_Atrium_Glass";
+        string path = FitoutAssets + "/" + name + ".mat";
+        var glass = AssetDatabase.LoadAssetAtPath<Material>(path);
+        if (glass) return glass;
+
+        glass = new Material(source) { name = name };
+        var tint = new Color(.83f, .91f, .93f, .075f);
+        glass.SetColor("_BaseColor", tint);
+        glass.SetColor("_Color", tint);
+        glass.SetFloat("_Cull", (float)CullMode.Back);
+        AssetDatabase.CreateAsset(glass, path);
+        return glass;
+    }
+
+    static bool BuildGalleryAtriumGlazing(Transform gallery, float height, Material metal, Material sourceGlass)
+    {
+        if (height <= 1.1f) throw new InvalidOperationException("The gallery soffit must be above the handrail.");
+        var current = gallery.Find(GalleryBalustradeName);
+        if (HasFullHeightGlazing(current, height)) return false;
+
+        var glass = LoadGalleryAtriumGlass(sourceGlass);
+        var replacement = Group(gallery, "New atrium glazing");
+        try
+        {
+            foreach (float z in new[] { -3.24f, 3.24f })
+                BuildGalleryGlazingSide(replacement, new Vector3(0, 0, z), 0f, 7.88f, height, metal, glass, true);
+            foreach (float x in new[] { -3.94f, 3.94f })
+                BuildGalleryGlazingSide(replacement, new Vector3(x, 0, 0), 90f, 6.48f, height, metal, glass, false);
+        }
+        catch
+        {
+            Object.DestroyImmediate(replacement.gameObject);
+            throw;
+        }
+
+        if (!current) replacement.name = GalleryBalustradeName;
+        else
+        {
+            while (current.childCount > 0) Object.DestroyImmediate(current.GetChild(0).gameObject);
+            while (replacement.childCount > 0) replacement.GetChild(0).SetParent(current, false);
+            Object.DestroyImmediate(replacement.gameObject);
+        }
+        return true;
+    }
+
+    static bool HasFullHeightGlazing(Transform balustrade, float height)
+    {
+        if (!balustrade || balustrade.childCount != 4) return false;
+        foreach (Transform side in balustrade)
+        {
+            if (side.name != GalleryGlassSideName || !side.TryGetComponent<BoxCollider>(out var barrier) ||
+                Mathf.Abs(barrier.size.y - height) > .001f)
+                return false;
+        }
+        return true;
+    }
+
+    static void BuildGalleryGlazingSide(Transform parent, Vector3 center, float yaw, float length, float height,
+        Material metal, Material glass, bool addCornerPosts)
+    {
+        const int bays = 4;
+        const float frameWidth = .045f;
+        const float frameDepth = .064f;
+        const float sillHeight = .045f;
+        const float headHeight = .032f;
+
+        var edge = Group(parent, GalleryGlassSideName);
+        edge.localPosition = center;
+        edge.localRotation = Quaternion.Euler(0, yaw, 0);
+
+        float railLength = length + (addCornerPosts ? frameWidth : -frameDepth);
+        D(edge, "Recessed sill channel", new Vector3(0, sillHeight / 2, 0),
+            new Vector3(railLength, sillHeight, frameDepth), metal);
+        D(edge, "Soffit channel", new Vector3(0, height - headHeight / 2, 0),
+            new Vector3(railLength, headHeight, frameDepth), metal);
+        D(edge, "Slim handrail", new Vector3(0, 1.09f, 0),
+            new Vector3(railLength, .034f, .070f), metal);
+
+        for (int joint = 0; joint <= bays; joint++)
+        {
+            bool corner = joint == 0 || joint == bays;
+            if (corner && !addCornerPosts) continue;
+            float x = length * ((float)joint / bays - .5f);
+            D(edge, corner ? "Corner jamb" : "Slim mullion", new Vector3(x, height / 2, 0),
+                new Vector3(frameWidth, height, frameDepth), metal);
+        }
+
+        float paneHeight = height - sillHeight - headHeight + .008f;
+        float paneCenter = (height + sillHeight - headHeight) / 2;
+        for (int bay = 0; bay < bays; bay++)
+        {
+            float x = length * ((bay + .5f) / bays - .5f);
+            AddOpeningGlass(edge, "Full-height clear glazing", new Vector3(x, paneCenter, 0),
+                new Vector3(length / bays - .040f, paneHeight, .018f), glass, false);
+        }
+
+        // One continuous barrier keeps the joints between panes and frame members closed to the player.
+        Solid(edge, new Vector3(0, height * .5f, 0), new Vector3(length, height, .04f));
     }
 
     static void BuildGalleryFurnishings(Transform floor, Material metal, Material benchWood)
