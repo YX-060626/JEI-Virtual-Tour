@@ -322,6 +322,7 @@ public static partial class JEIStructureBlockout
         Vector3 supportA = new Vector3(inner, 1.66f, 1.65f), supportB = new Vector3(inner, 3.31f, -1.65f);
         var support = Box(group, "Upper flight structural slab", (supportA + supportB) / 2, new Vector3(1.5f, .16f, Vector3.Distance(supportA, supportB)), finishes["stair"]);
         support.transform.rotation = Quaternion.LookRotation(supportB - supportA);
+        JEIStairEdgeRepair.FitStair(group);
         float gap = (outer + inner) / 2;
         Rail(group, new Vector3(gap, 1.1f, -1.65f), new Vector3(gap, 2.9f, 1.65f));
         Rail(group, new Vector3(gap, 2.9f, 1.65f), new Vector3(gap, 4.7f, -1.65f));

@@ -43,6 +43,9 @@ public static partial class JEIStructureBlockout
             floor5.gameObject.AddComponent<JEIGeneratedObject>();
             floor5.localPosition = Vector3.up * SportsFloorElevation;
             BuildSportsTerrace(floor5);
+            BuildStairOpeningWalls(view.floors[2], floor4);
+            BuildStairOpeningWalls(floor4, floor5);
+            CloseGalleryStairEnds(floor4, floor5);
             view.floors = view.floors.Concat(new[] { floor4, floor5 }).ToArray();
             BuildTourLift(view);
             VerifyExpandedLift(view);

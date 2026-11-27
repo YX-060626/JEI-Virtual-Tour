@@ -129,6 +129,29 @@ public static partial class JEIStructureBlockout
         }
     }
 
+    static void CloseGalleryStairEnds(Transform gallery, Transform sportsFloor)
+    {
+        var stairs = gallery.Find("04_Stairs__to_floor_05");
+        var wallMaterial = LoadSportsAccessMaterial("Assets/JEI_Blockout/Materials/Structure_Walls.mat");
+        float height = sportsFloor.position.y - gallery.position.y - .30f;
+        const float innerEdge = 14.20f;
+        const float glazingFace = 17.83f;
+
+        foreach (int side in new[] { -1, 1 })
+        {
+            var guards = stairs.Find(side < 0 ? "West opening guards" : "East opening guards");
+            var wall = guards.Find("North stairwell wall");
+            if (!wall) wall = guards.Find("North stair opening guard");
+            if (!wall) throw new InvalidOperationException("The north gallery stair guard is missing.");
+
+            // The north is a closed end. Keep the wall beyond the turning landing and join both side faces.
+            wall.name = "North stairwell wall";
+            wall.localPosition = new Vector3(side * (innerEdge + glazingFace) * .5f, height * .5f, 3.25f);
+            wall.localScale = new Vector3(glazingFace - innerEdge, height, .10f);
+            wall.GetComponent<Renderer>().sharedMaterial = wallMaterial;
+        }
+    }
+
     static void BuildGalleryFacade(Transform floor, Material stone, Material metal, Material glass)
     {
         var envelope = Group(floor, "01_Glazed_Perimeter");
