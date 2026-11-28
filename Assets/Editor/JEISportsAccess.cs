@@ -83,6 +83,7 @@ public static partial class JEIStructureBlockout
             text.gameObject.SetActive(false);
         AddSportsStairGuards(galleryStairs, railMaterial, false);
         BuildGalleryFurnishings(gallery, railMaterial, benchWood);
+        InstallGalleryLibrary(gallery);
         return gallery;
     }
 
