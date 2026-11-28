@@ -58,6 +58,7 @@ public static partial class JEIStructureBlockout
             Box(arrival, "Outer stair opening guard", new Vector3(side * 17.65f, .55f, .80f),
                 new Vector3(.10f, 1.10f, 4.90f), railMaterial);
         }
+        InstallSportsStairFences(floor5);
     }
 
     static void BuildRoofStairSupports(Transform floor5, Material metal)

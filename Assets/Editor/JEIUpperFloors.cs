@@ -95,6 +95,8 @@ public static partial class JEIStructureBlockout
             throw new InvalidOperationException("Upper floors already exist. Existing edits have been preserved.");
         InitMaterials();
         var levels = new[] { first, BuildUpperFloor(2), BuildUpperFloor(3) };
+        BuildStairOpeningWalls(levels[0], levels[1]);
+        BuildStairOpeningWalls(levels[1], levels[2]);
         var view = building.GetComponentInChildren<JEIStructureView>(true);
         view.floors = levels;
         view.target.localPosition = new Vector3(0, 4.3f, 0);
@@ -160,6 +162,41 @@ public static partial class JEIStructureBlockout
         foreach (var text in level.GetComponentsInChildren<TextMesh>(true)) text.gameObject.SetActive(false);
         level.localPosition = new Vector3(0, (number - 1) * plan.floorToFloor, 0);
         return level;
+    }
+
+    static void BuildStairOpeningWalls(Transform lower, Transform upper)
+    {
+        const string wallGroup = "Stairwell side walls";
+        if (!lower.Find(wallGroup))
+        {
+            var material = LoadSportsAccessMaterial("Assets/JEI_Blockout/Materials/Structure_Walls.mat");
+            const float slabThickness = .30f;
+            const float slabEdge = 14.20f;
+            const float treadEdge = 14.25f;
+            const float south = -1.65f;
+            const float north = 3.20f;
+            float height = upper.position.y - lower.position.y - slabThickness;
+            var walls = Group(lower, wallGroup);
+            foreach (int side in new[] { -1, 1 })
+            {
+                // The wall fits between the slab edge and the inner treads; the south landing stays open.
+                var center = new Vector3(side * (slabEdge + treadEdge) * .5f, height * .5f, (south + north) * .5f);
+                var size = new Vector3(treadEdge - slabEdge, height, north - south);
+                Box(walls, side < 0 ? "West stairwell wall" : "East stairwell wall", center, size, material);
+            }
+        }
+
+        // The old longitudinal guards share a face with the new walls.
+        var stairGroup = lower.Find("04_Stairs__to_floor_03") ?? lower.Find("04_Stairs__arrival_only") ??
+            lower.Find("04_Stairs__to_floor_05");
+        if (!stairGroup) return;
+        foreach (string name in new[] { "West opening guards", "East opening guards" })
+        {
+            var guards = stairGroup.Find(name);
+            if (!guards) continue;
+            var covered = guards.Find("Stair opening edge guard") ?? guards.Find("Inner stair opening guard");
+            if (covered) Object.DestroyImmediate(covered.gameObject);
+        }
     }
 
     static Rect[] UpperVoids()
